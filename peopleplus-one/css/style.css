@@ -32,6 +32,13 @@ body {
   
   margin-top: 50px;
   
+  opacity: 0;
+  
+}
+
+.loaded #logo {
+    opacity: 1;
+    transition: top 0.6s ease 1.4s, opacity 1.2s ease 1.4s;
 }
 
 #motto1 {
@@ -55,7 +62,17 @@ body {
 #left {
   float: left;
   width: 490px;
+  position: relative;
+  left: -200px;
+  opacity: 0;
 }
+
+.loaded #left {
+  left: 0;
+  opacity: 1;
+  transition: left 0.8s ease 0.4s, opacity 1.2s ease 0.4s;
+}
+
 
 #left-section {
   height: 680px;
@@ -217,6 +234,22 @@ body {
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0;
+  right: -100px;
+  position: relative;
+}
+
+
+.loaded #iphone {
+  -webkit-transition: .8s right, 1.2s opacity;
+  -moz-transition: .8s right, 1.2s opacity;
+  -o-transition: .8s right, 1.2s opacity;
+  transition: .8s right, 1.2s opacity;
+  right: 0;
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 
@@ -231,3 +264,5 @@ a, a:HOVER, a:VISITED, a:ACTIVE, a:FOCUS {
 .nav-link:HOVER {
   color: #23d7a7;
 }
+
+
