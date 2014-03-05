@@ -1,0 +1,233 @@
+body {
+  background: url("../img/background2.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-color: #e7ebec;
+  /*background-size: 100% auto; */
+}
+
+.backimage {
+  position: absolute;
+  width: 100%;
+  background: url("../img/background.jpg");
+  background-position: top center;
+}
+
+#content {
+ width: 980px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+#nav {
+  text-align: right;
+}
+
+#logo {
+  background: url("../img/logo.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  
+  height: 101px;
+  
+  margin-top: 50px;
+  
+}
+
+#motto1 {
+  margin-top: 65px;
+}
+
+#download-appstore {
+  display: block;
+  background-image: url("../img/download-appstore.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 299px;
+  margin-top: 100px;
+}
+
+#download-appstore:HOVER {
+  background-image: url("../img/download-appstore-on.png");
+}
+
+#left {
+  float: left;
+  width: 490px;
+}
+
+#left-section {
+  height: 680px;
+  padding-left: 10px;
+}
+
+#footer {
+  margin-top: 50px;
+  padding-left: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#right {
+  float: right;
+  width: 490px;
+}
+
+#clearer {
+  clear: both;
+}
+
+.text {
+  color: #d7e7f1;
+}
+
+.text-row {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text.large {
+  font-size: 18pt;
+}
+
+.text .plus {
+  color: #00e9a5;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+.text .play {
+  color: #00e9a5;
+  font-weight: bold;
+}
+
+.text2 {
+  color: #95a3a7;
+}
+
+
+.social {
+  display: inline-block;
+  margin-right: 20px;
+  width: 45px;
+  height: 44px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.companies {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.company {
+  display: inline-block;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.company.first {
+  margin-right: 10px;
+}
+
+.company.last {
+  margin-left: 10px;
+}
+
+.company.middle {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.company.wired {
+  width: 81px;
+  height: 16px;
+  background-image: url("../img/company-wired.png");
+}
+
+.company.business-insider {
+  width: 176px;
+  height: 16px;
+  background-image: url("../img/company-business-insider.png");
+}
+
+.company.techcrunch {
+  width: 97px;
+  height: 16px;
+  background-image: url("../img/company-techcrunch.png");
+}
+
+.company.venture-beat {
+  width: 28px;
+  height: 16px;
+  background-image: url("../img/company-venture-beat.png");
+}
+
+.twitter {
+  background-image: url("../img/icon-twitter-off.png");
+}
+
+.twitter:HOVER {
+  background-image: url("../img/icon-twitter-on.png");
+}
+
+.facebook {
+  background-image: url("../img/icon-facebook-off.png");
+}
+.facebook:HOVER {
+  background-image: url("../img/icon-facebook-on.png");
+}
+
+.gplus {
+  background-image: url("../img/icon-gplus-off.png");
+}
+.gplus:HOVER {
+  background-image: url("../img/icon-gplus-on.png");
+}
+
+
+.linkedin {
+  background-image: url("../img/icon-linkedin-off.png");
+}
+.linkedin:HOVER {
+  background-image: url("../img/icon-linkedin-on.png");
+}
+
+.email {
+  background-image: url("../img/icon-email-off.png");
+}
+.email:HOVER {
+  background-image: url("../img/icon-email-on.png");
+}
+
+#iphone {
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url("../img/iphone.png");
+  width: 390px;
+  height: 745px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+a, a:HOVER, a:VISITED, a:ACTIVE, a:FOCUS {
+  text-decoration:none;
+}
+
+.nav-link, .nav-link:VISITED, .nav-link:ACTIVE  {
+  color: #e7ebec;
+}
+
+.nav-link:HOVER {
+  color: #23d7a7;
+}
