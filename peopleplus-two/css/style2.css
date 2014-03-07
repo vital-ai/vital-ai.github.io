@@ -121,3 +121,7 @@
 .email:HOVER, .preload .email {
   background-image: url("../img/icon-email-on.png");
 }
+
+.copyright {
+  padding-left: 10px;
+}
