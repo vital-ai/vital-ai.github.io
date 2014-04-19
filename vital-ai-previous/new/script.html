@@ -1,0 +1,56 @@
+		<meta charset="utf-8" />
+		<meta name="robots" content="all" />
+		<meta name="viewport" content="width=960" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="canonical" href="http://www.vital.ai/index.html" />
+			<link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.10.3.custom.min.css"  />
+	<link rel="stylesheet" type="text/css" href="css/style.css"  />
+	<link rel="shortcut icon" type="image/ico" href="http://vital.ai/favicon.ico" />
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	<script>
+		$(function(){
+			$( "#menu" ).menu({
+				position: {at: "left bottom"},
+				icons: { submenu: "ui-icon-carat-1-s" }
+			});
+		});
+	
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    	$('#menu a').each(function(index) {
+    		var h = this.href;
+    		var l = '' + window.location;
+    		if(l.substring(l.length - 1) == '/') {
+    			l = l + 'index.html';
+    		}
+        	if(h == l) {
+            	$(this).addClass("selected");
+            	$(this).parents("[data-parent=true]").first().find(" > [role=menuitem]").first().addClass("selected");
+        	}
+    });
+});
+</script>
+
+<!-- Google analytics -->
+<script type="text/javascript">
+		
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30297498-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>

@@ -1,0 +1,4 @@
+Options Indexes FollowSymLinks +Includes 
+
+AddType text/html .html
+AddOutputFilter INCLUDES .html 

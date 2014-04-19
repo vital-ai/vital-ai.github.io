@@ -1,0 +1,29 @@
+		<div id="title">			
+			<div id="logo">
+				<p>vital.ai</p>
+			</div>
+			<div id="tagline">
+				big data app platform
+			</div>
+			<div id="menu-list">
+				<ul id="menu">
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="why-us.html" >Why us?</a></li>
+					<li data-parent="true"><a href="platform.html">Platform</a>
+						<ul>
+							<li><a href="application-integration.html">Application Integration</a></li>
+							<li><a href="vital-ai.html">Vital AI Service</a></li>
+							<li><a href="vital-signs.html">VitalSigns</a></li>
+							<li><a href="data-model.html">Data Model</a></li>
+							<li><a href="vital-prime.html">Vital Prime</a></li>
+							<li><a href="vital-flow.html">Vital Flow</a></li>
+							<li><a href="hadoop.html">Hadoop</a></li>
+						</ul>
+					<li><a href="apps.html">Apps</a></li>
+					<li><a href="api.html">API</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="job.html">Job</a></li>
+					<li><a href="contact.html">Contact</a></li>				
+				</ul>
+			</div>	
+		</div>

@@ -1,0 +1,27 @@
+#main-nav > ul > li > ul{
+	z-index: 6000 !important;
+}
+#main-nav > ul > li > ul > li{
+	z-index: 6001 !important;
+}
+#main-nav > ul > li ul > li > a{
+	z-index: 6002 !important;
+}
+#main-nav > ul > li{
+	float:left;
+}
+#main-nav > ul > li, nav#main-nav ul li:hover{
+	
+}
+
+main-nav > ul li ul{
+	padding-top: 0;
+	padding-bottom: 0;
+	
+}
+#page-content{
+	z-index: -1;
+}
+#page-top{
+	margin-bottom: -20px;
+}

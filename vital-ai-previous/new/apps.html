@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Apps | vital.ai</title>
+
+		<link rel="stylesheet" href="css/nivo-default/default.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	
+	<!--#include file="script.html" -->
+		
+		<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	    <script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider({
+		    		effect: 'fade',
+		    		animSpeed: 1000,
+		    		pauseTime: 5000,
+		    		directionNav: false,
+		    		directionNavHide: false,
+		    		controlNav: true,
+		    		controlNavThumbs: false,
+		    		controlNavThumbsFromRel: false,
+		    		keyboardNav: true,
+		    		pauseOnHover: true,
+		    		manualAdvance: false,
+		    		captionOpacity: 0.6,
+		    		prevText: 'Previous',
+		    		nextText: 'Next'
+		        });
+	    	});
+	    </script>
+		
+		
+	</head>
+	<body>
+		<div id="all-page">
+			<!--#include file="title-side.shtml" -->
+			<div id="main-container">
+					
+				<div class="api-title">
+					Apps
+				</div>
+				<div class="why-title">
+					A Gallery of Apps using the Vital Platform:
+				</div>
+				
+				<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/modernist_screen_600.png" data-thumb="images/modernist_screen_600.png" alt="" />
+                
+                <img src="images/tidbt_screen_600.png" data-thumb="images/tidbt_screen_600.png" alt="" data-transition="slideInLeft" />
+                <img src="images/chat_ai_screenshot_600.png" data-thumb="images/chat_ai_screenshot_600.png" alt="" title="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
+           
+			
+			
+			<!--#include file="footer.shtml" -->
+		
+		
+		</div>
+	
+	
+	</body>
