@@ -1,0 +1,14 @@
+.background {
+	background-image: initial !important;
+	background-color: #FFFFFF !important;
+	opacity: 100 !important;
+}
+h3 {color:#000000 !important;}
+
+h1 {
+	color:#000000 !important;
+	font:Oswald !important;
+	font-size:20 !important;
+}
+
+.lead {color:#222222 !important;}

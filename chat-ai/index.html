@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chat.ai</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="flat-ui/css/flat-ui.css">
+        <!-- Using only with Flat-UI (free)-->
+        <link rel="stylesheet" href="common-files/css/icon-font.css">
+        <!-- end -->
+        <link rel="stylesheet" href="common-files/css/animations.css">
+        
+        <!-- If you don't use any of these blocks just remove unnecessary CSS files -->
+        <!-- blog -->
+        <!-- contacts -->
+        <!-- content -->
+        <!-- crew -->
+        <!-- footer -->
+        <link rel="stylesheet" href="ui-kit/ui-kit-footer/css/style.css">
+        <!-- header -->
+        <link rel="stylesheet" href="ui-kit/ui-kit-header/css/style.css">
+        <!-- price -->
+        <!-- projects -->
+
+
+
+    </head>
+
+    <body>
+        
+        <div class="page-wrapper">
+            
+<header class="header-3">
+
+
+<div class="container">
+        <div class="row">
+            <nav class="navbar col-sm-12" role="navigation">
+                <div class="navbar-header">
+                    <h1>Chat.ai</h1>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<section class="header-13-sub v-center">
+    <div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-0">
+                    <h3>Meet Haley!</h3>
+                    <p class="lead">The chat.ai mobile application  enables chatting with an artificially intelligent agent, Haley, using spoken or textual interactions. </p>
+
+<p class="lead">Haley can learn your likes and dislikes, suggest information to you, and engage in a fun conversation.  Haley can scan your social networks and other news sources for you to find things you might like.</p>
+
+<p class="lead">We're teaching Haley to do even more things and be friendly.</p>
+
+<p class="lead">Stay tuned, we'll be launching the mobile application soon!</p> <br>
+                    
+                </div>
+                <div class="col-sm-4 col-sm-offset-0">
+                    
+
+
+
+
+                                                                            <video controls="controls" preload="none" poster="media/haley_demo2-2.jpeg" width="300" height="626" id="video">
+                                                                                <script>
+                                                                                // Remove poster from buggy iOS before 4
+                                                                                if (navigator.userAgent.match(/CPU( iPhone)*( OS )*([123][_0-9]*)? like Mac OS X/)) {
+                                                                                    $('#video').removeAttr('poster');
+                                                                                }
+                                                                                </script>
+                                                                                <source src="media/haley_demo2.mp4" type="video/mp4" onerror="fallback(this.parentNode)" /><object id="player_flv_maxi.swf" type="application/x-shockwave-flash" data="resources/player_flv_maxi.swf" width="300" height="626">
+                                                                                    <param name="movie" value="resources/player_flv_maxi.swf" />
+                                                                                    <param name="flashvars" value="flv=media/haley_demo2.mp4&amp;startimage=media/haley_demo2-2.jpeg&amp;margin=0&amp;showplayer=autohide" />
+                                                                                    <div style="width:300px; height:626px;" id="unrecognized">
+                                                                                        <p>This browser cannot play the embedded video file.</p><img title="This browser cannot play the embedded video file." src="media/haley_demo2-2.jpeg" alt="haley_demo2-2" width="300" height="626" />
+                                                                                    </div>
+                                                                                </object>
+                                                                            </video>
+                                                                            <script>
+                                                                            var video = document.getElementById('video');
+                                                                            if (video.canPlayType && video.canPlayType('video/mp4')) {
+                                                                                // canPlayType is overoptimistic, so we have browser sniff.
+                                                                                var ua = navigator.userAgent;
+                                                                                if ((ua.indexOf('WebKit/') < 0 && ua.indexOf('MSIE') < 0) || ua.match(/MSIE [1-8]\./)) {
+                                                                                    // Only webkit-browsers can currently play this natively
+                                                                                    fallback(video);
+                                                                                }
+                                                                            } else {
+                                                                                fallback(video);
+                                                                            }
+                                                                            </script>
+                                                                           
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-14">
+    <div class="container">
+        
+            <p>Copyright 2014 vital.ai, llc.</p>
+        
+        
+    </div>
+
+</footer>
+
+
+
+
+
+        </div>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="common-files/js/jquery-1.10.2.min.js"></script>
+        <script src="flat-ui/js/bootstrap.min.js"></script>
+        <script src="common-files/js/modernizr.custom.js"></script>
+        <script src="common-files/js/page-transitions.js"></script>
+        <script src="common-files/js/startup-kit.js"></script>
+    </body>
+</html>
