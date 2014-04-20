@@ -1,0 +1,26 @@
+.header-1-sub .pt-page-1 .background {
+  background-image: url("../img/greenstones.png");
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background-position: 50% 30%;
+}
+
+.header-1-sub .pt-page-2 .background {
+  background-image: url("../img/stones.png");
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background-position: 50% 30%;
+}
+
+.header-1-sub .pt-page-3 .background {
+  background-image: url("../img/cytoscape_wine5.png");
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background-position: 50% 30%;
+}
