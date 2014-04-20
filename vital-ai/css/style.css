@@ -17,10 +17,49 @@
 }
 
 .header-1-sub .pt-page-3 .background {
-  background-image: url("../img/cytoscape_wine5.png");
+  background-image: url("../img/vital-ai-postcard-back-graph.png");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
   filter: alpha(opacity=75);
   background-position: 50% 30%;
 }
+
+.header-1-sub .pt-page-3 h3 {
+    text-align: center;
+
+  color: #EEEEEE;
+  }
+
+  .header-1-sub .pt-page-3 .lead {
+  color: #EEEEEE;
+  }
+
+  .header-1-sub .pt-page-2 h3 {
+      text-align: center;
+
+  color: #EEEEEE;
+  }
+
+  .header-1-sub .pt-page-2 .lead {
+  color: #EEEEEE;
+  }
+
+.header-1-sub .pt-page-1 h3 {
+  text-align: center;
+  color: #EEEEEE;
+  }
+
+  .header-1-sub .pt-page-1 .lead {
+  color: #EEEEEE;
+  }
+
+.hero-unit {
+  color: #EEEEEE;
+  background-color: #FF0000;
+}
+
+
+
+
+
