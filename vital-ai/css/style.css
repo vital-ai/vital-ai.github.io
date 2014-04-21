@@ -59,6 +59,21 @@
   background-color: #FF0000;
 }
 
+/*
+.row-fluid .span6 {
+width: 66.6%;
+display: table-cell;
+vertical-align: bottom;
+    float: none;
+}
+
+.row-fluid .span3 {
+width: 33.3%;
+display: table-cell;
+vertical-align: bottom;
+    float: none;
+}
+*/
 
 
 
