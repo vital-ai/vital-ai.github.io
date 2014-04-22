@@ -38,8 +38,13 @@ you can use the generic selector below, but it's slower:
 .fui-question,
 .fui-window,
 .fui-windows,
-.fui-arrow-right,
-.fui-arrow-left,
+.fui-arrow-right {
+  font-size: 150%;
+}
+
+.fui-arrow-left {
+  font-size: 150%;
+}
 .fui-loop,
 .fui-cmd,
 .fui-mic,

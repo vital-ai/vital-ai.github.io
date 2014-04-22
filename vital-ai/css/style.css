@@ -59,6 +59,17 @@
   background-color: #FF0000;
 }
 
+/* for team memebrs */
+
+.member-wrapper {
+
+  vertical-align: top;
+}
+
+
+/* experiment for bottom aligning content */
+
+
 /*
 .row-fluid .span6 {
 width: 66.6%;

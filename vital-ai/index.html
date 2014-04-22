@@ -53,14 +53,11 @@
         
         </script>
 
-
-
     </head>
 
     <body>
         
-        <div class="page-wrapper">
-           
+        <div class="page-wrapper">   
 
         <a name="home"></a>
             
@@ -100,29 +97,30 @@
                                 <li>
                                     <a href="#news">NEWS</a>
                                 </li>
-                                <li>
+
+                                <!-- <li>
                                     <a target=_blank href="login.html">LOGIN</a>
-                                </li>
+                                </li> -->
+
+
 
                             </ul>
                             <ul class="subnav">
+                                
                                 <li>
-                                    <a href="#">About Us</a>
+                                    <a target=_blank href="http://inc.ogni.to">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="#">Blog</a>
+                                    <a target=_blank href="https://github.com/vital-ai/vital-overview/wiki">Github</a>
                                 </li>
                                 <li>
-                                    <a href="#">Github</a>
+                                    <a href="terms-of-service.html">Terms of Service</a>
                                 </li>
                                 <li>
-                                    <a href="#">Terms of Service</a>
+                                    <a href="privacy-policy.html">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Mailing List Management</a>
+                                    <a href="mailing-list-management.html">Mailing List Management</a>
                                 </li>
                             </ul>
                         </div>
@@ -197,8 +195,13 @@
                     </div>
                 </div>
                 <div class="container controls">
+
+
                     <a class="control-prev" href="#"><span class="fui-arrow-left"> </span></a>
                     <a class="control-next" href="#"><span class="fui-arrow-right"> </span></a>
+
+                    
+
                 </div>
             </div>
         </section>
@@ -237,7 +240,7 @@
             </div>
             <div class="col-sm-3 col-sm-offset-1">
                 <img src="common-files/icons/Responsive1@2x.png" alt="" width="100" height="100">
-                <h6>Add a User Interface</h6>
+                <h6>Connect a User Interface</h6>
                 You can easily combine any blocks in a variety of design projects.
             </div>
         </div>
@@ -403,8 +406,15 @@
                 <div class="col-sm-6 aligment">
                     <h3>Vital AI Application Platform</h3>
                     <p>
-                        Startup Design Framework contains components and complex blocks which can easily be
-                        integrated into almost any design. Responsive layout, clear grid, retina ready.
+                        The Vital Client is added to your application, providing an API to access the Vital Platform.  The Vital Client includes a cache of data objects to improve performance, the REST and Queue interfaces, and the VitalSigns data mapping component, which aligns your application data model with the Vital AI Platform.  VitalSigns greatly improves development efficiency, eases integration, and eliminates additional data mapping and other data maintenance.
+
+                        The Vital AI platform includes Machine Learning, Natural Language Processing, Logical Inference, Graph Analytics, Data Analysis via Hadoop, Web Crawling, integration with Twitter and Facebook, and large scale semantic data management, available via the Vital Client.
+
+
+                        The Vital AI Platform is implemented using the Vital AI Service, which consists of 3 primary layers:
+                        Vital Prime, Vital Flow, and Hadoop. 
+
+                        Vital Prime provides in-memory data storage and analysis.  Vital Flow provides data processing via multi-step data flows which may include steps for text processing, graph analysis, machine learning, logical inference, integration with social networks, and integration with other external APIs.  Hadoop provides long term storage of data via HDFS and HBase and analysis via Map/Reduce jobs.
                     </p>
                 </div>
                 <div class="col-sm-6">
@@ -442,10 +452,72 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 aligment">
+                    <h3>VitalSigns</h3>
+                    <p>
+                        Vital AI provides a low-level Core data model which allows different data processing components to have a common data framework.
+
+                        This Core data model is extended to include objects for common use cases, such as "User", "Document", "Event", and others. 
+
+                        This Vital Domain Model is extended to include objects that are required for an application.  This becomes the Application Domain Model.
+
+                        For example, if an application will recommend movies to users, then the application may extend the domain model to include objects for "Film", "Actor", and "Genre".
+
+
+                        VitalSigns provides development tools to define a data model across the entire application and generate objects, which are then used in various components, including the Application's User Interface, Vital Flows, and Hadoop.
+
+                        This means that the definition of the "User" object is the same in the Application's User Interface, in Vital Flows for recommendations, and in the Hadoop machine learning jobs.  This speeds development and eliminates many problems with data incompatibilities.
+
+                        VitalSigns handles data mapping across components, across different programming languages and data repositories.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="img">
+                        <img src="img/vitaldatamodel_med.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delimiter">&nbsp;</div>
+        <div class="container">
+            <div class="row features">
+                <div class="col-sm-3">
+                    <h6>High Resolution</h6>
+                    <p>We did a 2.5K size high resolution photo that will suit even for a very large web site.</p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <h6>Easy to use</h6>
+                    <p>To get started, you select the desired sample and base the entire website on it. It’s that
+                        simple!</p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <h6>Feel our design</h6>
+                    <p>Samples will show you the feeling on how to play around using the components.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="content-3 v-center">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 aligment">
                     <h3>Vital AI Application Platform:<br>Vital Prime</h3>
                     <p>
-                        Startup Design Framework contains components and complex blocks which can easily be
-                        integrated into almost any design. Responsive layout, clear grid, retina ready.
+                        The Vital Platform uses Vital Prime servers in the implementation.  Vital Prime provides in-memory data storage and analysis, interfaces to data repositories, and access to data processing using Vital Flows or Hadoop.  Additionally, Vital Prime implements authentication / authorization for application users.
+
+                        Vital Prime is accessed via a REST interface.  Event objects, such as user "clicks", can be sent to Vital Prime via the Queue interface.
+
+                        Event data sent via queue is typically sent into the Data Matrix, which counts events by type and group.
+
+                        Vital Prime processes queries using a connected data repository such as a text index, a triplestore (NoSQL) database, or HBase.
+
+                        Vital Prime provides a scripting interface.  Such scripts are called "DataScripts".  DataScripts implement application data processing functionality including defining data processing workflows ("Vital Flows"), processing real-time data analytics in the Data Matrix, or accessing the cache and connected data repositories.  DataScripts can be run periodically using the JobEngine.  DataScripts can be called via the application using the callFunction REST API call.  Application functionality is typically implemented via a DataScript, including common features such as returning "top content", "recommended content", or "trending content".
                     </p>
                 </div>
                 <div class="col-sm-6">
@@ -467,8 +539,28 @@
                 <div class="col-sm-6 aligment">
                     <h3>Vital AI Application Platform:<br>Vital Flow</h3>
                     <p>
-                        Startup Design Framework contains components and complex blocks which can easily be
-                        integrated into almost any design. Responsive layout, clear grid, retina ready.
+                        Vital Flows are used to process data in workflows using different data access and processing components strung together.
+
+Vital Flows are distributed over servers using a queue.
+
+Vital Flows consist of steps and sub-steps, and a Flow may "call" another Flow, providing generalized data workflows.
+
+The NLP Flow Server handles various text processing functions, such as entity extraction, sentiment analysis, and topic categorization.
+
+The Graph Analytics Server handles large-scale graph analysis, such as for social network analysis.
+
+The Data Flow Server interfaces with data repositories for accessing and storing data.
+
+The Integrator Flow Server interacts with external APIs, including Facebook and Twitter APIs.
+
+The Inference Flow Server provides a logical inference and rules engine.
+
+The Machine Learning Flow Server uses learned models to categorize data.
+
+The Hadoop Flow Server access Hadoop jobs and data.
+
+DataScripts define and run a Vital Flow.
+
                     </p>
                 </div>
                 <div class="col-sm-6">
@@ -490,8 +582,13 @@
                 <div class="col-sm-6 aligment">
                     <h3>Vital AI Application Platform:<br>Hadoop</h3>
                     <p>
-                        Startup Design Framework contains components and complex blocks which can easily be
-                        integrated into almost any design. Responsive layout, clear grid, retina ready.
+                        The Vital Platform uses Hadoop for large-scale data processing, including machine learning analysis.
+
+Data stored in HBase is available for analysis using Map/Reduce jobs, as is data from application events (such as log data), typically written to HDFS.
+
+A Vital Flow, initiated via DataScript, may trigger a Map/Reduce job.
+
+The output of a machine learning job is a learned model.  The model is loaded into a Vital Flow step which can be used in Vital Flows in categorization.
                     </p>
                 </div>
                 <div class="col-sm-6">
@@ -512,7 +609,10 @@
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="img"><img src="img/gear.jpg" width="500" height=400 alt=""></div>
-                <h1>Why?</h1>
+                
+                    <h1>&#147;Why?&#148;</h1>
+                
+
                 <p>We prepared some high-quality photos, that you can use in your projects.
                     When you have to show your application or website on iPhone, iPad or
                     Macbook you can use these images.
@@ -800,7 +900,7 @@
                     </div>
                     <div class="info">
                         <div class="name">Marc Hadfield</div>
-                        <b>Designer</b> who makes easy to change and easy to create new elements.
+                        <h6>Marc Hadfield loves to create software that understands data.  He has been a CTO of several start-ups over the past ten years before founding Vital.AI, most recently Inform Technologies.  Inform applied Natural Language Processing to the Enterprise Publishing space.  Prior to Inform, Marc was CTO of Alitora Systems, which used large scale data analysis to gain insight into disease processes for drug discovery, primarily using Natural Language Processing to understand research articles.  In creating many data driven applications, Marc gained experience building out the necessary infrastructure -- this has led to creating the Vital Platform to do the heavy lifting in creating data driven applications, leaving time to focus on the cool algorithms such as Natural Language Processing to understand text or Graph Analysis to find the interesting parts of graphs, and then use this insight to add value to applications.</h6>
                         
                     </div>
                 </div>
@@ -815,7 +915,7 @@
                     </div>
                     <div class="info">
                         <div class="name">Dariusz "Derek" Kobylarz</div>
-                        <b>Designer</b> who makes easy to change and easy to create new elements.
+                        <h6>Derek has worked closely with Marc at both Inform and Alitora, implementing both back-end large scale semantic applications and front-end web and mobile user interfaces.  Derek can integrate anything with anything, and probably already has.  Derek is an expert at the details of the Java Platform and Semantic Web technologies and standards.</h6>
                         
                     </div>
                 </div>
@@ -831,7 +931,7 @@
                     </div>
                     <div class="info">
                         <div class="name">Taryn Phippen</div>
-                        <b>Designer</b> who makes easy to change and easy to create new elements.
+                        <h6>Taryn is a former Ph.D. researcher with extensive experience in molecular, cellular, and developmental biology. As a postdoctoral fellow, she pursued a project in bioinformatics, using the biochemical technique of chromatin immunopreciptation followed by chip microarray (ChIP-chip) to determine the high-resolution, genome-wide distribution of the Ceanorhabditis. elegans chromatin-associated protein MES-4. After completing her postdoc, she obtained a second Bachelors Degree in mathematics with a minor in computer science. As Vital.AI’s intern, Taryn is serving as the data scientist for the NYC Department of Education School Choice Design Challenge (SCDC), the purpose of which was to design an implement an app that helps students and their parents select a high school. Taryn used Vital’s tools to create a data model for the large amount of data provided by the NYC DoE, loaded the data into our platform, and helped create a recommendation model to match students with school programs.</h6>
                         
                     </div>
                 </div>
@@ -960,17 +1060,17 @@
                 <nav>
                     <h6>Vital AI</h6>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="#tech">Tech</a></li>
                         <li><a target=_blank href="http://inc.ogni.to">Blog: http://inc.ogni.to</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#join">Join Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col-sm-3 col-sm-offset-1">
                 <nav>
-                    <h6>Products & Services</h6>
+                    <h6>Products &amp; Services</h6>
                     <ul>
                         <li><a href="#product">Development Kit</a></li>
                         <li><a href="#product">App Platform</a></li>
@@ -981,11 +1081,6 @@
                 </nav>
             </div>
 
-
-            
-
-
-
             <div class="col-sm-3 col-sm-offset-2">
                 <nav>
                     <h6>Resources</h6>
@@ -993,7 +1088,7 @@
                         <li><a target=_blank href="https://github.com/vital-ai/vital-overview/wiki">Documentation on Github</a></li>
                         <li><a href="terms-of-service.html">Terms of Service</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a target=_blank href="login.html">Customer Portal Login</a></li>
+                        <!-- <li><a target=_blank href="login.html">Customer Portal Login</a></li> -->
                         <li><a href="mailing-list-management.html">Manage Mailing List Membership</a></li>
                     </ul>
                 </nav>
