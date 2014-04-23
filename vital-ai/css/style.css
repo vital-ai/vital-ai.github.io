@@ -1,5 +1,5 @@
 .header-1-sub .pt-page-1 .background {
-  background-image: url("../img/greenstones.png");
+  background-image: url("../img/greenstones.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -8,7 +8,7 @@
 }
 
 .header-1-sub .pt-page-2 .background {
-  background-image: url("../img/stones6.png");
+  background-image: url("../img/stones6.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -17,7 +17,7 @@
 }
 
 .header-1-sub .pt-page-3 .background {
-  background-image: url("../img/vital-ai-postcard-back-graph.png");
+  background-image: url("../img/vital-ai-postcard-back-graph.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
