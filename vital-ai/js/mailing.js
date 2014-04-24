@@ -160,7 +160,6 @@ $(function(){
          })
 			});
 			
-			els.removeAttr('disabled');
 			
 		}, function(status, msg){
 			
