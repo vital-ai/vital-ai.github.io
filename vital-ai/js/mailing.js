@@ -3,7 +3,7 @@
 
 var hostPort = 'dashboard.vital.ai';
 
-if( window.location.hostname != 'vital.ai' ) {
+if( window.location.hostname.indexOf('dev.') == 0) {
   //development URL
   hostPort = 'localhost:8080'
 }
