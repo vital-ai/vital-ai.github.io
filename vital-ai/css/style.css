@@ -89,3 +89,19 @@ vertical-align: bottom;
 
 
 
+
+
+.content-11.subscribe-form input[type="text"], .content-11.subscribe-form input[type="email"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #34495E;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: -1px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
