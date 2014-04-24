@@ -3,7 +3,7 @@
 	background-color: #FFFFFF !important;
 	opacity: 100 !important;
 }
-h3 {color:#000000 !important;}
+h3 {color:#333 !important;}
 
 h1 {
 	color:#000000 !important;
@@ -11,4 +11,18 @@ h1 {
 	font-size:20 !important;
 }
 
-.lead {color:#222222 !important;}
+.lead {color:#555 !important;}
+
+
+.header-10 .navbar .brand {
+  font-size: 32px;
+}
+
+.header-13-sub {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+#video {
+  box-shadow: 4px 4px 10px #aaa;
+}
