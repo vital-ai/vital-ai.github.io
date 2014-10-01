@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CallidaEnergy Comfort App</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/dial.css" />
+<link rel="stylesheet" href="css/map.css" />
+<!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/jquery.cookie-1.4.1.js"></script>
+<script src="js/jquery.mobile-1.4.4.min.js"></script>
+<script src="js/dial.js"></script>
+
+<script src="js/gmap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
+
+<script>
+
+	var COOKIE_LAST_VIEWED_SCREEN = "LAST_VIEWED_SCREEN";
+
+	$(function() {
+		
+		$("[data-role='navbar']").navbar();
+		
+		$("[data-role='header'], [data-role='footer']").toolbar();
+		
+		
+		var lastScreen = $.cookie(COOKIE_LAST_VIEWED_SCREEN);
+		
+		var current = $(".ui-page-active").attr('id');
+		
+		console.log("last viewed screen: " + lastScreen + " current: " + current);
+		
+		
+		if(lastScreen != null && lastScreen != current) {
+			
+			console.log("transition to another screen...")
+			
+			$.mobile.navigate( '#' + lastScreen, {
+				//foo: $(this).attr("data-foo")
+			});
+			
+		}
+		
+		
+		//init gmaps here
+		google.maps.event.addDomListener(window, 'load', initialize_gmaps);
+		
+		
+	});
+
+	var firstChange = true;
+	
+	$(document).on("pagecontainerchange", function() {
+		// Each of the four pages in this demo has a data-title attribute
+		// which value is equal to the text of the nav button
+		// For example, on first page: <div data-role="page" data-title="Info">
+		var current = $(".ui-page-active").attr('id');
+		console.log("pagecontainerchange, current page: " + current);
+		//alert("current: " +current);
+		// Change the heading
+		//$( "[data-role='header'] h1" ).text( current );
+		// Remove active class from nav buttons
+		$( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
+		// Add active class to current nav button
+		$("[data-role='navbar'] a").each(function() {
+			if ($(this).attr('href') === '#' + current) {
+				$(this).addClass("ui-btn-active");
+			}
+		});
+		
+		if(firstChange == true) {
+			firstChange = false;			
+		} else {
+			$.cookie(COOKIE_LAST_VIEWED_SCREEN , current, { expires: 365, path: '/' });
+		}
+		
+		if(current == 'comfort-level') {
+			onDialPageShown();
+		}
+		
+		
+		
+	});
+	
+	
+</script>
+
+</head>
+<body>
+
+	<div id="main-header" data-role="header" data-position="fixed" data-theme="a">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-prefetch="true"
+					data-transition="slide">Home</a></li>
+				<li><a href="#comfort-level" data-prefetch="true"
+					data-transition="slide">Comfort Level</a></li>
+				<li><a href="#select-building" data-prefetch="true"
+					data-transition="slide">Select Building</a></li>
+			</ul>
+		</div>
+		<!-- /navbar -->
+	</div>
+	<!-- /header -->
+
+	<div data-role="page" id="home">
+		<div class="ui-content">
+			Welcome
+			<div style="">
+				<a href="#select-building">Next</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="comfort-level">
+		<div class="ui-content" id="comfort-level-body">
+			<div style="text-align: center;" id="dial-selected-address" data-default="(no address selected)">(no address selected)</div>
+			<h1 style="text-align: center;">What is your comfort level?</h1>
+			<div style="text-align: center;">0 = comfortable</div>
+			<!-- 
+			<div id="circle" style="height: 0px;">
+				<div id="handler">0</div>
+				<p id="test">0</p>
+			</div>
+			 -->
+			<div id="bottom-labels">
+				<div style="float: left;">10 = very warm</div>
+				<div style="float: right;">-10 = very cold</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div id="bottom-buttons">
+				<button id="submit-button">Submit</button>
+				<!-- 
+				<button data-role="none" onclick="dial_onPlaceChanged({formatted_address: '349 5th Ave New York'});">set place</button>
+				<button data-role="none" onclick="dial_onPlaceChanged(null);">clear place</button>
+				 --> 
+			</div>
+			<div id="submit-status">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="select-building">
+		<input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+		<button id="clear-search" style="display: none; position: absolute; z-index: 2000000;" data-role="none">X</button> 
+    	<div id="map-canvas"></div>
+	</div>
+
+</body>
+</html>
+
