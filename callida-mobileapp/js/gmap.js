@@ -6,6 +6,14 @@ var map = null;
 
 function initialize_gmaps() {
 
+	
+	//only initialize gmaps if screen is open?
+	if( ! $('#select-building').hasClass('initialized') ) {
+		return;
+	}
+	
+	if(map != null) return;
+	
 	var markers = [];
 	map = new google.maps.Map(document.getElementById('map-canvas'), {
 		mapTypeId : google.maps.MapTypeId.ROADMAP,
@@ -266,7 +274,8 @@ function onMapPageShown() {
 		});
 		
 		onPlaceChanged();
-		
+
+		initialize_gmaps();
 	}
 	
 }

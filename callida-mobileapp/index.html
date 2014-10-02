@@ -28,7 +28,7 @@
 <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/jquery.cookie-1.4.1.js"></script>
-<script src="js/jquery.mobile-1.4.4.min.js"></script>
+
 <script src="js/dial.js"></script>
 <script src="js/gmap.js"></script>
 <script src="js/home.js"></script>
@@ -42,18 +42,22 @@
 <script>
 
 	var COOKIE_LAST_VIEWED_SCREEN = "LAST_VIEWED_SCREEN";
-
+	
+	
 	$(document).on('vmousemove', function(event) {
 		event.preventDefault();
         //event.stopImmediatePropagation();
         event.stopPropagation();
 	});
 	
+	
+	/*
 	$('body').on('vmousemove', function(event) {
         event.stopPropagation();
 		//event.preventDefault();
         //event.stopImmediatePropagation();
 	});
+	*/
 	
 	$(function() {
 		
@@ -65,9 +69,6 @@
 		$("[data-role='header'], [data-role='footer']").toolbar();
 		
 		
-		var lastScreen = $.cookie(COOKIE_LAST_VIEWED_SCREEN);
-		
-		var current = $(".ui-page-active").attr('id');
 		
 		
 		
@@ -84,22 +85,6 @@
 			
 		});
 		
-		console.log("last viewed screen: " + lastScreen + " current: " + current);
-		
-		if(lastScreen != null && lastScreen != current) {
-			
-			console.log("transition to another screen...")
-			
-			/*
-			$.mobile.navigate( '#' + lastScreen, {
-				//foo: $(this).attr("data-foo")
-				changeHash: false
-			});
-			*/
-
-			navigateTo(lastScreen);
-			
-		}
 		
 		/*
 		$('body').on("swipeleft", function(event){
@@ -306,6 +291,26 @@
     		</div>
     	</div>
 	</div>
+
+
+<script>
+
+	var lastScreen = $.cookie(COOKIE_LAST_VIEWED_SCREEN);
+
+	console.log("last viewed screen: " + lastScreen);
+
+	if(lastScreen != null && lastScreen != '' && lastScreen != 'home') {
+	
+		//switch the pages order as soon as jquery mobile is ready?
+	
+		console.log("transition to another screen - make it first element before jquery mobile launches!");
+	
+		$('#' + lastScreen).insertBefore($('#home'));
+		
+	
+	}	
+</script>
+<script src="js/jquery.mobile-1.4.4.min.js"></script>
 
 </body>
 </html>

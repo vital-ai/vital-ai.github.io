@@ -41,7 +41,7 @@ function navigateTo(newId) {
 	
 	var btn = null;
 	
-	$('#main-header .ui-btn').each(function(index){
+	$('#main-header a').each(function(index){
 		var $this = $(this);
 		var hr = $this.attr('href').substring(1);
 		if(hr == current) {
