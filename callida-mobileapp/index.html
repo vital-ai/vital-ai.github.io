@@ -163,7 +163,8 @@
 		if(firstChange == true) {
 			firstChange = false;			
 		} else {
-			$.cookie(COOKIE_LAST_VIEWED_SCREEN , current, { expires: 365, path: '/' });
+			localStorage.setItem(COOKIE_LAST_VIEWED_SCREEN, current);
+			//$.cookie(COOKIE_LAST_VIEWED_SCREEN , current, { expires: 365, path: '/' });
 		}
 		
 		if(current == 'comfort-level') {
@@ -303,7 +304,8 @@
 
 <script>
 
-	var lastScreen = $.cookie(COOKIE_LAST_VIEWED_SCREEN);
+	//var lastScreen = $.cookie(COOKIE_LAST_VIEWED_SCREEN);
+	var lastScreen = localStorage.getItem(COOKIE_LAST_VIEWED_SCREEN);
 
 	console.log("last viewed screen: " + lastScreen);
 
