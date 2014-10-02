@@ -44,13 +44,6 @@
 	var COOKIE_LAST_VIEWED_SCREEN = "LAST_VIEWED_SCREEN";
 	
 	
-	$(document).on('vmousemove', function(event) {
-		event.preventDefault();
-        //event.stopImmediatePropagation();
-        event.stopPropagation();
-	});
-	
-	
 	/*
 	$('body').on('vmousemove', function(event) {
         event.stopPropagation();
@@ -61,6 +54,12 @@
 	
 	$(function() {
 		
+		
+		$(document).on('vmousemove', function(event) {
+			event.preventDefault();
+	        //event.stopImmediatePropagation();
+	        event.stopPropagation();
+		});
 		
 		
 		
