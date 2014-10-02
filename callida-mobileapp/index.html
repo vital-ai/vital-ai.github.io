@@ -13,8 +13,9 @@
 <script src="js/jquery.cookie-1.4.1.js"></script>
 <script src="js/jquery.mobile-1.4.4.min.js"></script>
 <script src="js/dial.js"></script>
-
 <script src="js/gmap.js"></script>
+<script src="js/home.js"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 
 
@@ -22,7 +23,20 @@
 
 	var COOKIE_LAST_VIEWED_SCREEN = "LAST_VIEWED_SCREEN";
 
+	$(document).on('vmousemove', function(event) {
+		event.preventDefault();
+        //event.stopImmediatePropagation();
+        event.stopPropagation();
+	});
+	
+	$('body').on('vmousemove', function(event) {
+        event.stopPropagation();
+		//event.preventDefault();
+        //event.stopImmediatePropagation();
+	});
+	
 	$(function() {
+		
 		
 		$("[data-role='navbar']").navbar();
 		
@@ -46,6 +60,46 @@
 			
 		}
 		
+		/*
+		$('body').on("swipeleft", function(event){
+			
+			//alert("swipe left on: " + current);
+			
+			var current = $(".ui-page-active").attr('id');
+			
+			var n = null;
+			if(current == 'home') {
+				return;
+			}else if(current == 'comfort-level') {
+				n = 'home';
+			} else if(current == 'select-building') {
+				n = 'comfort-level';
+			}
+			
+			$.mobile.navigate( '#' + n, {});
+			
+		});
+		
+		$('body').on("swiperight", function(event){
+			
+			var current = $(".ui-page-active").attr('id');
+			
+			var n = null;
+			if(current == 'home') {
+				return;
+			}else if(current == 'comfort-level') {
+				n = 'home';
+			} else if(current == 'select-building') {
+				n = 'comfort-level';
+			}
+			
+			$.mobile.navigate( '#' + n, {});
+			
+			//alert("swipe right on: " + current);
+			
+		}); 
+		*/
+		
 		
 		//init gmaps here
 		google.maps.event.addDomListener(window, 'load', initialize_gmaps);
@@ -53,6 +107,8 @@
 		
 	});
 
+
+	
 	var firstChange = true;
 	
 	$(document).on("pagecontainerchange", function() {
@@ -81,6 +137,10 @@
 		
 		if(current == 'comfort-level') {
 			onDialPageShown();
+		} else if(current == 'select-building') {
+			onMapPageShown();
+		} else if(current == 'home') {
+			onHomePageShown();
 		}
 		
 		
@@ -94,14 +154,26 @@
 <body>
 
 	<div id="main-header" data-role="header" data-position="fixed" data-theme="a">
-		<div data-role="navbar">
+		<div data-role="navbar" data-iconpos="left">
 			<ul>
 				<li><a href="#home" data-prefetch="true"
-					data-transition="slide">Home</a></li>
+					data-transition="slide" 
+					
+					>
+					<img src="img/welcome.png" height="13" />
+					Welcome</a></li>
 				<li><a href="#comfort-level" data-prefetch="true"
-					data-transition="slide">Comfort Level</a></li>
+					data-transition="slide"
+					
+					>
+					<img src="img/comfort.png" height="13" />
+					Comfort Level</a></li>
 				<li><a href="#select-building" data-prefetch="true"
-					data-transition="slide">Select Building</a></li>
+					data-transition="slide"
+					
+					>
+					<img src="img/building.png" height="13" />
+					Select Building</a></li>
 			</ul>
 		</div>
 		<!-- /navbar -->
@@ -109,32 +181,50 @@
 	<!-- /header -->
 
 	<div data-role="page" id="home">
-		<div class="ui-content">
-			Welcome
-			<div style="">
-				<a href="#select-building">Next</a>
+		<div class="ui-content" id="home-body">
+			<div id="home-header">
+				<img alt="CallidaEnergy logo" src="img/Callida-grey.png" title="CallidaEnergy" height="100"/>
+				<br/>
+				<h3>The building comfort tracking app</h3>
+			</div>
+			<div id="home-center">
+				To track your comfort level, please
+				select your building location
+				and submit your comfort level
+			</div>
+			<div id="home-bottom">
+				<div id="home-next-button" class="round-button outer">
+					<div class="inner">Next</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div data-role="page" id="comfort-level">
 		<div class="ui-content" id="comfort-level-body">
-			<div style="text-align: center;" id="dial-selected-address" data-default="(no address selected)">(no address selected)</div>
-			<h1 style="text-align: center;">What is your comfort level?</h1>
-			<div style="text-align: center;">0 = comfortable</div>
+			<div id="dial-selected-address" data-default="(no address selected)">(no address selected)</div>
+			<h1 id="dial-header">What is your comfort level?</h1>
+			<!-- <div style="text-align: center;">0 = comfortable</div> -->
 			<!-- 
 			<div id="circle" style="height: 0px;">
 				<div id="handler">0</div>
 				<p id="test">0</p>
 			</div>
 			 -->
+			<!-- 
 			<div id="bottom-labels">
 				<div style="float: left;">10 = very warm</div>
 				<div style="float: right;">-10 = very cold</div>
 				<div style="clear: both;"></div>
 			</div>
+			-->
 			<div id="bottom-buttons">
-				<button id="submit-button">Submit</button>
+			
+				<div id="submit-button" class="round-button outer">
+					<div class="inner">Submit</div>
+				</div>
+			
+				<!-- <button id="submit-button">Submit</button> -->
 				<!-- 
 				<button data-role="none" onclick="dial_onPlaceChanged({formatted_address: '349 5th Ave New York'});">set place</button>
 				<button data-role="none" onclick="dial_onPlaceChanged(null);">clear place</button>
@@ -147,9 +237,30 @@
 	</div>
 
 	<div data-role="page" id="select-building">
-		<input id="pac-input" class="controls" type="text" placeholder="Search Box" />
-		<button id="clear-search" style="display: none; position: absolute; z-index: 2000000;" data-role="none">X</button> 
-    	<div id="map-canvas"></div>
+		<div class="ui-content" id="select-building-body">
+			<div id="address-box-panel">
+				<div id="address-box-selected">
+					<div id="address-box-mglass"></div>
+					<div id="address-box-remove"></div>
+					<div id="address-box-selected-address" data-default="(no place selected)"></div>
+					<div class="clearer"></div>
+				</div>
+				<div id="address-box-notselected" style="margin-left: 30px; margin-right: 30px;">
+					<input data-role="" id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+				</div>
+			</div>
+    		<div id="map-canvas"></div>
+    		<div id="selected-location-panel">
+    			<div id="selected-address-arrow"></div>
+    			<div id="selected-address-next">
+					<div id="selected-address-next-button" class="round-button outer">
+						<div class="inner">Next</div>
+					</div>
+    			</div>
+    			<div id="selected-address-text" data-default="(no place selected)"></div>
+    			<div class="clearer"></div>
+    		</div>
+    	</div>
 	</div>
 
 </body>

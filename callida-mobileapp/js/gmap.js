@@ -2,10 +2,12 @@ var selectedPlace = null;
 
 var clearPlace = null;
 
+var map = null;
+
 function initialize_gmaps() {
 
 	var markers = [];
-	var map = new google.maps.Map(document.getElementById('map-canvas'), {
+	map = new google.maps.Map(document.getElementById('map-canvas'), {
 		mapTypeId : google.maps.MapTypeId.ROADMAP
 	});
 
@@ -16,7 +18,9 @@ function initialize_gmaps() {
 	// Create the search box and link it to the UI element.
 	var input = /** @type {HTMLInputElement} */
 	(document.getElementById('pac-input'));
-	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	
+	//XXX don't push search box!
+	//map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
 	var searchBox = new google.maps.places.SearchBox(
 	/** @type {HTMLInputElement} */
@@ -83,7 +87,7 @@ function initialize_gmaps() {
 		searchBox.setBounds(bounds);
 	});
 	
-	clearPlace = $('#clear-search');
+	clearPlace = $('#address-box-remove');
 	
 	clearPlace.click(function(){
 		
@@ -93,26 +97,28 @@ function initialize_gmaps() {
 			marker.setMap(null);
 		}
 		
+		var inputPanel = $('#pac-input');
+		inputPanel.val('');
 		onPlaceChanged();
 		
 	});
 	
-	google.maps.event.addListener(map, 'tilesloaded', function() {
-		
-		//move the button over top of search box now
-		var c = $('#map-canvas');
-		var inputPanel = $('#pac-input');
-		
-		var pos = inputPanel.offset();
-		
-//		var cpos = c.position();
-		
-		clearPlace.css({'top': (/*cpos.top +*/  pos.top) + 'px', 'left': (/*cpos.left + */ pos.left + inputPanel.outerWidth()) + 'px'});
-		
-		if(selectedPlace != null) {
-			clearPlace.show();
-		}
-	});
+//	google.maps.event.addListener(map, 'tilesloaded', function() {
+//		
+//		//move the button over top of search box now
+//		var c = $('#map-canvas');
+//		var inputPanel = $('#pac-input');
+//		
+//		var pos = inputPanel.offset();
+//		
+////		var cpos = c.position();
+//		
+//		clearPlace.css({'top': (/*cpos.top +*/  pos.top) + 'px', 'left': (/*cpos.left + */ pos.left + inputPanel.outerWidth()) + 'px'});
+//		
+//		if(selectedPlace != null) {
+//			clearPlace.show();
+//		}
+//	});
 	
 	
 
@@ -122,17 +128,76 @@ function onPlaceChanged() {
 	
 	console.log("place selected: ", selectedPlace);
 	
+	var selBox = $('#address-box-selected');
+	var notSelBox = $('#address-box-notselected');
+	
+	var text = $('#selected-address-text, #address-box-selected-address');
+	
 	if(selectedPlace != null) {
 		
-		clearPlace.show();
+		notSelBox.hide();
+		selBox.show();
+		
+		text.text(selectedPlace.formatted_address).addClass('selected');
 		
 	} else {
+
+		selBox.hide();
+		notSelBox.show();
 		
-		clearPlace.hide();
+		text.text(text.attr('data-default')).removeClass('selected');
 		
 	}
 	
 	dial_onPlaceChanged(selectedPlace);
 	
+	
+}
+
+function onMapPageShown() {
+
+	var sb = $('#select-building');
+	
+	if( ! sb.hasClass('initialized') ) {
+
+		var mc = $('#map-canvas');
+
+		var w = $(window).width();
+		var h = $(window).height();
+		
+		//other elements should be constant height
+		console.log("w: " + w + " h: " + h);
+		
+		var slb = $('#select-building-body');
+		
+		var header = $('#main-header').outerHeight();
+		
+		var innerHeight = slb.outerHeight();
+
+		var searchP = $('#address-box-panel').outerHeight();
+		
+		mc.css('height', ( h - header - searchP - 5) + 'px');
+		
+		if(map != null) {
+			
+			//make it refresh
+			console.log("resizing gmap...");
+			
+			google.maps.event.trigger(map, 'resize');
+			
+		}
+		
+		
+		sb.addClass('initialized');
+		
+		$('#selected-address-next-button').click(function(){
+			
+			$.mobile.navigate( '#comfort-level', {});
+			
+		});
+		
+		onPlaceChanged();
+		
+	}
 	
 }
