@@ -25,6 +25,8 @@
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/dial.css" />
 <link rel="stylesheet" href="css/map.css" />
+
+
 <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/jquery.cookie-1.4.1.js"></script>
@@ -32,11 +34,15 @@
 <script src="js/dial.js"></script>
 <script src="js/gmap.js"></script>
 <script src="js/home.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/addtohomescreen-3.0.6.css" />
+<script type="text/javascript" src="js/addtohomescreen-3.0.6.js"></script>
 <!-- 
 <script src="js/orientation.js"></script>
  -->
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
 
 
 <script>
@@ -134,7 +140,7 @@
 
 
 	
-	var firstChange = true;
+	var firstChange = false;
 	
 	$(document).on("pagecontainerchange", function() {
 		// Each of the four pages in this demo has a data-title attribute
@@ -172,7 +178,10 @@
 		
 	});
 	
-	
+	addToHomescreen({
+		skipFirstVisit: false,
+		displayPace: 0
+	});
 </script>
 
 </head>
