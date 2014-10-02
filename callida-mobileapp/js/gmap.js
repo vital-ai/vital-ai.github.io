@@ -8,19 +8,30 @@ function initialize_gmaps() {
 
 	var markers = [];
 	map = new google.maps.Map(document.getElementById('map-canvas'), {
-		mapTypeId : google.maps.MapTypeId.ROADMAP
+		mapTypeId : google.maps.MapTypeId.ROADMAP,
+		panControl: false,
+		zoomControl: false,
+		mapTypeControl: false,
+		scaleControl: false,
+		streetViewControl: false,
+		overviewMapControl: false
 	});
-
+	
 	var defaultBounds = new google.maps.LatLngBounds(new google.maps.LatLng(
-			-33.8902, 151.1759), new google.maps.LatLng(-33.8474, 151.2631));
+//			-33.8902, 151.1759), new google.maps.LatLng(-33.8474, 151.2631));
+			40.697604, -74.022543), new google.maps.LatLng(40.819570, -73.915083));
 	map.fitBounds(defaultBounds);
+	
+//	//40.7127 N, 74.0059W
+//	var position = new google.maps.LatLng(40.7127, -74.0059);
+//	map.setCenter(position);
 
 	// Create the search box and link it to the UI element.
 	var input = /** @type {HTMLInputElement} */
 	(document.getElementById('pac-input'));
 	
 	//XXX don't push search box!
-	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
 	var searchBox = new google.maps.places.SearchBox(
 	/** @type {HTMLInputElement} */
@@ -120,9 +131,46 @@ function initialize_gmaps() {
 //		}
 //	});
 	
-	
+	 // Try HTML5 geolocation
+	  if(navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(function(position) {
+	      var pos = new google.maps.LatLng(position.coords.latitude,
+	                                       position.coords.longitude);
+
+	      var infowindow = new google.maps.InfoWindow({
+	        map: map,
+	        position: pos,
+	        content: 'Your current location.'
+	      });
+
+	      map.setCenter(pos);
+	    }, function() {
+	      handleNoGeolocation(true);
+	    });
+	  } else {
+	    // Browser doesn't support Geolocation
+	    handleNoGeolocation(false);
+	  }
 
 }
+
+
+function handleNoGeolocation(errorFlag) {
+	
+	var content = null;
+	if (errorFlag) {
+		content = 'Error: The Geolocation service failed.';
+	} else {
+		content = 'Error: Your browser doesn\'t support geolocation.';
+	}
+	
+	console.warn(content);
+
+//	//40.7127 N, 74.0059W
+//	var position = new google.maps.LatLng(40.7127, -74.0059);
+//	map.setCenter(position);
+}
+
 
 function onPlaceChanged() {
 	
@@ -175,12 +223,16 @@ function onMapPageShown() {
 
 	var sb = $('#select-building');
 	
+	
 	if( ! sb.hasClass('initialized') ) {
+		
 
 		var mc = $('#map-canvas');
 
 		var w = $(window).width();
 		var h = $(window).height();
+		
+		$('#pac-input').width((w - 50) + 'px');
 		
 		//other elements should be constant height
 		console.log("w: " + w + " h: " + h);

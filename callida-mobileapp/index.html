@@ -2,7 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+		
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		
+<!-- Customize home screen title. -->
+<meta name="apple-mobile-web-app-title" content="CallidaEnergy Comfort App" />
+		
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
 <title>CallidaEnergy Comfort App</title>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css" />
 <link rel="stylesheet" href="css/main.css" />
@@ -15,6 +32,9 @@
 <script src="js/dial.js"></script>
 <script src="js/gmap.js"></script>
 <script src="js/home.js"></script>
+<!-- 
+<script src="js/orientation.js"></script>
+ -->
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 
@@ -36,6 +56,8 @@
 	});
 	
 	$(function() {
+		
+		
 		
 		
 		$("[data-role='navbar']").navbar();
@@ -179,19 +201,19 @@
 					data-transition="slide" 
 					
 					>
-					<img src="img/welcome.png" height="13" />
+					<!-- <img src="img/welcome.png" height="13" /> -->
 					Welcome</a></li>
 				<li><a href="#comfort-level" data-prefetch="true"
 					data-transition="slide"
 					
 					>
-					<img src="img/comfort.png" height="13" />
+					<!-- <img src="img/comfort.png" height="13" /> -->
 					Comfort Level</a></li>
 				<li><a href="#select-building" data-prefetch="true"
 					data-transition="slide"
 					
 					>
-					<img src="img/building.png" height="13" />
+					<!-- <img src="img/building.png" height="13" />  -->
 					Select Building</a></li>
 			</ul>
 		</div>

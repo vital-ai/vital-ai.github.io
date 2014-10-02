@@ -130,8 +130,8 @@ html {
 #selected-location-panel {
 	height: 80px;
 	position: absolute;
-	bottom: 0px;
-	background-color: rgba(255,255,255,0.5);
+	bottom: 30px;
+	background-color: rgb(255,255,255);
 	left: 0px;
 	right: 0px;
 	padding-top: 10px;
@@ -194,7 +194,7 @@ html {
 	text-align: center;
 	color: white;
 	line-height: 64px;
-	font-size: 22px;
+	font-size: 20px;
 	text-shadow: none;
 }
 
