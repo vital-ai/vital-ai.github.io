@@ -65,6 +65,7 @@ html {
 #select-building-body {
 	padding: 0px;
 	margin: 0px;
+	position: relative;
 }
 
 
@@ -102,8 +103,13 @@ html {
 }
 
 #address-box-notselected {
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
 	padding-top: 20px;
 }
+
 
 #address-box-notselected .ui-input-text {
 	margin: 0px;
@@ -117,11 +123,12 @@ html {
 	background-image: url("../img/x.png");
 	background-repeat: no-repeat;
 	background-position: 25px 20px;
-	
+	border-left: 2px solid #ccc;
 }
 
 
 #selected-location-panel {
+	height: 80px;
 	position: absolute;
 	bottom: 0px;
 	background-color: rgba(255,255,255,0.5);
@@ -129,6 +136,7 @@ html {
 	right: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	overflow: hidden;
 }
 
 #selected-address-arrow {
@@ -145,7 +153,7 @@ html {
 }
 
 #selected-address-text {
-	margin-left: 100px;
+	margin-left: 10px;
 	margin-right: 100px;
 	font-size: 15px;
 }
@@ -168,6 +176,10 @@ html {
 	border: 10px solid #2370ba;
 	width: 70px;
 	height: 70px;
+}
+
+.round-button.tapped {
+	box-shadow: 0 0 15px 3px rgba(0, 0, 255, 1);
 }
 
 

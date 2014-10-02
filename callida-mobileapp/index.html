@@ -47,16 +47,35 @@
 		
 		var current = $(".ui-page-active").attr('id');
 		
-		console.log("last viewed screen: " + lastScreen + " current: " + current);
 		
+		
+		$('#main-header .ui-btn').on('tap', function(event){
+			
+			event.preventDefault();
+			event.stopPropagation();
+			
+			var btn = $(this);
+			
+			var clicked = btn.attr('href').substring(1);
+
+			navigateTo(clicked);
+			
+		});
+		
+		console.log("last viewed screen: " + lastScreen + " current: " + current);
 		
 		if(lastScreen != null && lastScreen != current) {
 			
 			console.log("transition to another screen...")
 			
+			/*
 			$.mobile.navigate( '#' + lastScreen, {
 				//foo: $(this).attr("data-foo")
+				changeHash: false
 			});
+			*/
+
+			navigateTo(lastScreen);
 			
 		}
 		
@@ -238,6 +257,7 @@
 
 	<div data-role="page" id="select-building">
 		<div class="ui-content" id="select-building-body">
+				<!-- 
 			<div id="address-box-panel">
 				<div id="address-box-selected">
 					<div id="address-box-mglass"></div>
@@ -249,14 +269,16 @@
 					<input data-role="" id="pac-input" class="controls" type="text" placeholder="Search Box"/>
 				</div>
 			</div>
+				-->
+			<input data-role="none" id="pac-input" class="controls" type="text" placeholder="Search Box"/>
     		<div id="map-canvas"></div>
+			<!-- 
+    		<div id="address-box-notselected" style="margin-left: 30px; margin-right: 30px;">
+				<input data-role="" id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+			</div>
+			 -->
     		<div id="selected-location-panel">
-    			<div id="selected-address-arrow"></div>
-    			<div id="selected-address-next">
-					<div id="selected-address-next-button" class="round-button outer">
-						<div class="inner">Next</div>
-					</div>
-    			</div>
+    			<div id="address-box-remove"></div>
     			<div id="selected-address-text" data-default="(no place selected)"></div>
     			<div class="clearer"></div>
     		</div>

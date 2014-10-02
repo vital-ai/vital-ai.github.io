@@ -20,7 +20,7 @@ function initialize_gmaps() {
 	(document.getElementById('pac-input'));
 	
 	//XXX don't push search box!
-	//map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
 	var searchBox = new google.maps.places.SearchBox(
 	/** @type {HTMLInputElement} */
@@ -89,7 +89,7 @@ function initialize_gmaps() {
 	
 	clearPlace = $('#address-box-remove');
 	
-	clearPlace.click(function(){
+	clearPlace.on('tap', function(){
 		
 		selectedPlace = null;
 		
@@ -133,19 +133,36 @@ function onPlaceChanged() {
 	
 	var text = $('#selected-address-text, #address-box-selected-address');
 	
+	var pi = $('#pac-input');
+	
+	var selectedLocationPanel = $('#selected-location-panel');
+	
 	if(selectedPlace != null) {
 		
 		notSelBox.hide();
 		selBox.show();
 		
+		pi.hide();
+		
+//		clearPlace.show();
+		
+		
 		text.text(selectedPlace.formatted_address).addClass('selected');
+		
+		selectedLocationPanel.show();
 		
 	} else {
 
+		pi.show();
 		selBox.hide();
 		notSelBox.show();
 		
+//		clearPlace.hide();
+		
+		selectedLocationPanel.hide();
+		
 		text.text(text.attr('data-default')).removeClass('selected');
+		
 		
 	}
 	
@@ -190,9 +207,9 @@ function onMapPageShown() {
 		
 		sb.addClass('initialized');
 		
-		$('#selected-address-next-button').click(function(){
+		$('#selected-address-next-button').on('tap', function(){
 			
-			$.mobile.navigate( '#comfort-level', {});
+			navigateTo('comfort-level');
 			
 		});
 		

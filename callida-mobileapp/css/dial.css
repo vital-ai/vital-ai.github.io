@@ -65,6 +65,8 @@
 
 #bottom-buttons {
 	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ccc;
 }
 
 #submit-button .inner {
@@ -73,9 +75,30 @@
 
 #submit-status {
 	text-align: center;
-	font-size: 10px;
+	padding-top: 3px;
+	font-weight: bold;
 }
 
 #dial-selected-address {
 	text-shadow: none;
+	border-bottom: 2px solid #cccccc;
+	background-color: yellow;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#dial-selected-address.selected {
+	background-color: transparent;
+	font-weight: bold;
+}
+
+#submitted-label {
+	border: 1px solid black;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    position: absolute;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
 }

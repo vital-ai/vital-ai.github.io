@@ -4,7 +4,7 @@ html,body,#map-canvas {
 	padding: 0px
 }
 
-/*
+
 .controls {
 	margin-top: 16px;
 	border: 1px solid transparent;
@@ -29,8 +29,7 @@ html,body,#map-canvas {
 #pac-input:focus {
 	border-color: #4d90fe;
 	margin-left: -1px;
-	padding-left: 14px; *//* Regular padding-left + 1. */
-	/*
+	padding-left: 14px; 
 	width: 401px;
 }
 
@@ -49,4 +48,3 @@ html,body,#map-canvas {
 	font-size: 13px;
 	font-weight: 300;
 }
-*/

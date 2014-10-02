@@ -26,7 +26,7 @@ function dial_onPlaceChanged(place) {
 		
 		dial_locked = false;
 		
-		label.css('background-color', 'yellow');
+		label.removeClass('selected');
 		
 		label.text(label.attr('data-default'));
 		
@@ -38,11 +38,12 @@ function dial_onPlaceChanged(place) {
 	} else {
 		
 		
+		label.addClass('selected');
+		
 		label.text(place.formatted_address);
 		
 		$submitButton.removeAttr('disabled');
 		
-		label.css('background-color', '#7ed3f6');
 		
 		//new place ? 
 		dial_locked = false;
@@ -52,6 +53,8 @@ function dial_onPlaceChanged(place) {
 	$submitStatus.html('&nbsp;');
 	$submitButton.find('.inner').text('Submit');
 	
+	
+	$submittedLabel.hide();
 	
 }
 
@@ -66,7 +69,7 @@ var PI2 = Math.PI/180;
 var handlerW2 = null;
 var $comfNumber = null;
 var $comfLabel = null;
-
+var $submittedLabel = null;
 
 //3 variables that control the look of the dial
 var dial_locked = false;
@@ -80,7 +83,7 @@ var dial_innerH = null;
 function dial_initialize() {
 	
 	$submitButton = $('#submit-button');
-	$submitButton.click(dial_onSubmitClicked);
+	$submitButton.on('tap', dial_onSubmitClicked);
 	
 	$submitStatus = $('#submit-status');
 	
@@ -117,6 +120,8 @@ function dial_initialize() {
 			).append(
 				$('<p>', {'id': 'comfort-label'}).text('')
 			)
+	).append(
+			$('<div>', {'id': 'submitted-label'}).text('submitted').css('display', 'none')
 	).insertBefore('#bottom-buttons');
 	//);
 	
@@ -135,8 +140,15 @@ function dial_initialize() {
 	
 	$comfLabel = $('#comfort-label');
 	
+	$submittedLabel= $('#submitted-label');
+	
 	
 	var $height = (h - header - innerHeight - 105 );
+	
+	if(2 * $height > w - 50 ) {
+		$height = (w - 50)/2;
+	}
+	
 	var $width = 2 * $height;
 	$circle.css({
 		'height': $height + 'px', 
@@ -156,6 +168,7 @@ function dial_initialize() {
 	
 	$comfNumber.css('font-size', dial_innerH/2 + 'px');
 	$comfLabel.css('font-size', dial_innerH/4 + 'px');
+	$submittedLabel.css({'font-size': dial_innerH/2 + 'px', 'top': ($height / 4)+ 'px' });
 	
 	dial_handler = $('#handler');
 	
@@ -398,11 +411,36 @@ function dial_onSubmitClicked() {
 		
 		$submitButton.find('.inner').text('Submit');
 		
+		$submittedLabel.hide();
+		
 	} else {
 		
 		dial_locked = true;
 		
-		$submitStatus.text("Last submission: " + new Date() + " level: " + dial_level + " ( " + dial_comfort + " ) ");
+		$submittedLabel.show();
+		
+		var date = new Date();
+		
+		var h = date.getHours()
+		
+		var ampm = h < 12 ? 'am' : 'pm';
+		
+		var hs = '';
+		if(h == 0) {
+			hs = '12';
+		} else if(h < 13) {
+			hs = h;
+		} else {
+			hs = ( h - 12 );
+		}
+		
+		var m = date.getMinutes();
+		
+		var ms = m > 9 ? ('' + m) : ('0' + m); 
+		
+		var ds = (date.getMonth()+1) + '/' + date.getDate() + '/' + date.getFullYear() + ' ' + hs + ':' + ms + ampm;    
+		
+		$submitStatus.text("Last submission: " + ds);
 		
 		$submitButton.find('.inner').text('Update');
 		
