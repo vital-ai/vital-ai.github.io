@@ -135,6 +135,7 @@
 		$("[data-role='header'], [data-role='footer']").toolbar();
 		
 	    //$( "#popup-outside-page" ).enhanceWithin().popup();
+	    $( "#popupBasic" ).enhanceWithin().popup({afterclose: function( event, ui ) { return false; }});
 		
 		
 		
@@ -359,9 +360,6 @@
     			<div id="selected-address-text" data-default="(no place selected)"></div>
     			<div class="clearer"></div>
     		</div>
-    		<div data-role="popup" id="popupBasic">
-				
-			</div>
     	</div>
 	</div>
 	
@@ -392,6 +390,10 @@
 	</div>
 
 	 -->
+	 
+	<div id="popupBasic" data-theme="a" data-history="false">
+				
+	</div>
 
 <script>
 
