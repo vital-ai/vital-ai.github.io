@@ -14,7 +14,7 @@ function onDialPageShown() {
 	
 }
 
-function dial_onPlaceChanged(place) {
+function dial_onPlaceChanged(event, place) {
 	
 	if($submitButton == null) return;
 	
@@ -24,21 +24,17 @@ function dial_onPlaceChanged(place) {
 	
 	if(dial_place == null) {
 		
-		dial_locked = false;
-		
-		label.removeClass('selected');
+		label.removeClass('selected').addClass('notselected');
 		
 		label.text(label.attr('data-default'));
 		
 		$submitButton.attr('disabled', 'disabled');
 		
 		
-		
-		
 	} else {
 		
 		
-		label.addClass('selected');
+		label.removeClass('notselected').addClass('selected');
 		
 		label.text(place.formatted_address);
 		
@@ -46,13 +42,16 @@ function dial_onPlaceChanged(place) {
 		
 		
 		//new place ? 
-		dial_locked = false;
 		
 	}
 	
-	$submitStatus.html('&nbsp;');
+	if(event != null) {
+		dial_locked = false;
+		dial_refreshLock();
+	}
+
+	//always change the label?
 	$submitButton.find('.inner').text('Submit');
-	
 	
 	$submittedLabel.hide();
 	
@@ -74,7 +73,8 @@ var $submittedLabel = null;
 //3 variables that control the look of the dial
 var dial_locked = false;
 var dial_place = null;
-var dial_deg = 0;
+//read the value from 
+var dial_deg = null;
 var dial_level = null;
 var dial_comfort = null;
 
@@ -82,10 +82,23 @@ var dial_innerH = null;
 
 function dial_initialize() {
 	
+	dial_deg = appstate.getDialDeg();
+	console.log("Initial dial deg value: " + dial_deg);
+	
 	$submitButton = $('#submit-button');
 	$submitButton.on('tap', dial_onSubmitClicked);
 	
 	$submitStatus = $('#submit-status');
+	
+	var lastStatus = appstate.getLastSubmitStatus();
+	if(lastStatus != null && lastStatus != '') {
+		$submitStatus.text(lastStatus);
+	} else {
+		$submitStatus.html('&nbsp;');
+	}
+	
+	
+	dial_locked = appstate.getLockedFlag();
 	
 	//set the circles size now!
 	
@@ -110,9 +123,30 @@ function dial_initialize() {
 	
 	
 	//create circle manually...
+
+	var $height = (h - header - innerHeight - 90);
+	
+	var diff = 0;
+	
+	if(2 * $height > w - 50 ) {
+		
+		diff = $height - (w - 50)/2; 
+		
+		$height = (w - 50)/2;
+		
+	}
+
 	
 	//clb.append(
 	$('<div>', {'id': 'circle'}).append(
+			$('<div>', {'id': 'circle-left-arrow', 'class': 'circle-arrow'})
+	).append(
+			$('<div>', {'id': 'circle-right-arrow', 'class': 'circle-arrow'})
+	).append(
+			$('<div>', {'id': 'circle-too-warm', 'class': 'circle-label'}).text('too warm')
+	).append(
+			$('<div>', {'id': 'circle-too-cold', 'class': 'circle-label'}).text('too cold')
+	).append(
 			$('<div>', {'id': 'handler'}).text('')
 	).append(
 			$('<div>', {'id': 'inner-circle'}).append(
@@ -142,12 +176,10 @@ function dial_initialize() {
 	
 	$submittedLabel= $('#submitted-label');
 	
-	
-	var $height = (h - header - innerHeight - 105 );
-	
-	if(2 * $height > w - 50 ) {
-		$height = (w - 50)/2;
+	if(diff > 0) {
+		$submitStatus.css({'margin-top': diff + 'px'});
 	}
+	
 	
 	var $width = 2 * $height;
 	$circle.css({
@@ -175,6 +207,33 @@ function dial_initialize() {
 	var dialHeight = dial_handler.height();
 	
 	dial_handler.css({'left': ($height - dialHeight/2) + 'px'});
+	
+	
+	
+	
+	
+	//center the label
+	var ctw = $('#circle-too-warm');
+	var ctw_width  = ctw.width();
+	var ctw_height = ctw.height();
+//	var ctw_deg = (ctw_width * 360)/(Math.PI * $width);
+	var ctw_rad = (ctw_width) / (Math.PI * $width);
+	var ctw_top = $height - Math.sin( Math.PI / 4 -  ctw_rad / 2 ) * $height - ctw_height+5;
+	var ctw_left = $height -  Math.cos( Math.PI / 4 -  ctw_rad / 2 ) * $height - ctw_width+5;
+	
+	ctw.css({'top': ctw_top + 'px', 'left': ctw_left + 'px', 'transform': 'rotate(-50deg)'});
+	ctw.arctext({ radius: $height -20, dir: 1, rotate: true });
+	
+	
+	var ctc = $('#circle-too-cold');
+	var ctc_width = ctc.width();
+	var ctc_height = ctc.height();
+	var ctc_rad = (ctc_width) / (Math.PI * $width);
+	var ctc_top = $height - Math.sin( Math.PI / 4 -  ctc_rad / 2 ) * $height - ctc_height+5;
+	var ctc_right = $height -  Math.cos( Math.PI / 4 -  ctc_rad / 2 ) * $height - ctc_width+5;
+	
+	ctc.css({'top': ctc_top + 'px', 'right': ctc_right+ 'px', 'transform': 'rotate(50deg)'});
+	ctc.arctext({ radius: $height -20, dir: 1, rotate: true });
 	
 	
 	handlerW2 = dial_handler.width()/2;
@@ -232,14 +291,29 @@ function dial_initialize() {
 	});
 	
 //	$(document).mouseup (function() { 
-	$(document).on('vmouseup', function() { 
-		mHold = false; 
+	$(document).on('vmouseup', function() {
+		
+		if(mHold == true) {
+			
+			mHold = false;
+			
+			//persist it once!
+			appstate.setDialDeg(dial_deg);
+			
+		}
+		
 	});
 	
-	//read from gmaps?
-	dial_onPlaceChanged(selectedPlace);
+	var cp = appstate.getCurrentPlace();
+	dial_onPlaceChanged(null, cp);
+	
+	//register the listener
+	$(document).on(EVENT_CURRENT_PLACE_CHANGED, dial_onPlaceChanged);
+	
+	dial_refreshLock();
 	
 	dial_update();
+	
 	
 }
 
@@ -356,7 +430,9 @@ function dial_update() {
 	
 	//$comfLabel.html( "" + comf );//.css({	color:       "hsl(200,70%,"+ (perc*70/100+30) +"%)"});
 	
-	var hue = 120 + ( -1 * comf * 120 / 10);
+	var _max = comf >= 0 ? 120 : 90;
+	
+	var hue = 120 + ( -1 * comf * _max / 10);
 	
 	$innerC.css('background-color', 'hsl(' + hue + ',100%,50%)');
 	
@@ -404,20 +480,15 @@ function dial_onSubmitClicked() {
 		return;
 	}
 	
+	
 	if(dial_locked) {
 		
 		//unlock
 		dial_locked = false;
 		
-		$submitButton.find('.inner').text('Submit');
-		
-		$submittedLabel.hide();
-		
 	} else {
 		
 		dial_locked = true;
-		
-		$submittedLabel.show();
 		
 		var date = new Date();
 		
@@ -440,10 +511,34 @@ function dial_onSubmitClicked() {
 		
 		var ds = (date.getMonth()+1) + '/' + date.getDate() + '/' + date.getFullYear() + ' ' + hs + ':' + ms + ampm;    
 		
-		$submitStatus.text("Last submission: " + ds);
+		var l = "Last submission: " + ds;
+		
+		$submitStatus.text(l);
+		
+		appstate.setLastSubmitStatus(l);
+		
+	}
+
+	appstate.setLockedFlag(dial_locked);
+	
+	dial_refreshLock();
+	
+}
+
+
+function dial_refreshLock() {
+	
+	if(dial_locked) {
 		
 		$submitButton.find('.inner').text('Update');
 		
+		$submittedLabel.show();
+		
+	} else {
+		
+		$submitButton.find('.inner').text('Submit');
+		
+		$submittedLabel.hide();
 		
 	}
 	

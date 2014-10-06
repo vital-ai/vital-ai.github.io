@@ -14,13 +14,67 @@
 		
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 		
-<!-- Customize home screen title. -->
+ <!-- Customize home screen title. -->
 <meta name="apple-mobile-web-app-title" content="CallidaEnergy Comfort App" />
 		
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ 
+		
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		
+<!-- iPhone -->
+<link href="img/apple-touch-icons/apple-touch-icon-57x57.png"
+	sizes="57x57" rel="apple-touch-icon" />
+<link href="img/apple-touch-startup-images/apple-touch-startup-image-320x460.png"
+	media="(device-width: 320px) and (device-height: 480px)
+    	and (-webkit-device-pixel-ratio: 1)"
+	rel="apple-touch-startup-image" />
 
+<!-- iPhone (Retina) -->
+<link href="img/apple-touch-icons/apple-touch-icon-114x114.png"
+	sizes="114x114" rel="apple-touch-icon" />
+<link href="img/apple-touch-startup-images/apple-touch-startup-image-640x920.png"
+	media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image" />
 
-<title>CallidaEnergy Comfort App</title>
+<!-- iPhone 5 -->
+<link href="img/apple-touch-startup-images/apple-touch-startup-image-640x1096.png"
+	media="(device-width: 320px) and (device-height: 568px)
+    	and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image" />
+
+<!-- iPad -->
+<link href="img/apple-touch-icons/apple-touch-icon-72x72.png"
+	sizes="72x72"
+	rel="apple-touch-icon" />
+<link href="img/apple-touch-startup-images/apple-touch-startup-image-768x1004.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+		and (orientation: portrait)
+		and (-webkit-device-pixel-ratio: 1)"
+	rel="apple-touch-startup-image" />
+<link href="img/apple-touch-startup-images/apple-touch-startup-image-748x1024.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+		and (orientation: landscape)
+		and (-webkit-device-pixel-ratio: 1)"
+	rel="apple-touch-startup-image" />
+
+<!-- iPad (Retina) -->
+<link href="img/apple-touch-icons/apple-touch-icon-144x144.png"
+	sizes="144x144"
+	rel="apple-touch-icon" />
+<link href="img/apple-touch-startup-images/apple-touch-startup-image-1536x2008.png"
+	media="(device-width: 768px) and (device-height: 1024px)
+    	and (orientation: portrait)
+        and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image" />
+	<link href="img/apple-touch-startup-images/apple-touch-startup-image-1496x2048.png"
+    media="(device-width: 768px) and (device-height: 1024px)
+    	and (orientation: landscape)
+        and (-webkit-device-pixel-ratio: 2)"
+	rel="apple-touch-startup-image" />
+
+<title>CallidaEnergy - Building Comfort Tracking App</title>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css" />
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/dial.css" />
@@ -30,6 +84,9 @@
 <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/jquery.cookie-1.4.1.js"></script>
+<script src="js/jquery.arctext.js"></script>
+
+<script src="js/appstate.js"></script>
 
 <script src="js/dial.js"></script>
 <script src="js/gmap.js"></script>
@@ -47,9 +104,9 @@
 
 <script>
 
-	var COOKIE_LAST_VIEWED_SCREEN = "LAST_VIEWED_SCREEN";
-	
-	
+	//singleton!
+	var appstate = new AppState();
+
 	/*
 	$('body').on('vmousemove', function(event) {
         event.stopPropagation();
@@ -73,6 +130,7 @@
 		
 		$("[data-role='header'], [data-role='footer']").toolbar();
 		
+	    //$( "#popup-outside-page" ).enhanceWithin().popup();
 		
 		
 		
@@ -163,8 +221,7 @@
 		if(firstChange == true) {
 			firstChange = false;			
 		} else {
-			localStorage.setItem(COOKIE_LAST_VIEWED_SCREEN, current);
-			//$.cookie(COOKIE_LAST_VIEWED_SCREEN , current, { expires: 365, path: '/' });
+			appstate.setLastVisitedScreen(current);
 		}
 		
 		if(current == 'comfort-level') {
@@ -220,12 +277,12 @@
 			<div id="home-header">
 				<img alt="CallidaEnergy logo" src="img/Callida-grey.png" title="CallidaEnergy" height="100"/>
 				<br/>
-				<h3>The building comfort tracking app</h3>
+				<h3>Building Comfort Tracking App</h3>
 			</div>
 			<div id="home-center">
 				To track your comfort level, please
 				select your building location
-				and submit your comfort level
+				and submit your comfort level.
 			</div>
 			<div id="home-bottom">
 				<div id="home-next-button" class="round-button outer">
@@ -298,14 +355,43 @@
     			<div id="selected-address-text" data-default="(no place selected)"></div>
     			<div class="clearer"></div>
     		</div>
+    		<div data-role="popup" id="popupBasic">
+				
+			</div>
     	</div>
 	</div>
+	
+	<!-- 
+	<div id="popup-outside-page" data-theme="a">
+    	    <ul data-role="listview">
+	        <li>Global Menu</li>
+	        <li><a href="#demo-intro">Intro Page</a></li>
+	        <li><a href="#other-page">Other Page</a></li>
+	        <li><a href="#third-page">Third Page</a></li>
+	    </ul>
+	</div><div data-url="other-page" id="other-page" data-role="page">
+	    <div data-role="header">
+	        <a href="#popup-outside-page" data-rel="popup">Menu</a>
+	        <h1>Another Page</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <p>This is another page that can be reached using the links in the global menu.</p>
+	    </div>
+	</div><div data-url="third-page" id="third-page" data-role="page">
+	    <div data-role="header">
+	        <a href="#popup-outside-page" data-rel="popup">Menu</a>
+	        <h1>Third Page</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <p>This is a third page that can be reached using the links in the global menu.</p>
+	    </div>
+	</div>
 
+	 -->
 
 <script>
 
-	//var lastScreen = $.cookie(COOKIE_LAST_VIEWED_SCREEN);
-	var lastScreen = localStorage.getItem(COOKIE_LAST_VIEWED_SCREEN);
+	var lastScreen = appstate.getLastVisitedScreen();
 
 	console.log("last viewed screen: " + lastScreen);
 
