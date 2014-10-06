@@ -128,11 +128,11 @@ function dial_initialize() {
 	
 	var diff = 0;
 	
-	if(2 * $height > w - 50 ) {
+	if(2 * $height > w - 60 ) {
 		
-		diff = $height - (w - 50)/2; 
+		diff = $height - (w - 60)/2; 
 		
-		$height = (w - 50)/2;
+		$height = (w - 60)/2;
 		
 	}
 
@@ -147,7 +147,7 @@ function dial_initialize() {
 	).append(
 			$('<div>', {'id': 'circle-too-cold', 'class': 'circle-label'}).text('too cold')
 	).append(
-			$('<div>', {'id': 'handler'}).text('')
+			$('<div>', {'id': 'handler'}).append($('<div>', {'id': 'handler-inner'}))
 	).append(
 			$('<div>', {'id': 'inner-circle'}).append(
 				$('<p>', {'id': 'comfort-number'}).text('')
@@ -204,7 +204,7 @@ function dial_initialize() {
 	
 	dial_handler = $('#handler');
 	
-	var dialHeight = dial_handler.height();
+	var dialHeight = dial_handler.outerHeight();
 	
 	dial_handler.css({'left': ($height - dialHeight/2) + 'px'});
 	
@@ -214,29 +214,53 @@ function dial_initialize() {
 	
 	//center the label
 	var ctw = $('#circle-too-warm');
-	var ctw_width  = ctw.width();
-	var ctw_height = ctw.height();
+	var ctw_width  = ctw.outerWidth();
+	var ctw_height = ctw.outerHeight();
 //	var ctw_deg = (ctw_width * 360)/(Math.PI * $width);
 	var ctw_rad = (ctw_width) / (Math.PI * $width);
-	var ctw_top = $height - Math.sin( Math.PI / 4 -  ctw_rad / 2 ) * $height - ctw_height+5;
-	var ctw_left = $height -  Math.cos( Math.PI / 4 -  ctw_rad / 2 ) * $height - ctw_width+5;
+	var ctw_top = $height - Math.sin( Math.PI / 4 -  ctw_rad / 2 ) * $height - ctw_height/2 - 12;
+	var ctw_left = $height -  Math.cos( Math.PI / 4 -  ctw_rad / 2 ) * $height - ctw_width/2 - 12; 
 	
-	ctw.css({'top': ctw_top + 'px', 'left': ctw_left + 'px', 'transform': 'rotate(-50deg)'});
-	ctw.arctext({ radius: $height -20, dir: 1, rotate: true });
+//	var ctw_top = $height/2 - ctw_height;
+//	var ctw_left = ($height - Math.cos(Math.PI/4)*$height);
+	
+//	console.log("$height: " + $height + " ctw " + ctw_width + 'x' + ctw_height);
+//	console.log("$ctw_top: " + ctw_top);
+//	console.log("$ctw_left: " + ctw_left);
+	
+	/*
+	var ctw_top_1 = ctw_height;
+	var ctw_left_1 = - ctw_width /2;
+	
+	var theta =  - 1 * Math.PI / 4;
+	var ctw_left_2 = ctw_left_1 * Math.cos(theta) - ctw_top_1 * Math.sin(theta);
+	var ctw_top_2 = ctw_left_1 * Math.sin(theta) + ctw_top_1 * Math.cos(theta); 
+	
+	//translate the 
+	ctw_top_2 = $height/2 - ctw_top_2;
+	ctw_left_2 = ($height - Math.sin(Math.PI/4)*$height) + ctw_left_2;
+	*/
+	
+	
+	ctw.css({'top': ctw_top + 'px', 'left': ctw_left + 'px'
+		, 'transform': 'rotate(-45deg)'
+	});
+	
+	ctw.arctext({ radius: $height + (12 * Math.sqrt(2)), dir: 1, rotate: true });
 	
 	
 	var ctc = $('#circle-too-cold');
-	var ctc_width = ctc.width();
-	var ctc_height = ctc.height();
+	var ctc_width = ctc.outerWidth();
+	var ctc_height = ctc.outerHeight();
 	var ctc_rad = (ctc_width) / (Math.PI * $width);
-	var ctc_top = $height - Math.sin( Math.PI / 4 -  ctc_rad / 2 ) * $height - ctc_height+5;
-	var ctc_right = $height -  Math.cos( Math.PI / 4 -  ctc_rad / 2 ) * $height - ctc_width+5;
+	var ctc_top = $height - Math.sin( Math.PI / 4 -  ctc_rad / 2 ) * $height - ctc_height/2 - 12;
+	var ctc_right = $height -  Math.cos( Math.PI / 4 -  ctc_rad / 2 ) * $height - ctc_width/2 - 12;
 	
-	ctc.css({'top': ctc_top + 'px', 'right': ctc_right+ 'px', 'transform': 'rotate(50deg)'});
-	ctc.arctext({ radius: $height -20, dir: 1, rotate: true });
+	ctc.css({'top': ctc_top + 'px', 'right': ctc_right+ 'px', 'transform': 'rotate(45deg)'});
+	ctc.arctext({ radius: $height + (10 * Math.sqrt(2)), dir: 1, rotate: true });
 	
 	
-	handlerW2 = dial_handler.width()/2;
+	handlerW2 = dial_handler.outerWidth()/2;
 	dial_rad = $circle.width()/2;
 	//moved to be calculated correctly!
 	//var offs = $circle.offset();

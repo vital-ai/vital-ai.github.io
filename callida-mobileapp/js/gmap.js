@@ -10,6 +10,8 @@ var currentPosition = null;
 
 var markers = [];
 
+var infowindow = null;
+
 function initialize_gmaps() {
 
 	
@@ -208,12 +210,6 @@ function initialize_gmaps() {
 				var pos = new google.maps.LatLng(position.coords.latitude,
 						position.coords.longitude);
 				
-				var infowindow = new google.maps.InfoWindow({
-					map: map,
-					position: pos,
-					disableAutoPan: selectedPlace != null,
-					content: '<div style="width:150px;"><a id="current-location-link" style="width: 150px;">Your current location</a></div>'
-				});
 				
 				currentPosition = pos;
 				/*
@@ -223,10 +219,25 @@ function initialize_gmaps() {
 				}
 				*/
 				
+				if(selectedPlace == null) {
+					
+					infowindow = new google.maps.InfoWindow({
+						map: map,
+						position: pos,
+						disableAutoPan: true,
+						content: '<div style="width:150px;"><a id="current-location-link" style="width: 150px;">Your current location</a></div>'
+					});
+					
+					google.maps.event.addListener(infowindow, 'domready', function() {
+						$('#current-location-link').on('tap', onCurrentLocationClicked);
+					});
+					
+					map.setCenter(pos);
+					map.setZoom(17);
+					
+				}
+			
 				
-				google.maps.event.addListener(infowindow, 'domready', function() {
-					$('#current-location-link').on('tap', onCurrentLocationClicked);
-				});
 				
 			}, function() {
 				handleNoGeolocation(true);
@@ -283,6 +294,11 @@ function onPlaceChanged() {
 		
 		selectedLocationPanel.show();
 		
+		if(infowindow != null) {
+			infowindow.close();
+			infowindow = null;
+		}
+		
 	} else {
 
 		pi.show();
@@ -302,6 +318,23 @@ function onPlaceChanged() {
 		
 		
 		selectedLocationPanel.hide();
+		
+		if(currentPosition != null) {
+			
+			infowindow = new google.maps.InfoWindow({
+				map: map,
+				position: currentPosition,
+				disableAutoPan: selectedPlace != null,
+				content: '<div style="width:150px;"><a id="current-location-link" style="width: 150px;">Your current location</a></div>'
+			});
+			
+			google.maps.event.addListener(infowindow, 'domready', function() {
+				$('#current-location-link').on('tap', onCurrentLocationClicked);
+			});
+			
+			map.setCenter(currentPosition);
+			map.setZoom(17);
+		}
 		
 		
 	}
@@ -359,11 +392,13 @@ function onMapPageShown() {
 		
 		sb.addClass('initialized');
 		
+		/*
 		$('#selected-address-next-button').on('tap', function(){
 			
 			navigateTo('comfort-level');
 			
 		});
+		*/
 		
 		initialize_gmaps();
 	}
