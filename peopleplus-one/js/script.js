@@ -1,6 +1,0 @@
-
-$(function(){
-
-  $('body').addClass('loaded');
-
-})
