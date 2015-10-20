@@ -24,9 +24,9 @@ function mailing_signup(email, successCallback, errorCallback) {
 	
 	console.log('signing up, email', email)
 	
-	eb.send('mailing.signup', {email: email}, function(result) {
+	eb.send('lili.mailing.signup', {email: email}, function(result) {
 		
-		console.log('mailing.signup result: ', result)
+		console.log('lili.mailing.signup result: ', result)
 		
 		if(result.status == 'ok') {
 			
@@ -42,14 +42,14 @@ function mailing_signup(email, successCallback, errorCallback) {
 	
 }
 
-
+/*
 function mailing_remove(email, code, successCallback, errorCallback) {
 	
 	console.log('remove, email', email)
 	
-	eb.send('mailing.remove', {email: email, code: code}, function(result) {
+	eb.send('lili.mailing.remove', {email: email, code: code}, function(result) {
 		
-		console.log('mailing.remove result: ', result)
+		console.log('lili.mailing.remove result: ', result)
 		
 		if(result.status == 'ok') {
 			
@@ -64,13 +64,20 @@ function mailing_remove(email, code, successCallback, errorCallback) {
 	});
 	
 }
-
+*/
 
 //UI PART
 $(function(){
 
+  //disable form element
+  $('#signup-form-el').submit(function() {
+    return false;
+  });
+
   var inputEmail = $('#input-email'); 
   var signupButton = $('#signup');
+  
+  var signupButtonPanel = $('#signup-button-panel');
   
   var success = $('#signup-success');
   var error   = $('#signup-error');
@@ -97,14 +104,16 @@ $(function(){
     }
   });
   
-  var els = $('.signup-form');
+  var els = $('#input-email, #signup');
   
   els.removeAttr('disabled');
   
   inputEmail.keyup(function(e) {
       if(e.which == 13) {
         onSignupTriggered();
+        return false;
       }
+      
   });
   
   signupButton.click(function(){
