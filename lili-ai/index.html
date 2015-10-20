@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-
         <link rel="shortcut icon" href="img/lili_favicon.ico">
 
         <link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
@@ -95,18 +94,18 @@
               <h3>Lili: Artificial Intelligence reinvents Project Management</h3>
               <p>Keeps you organized and efficient.</p>
               <div class="signup-form">
-                <form>
-                  <div class="form-group">
+                <form id="signup-form-el">
+                  <div class="signup-els form-group">
                     <input id="input-email" class="form-control" spellcheck="false" type="text" placeholder="Your E-mail">
                   </div>
                     
-                  <div class="signup-els">
+                  <div class="signup-els" id="signup-button-panel">
                     <button id="signup" type="button" class="btn btn-block btn-info">Join Our Mailing List</button>
                   </div>
-                <div class="signup-els text-success" id="signup-sucess" style="display: none;">
+                <div class="text-success" id="signup-success" style="display: none;">
                    Thanks for joining the mailing list! 
                 </div>
-                 <div class="signup-els text-danger" id="signup-error" style="display: none;">
+                 <div class="text-danger" id="signup-error" style="display: none;">
                    Error!
                     </div>
                 </form>
@@ -221,13 +220,19 @@ Responsive web design is a web design approach aimed to provide crafting sites.
       </footer>
   
 <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../common-files/js/jquery-1.10.2.min.js"></script>
-    <script src="../../flat-ui/js/bootstrap.min.js"></script>
-    <script src="../../common-files/js/modernizr.custom.js"></script>
-    <script src="../../common-files/js/page-transitions.js"></script>
-    <script src="../../common-files/js/jquery.backgroundvideo.min.js"></script>
-    <script src="../../common-files/js/froogaloop.min.js"></script>
-    <script src="../../common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-    <script src="../../common-files/js/startup-kit.js"></script>
+    <script src="common-files/js/jquery-1.10.2.min.js"></script>
+    <script src="flat-ui/js/bootstrap.min.js"></script>
+    <script src="common-files/js/modernizr.custom.js"></script>
+    <script src="common-files/js/page-transitions.js"></script>
+    <script src="common-files/js/jquery.backgroundvideo.min.js"></script>
+    <script src="common-files/js/froogaloop.min.js"></script>
+    <script src="common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="common-files/js/startup-kit.js"></script>
+    
+    <!-- websocket connection -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/sockjs-client/0.3.4/sockjs.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vertx/2.0.0/vertxbus.min.js"></script>
+    <script src="js/mailing.js" type="text/javascript"></script>
+    
   </body>
 </html>
