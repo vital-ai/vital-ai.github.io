@@ -25,30 +25,30 @@
 </style></head>
 <body>
 
-<h3 id="title" style="text-align: center;">CUTTIME.FM</h3>
+<h3 id="title" style="">CUTTIME.FM</h3>
  
 <div style="text-align: center;">
-	<div style="display:inline-block; width: 500px; margin-right: 50px;">
-		Band: 
-		<select id="band-name">
+	<div style="display:inline-block; width: 400px; margin-right: 50px;">
+		<span class="label">Band:</span> 
+		<select class="big-dropdown" id="band-name">
 			<option value="-">-</option>
 		</select>
 	</div>
-	<div style="display:inline-block; width: 500px; margin-left: 50px;">
-		Brand: 
-		<select id="brand-name">
+	<div style="text-align: center; display: inline-block; width: 200px; height: 50px; overflow: visible; vertical-align: middle;">
+		<span class="label">Affinity Score</span><br />
+		<span style="display: inline-block; width: 200px; height: 1px; overflow: visible; font-size: 72px;" id="affinity-score">-</span>
+	</div>
+	<div style="display:inline-block; width: 400px; margin-left: 50px;">
+		<span class="label">Brand:</span> 
+		<select class="big-dropdown" id="brand-name">
 			<option value="-">-</option>
 		</select>
 	</div>
 	<div style="clear: both"></div>
 </div> 
 
-<div style="text-align: center;">
-	<span>Affinity Score</span><br />
-	<span id="affinity-score">-</span>
-</div>
 
-<div style="text-align: center;">
+<div id="charts-div" style="text-align: center;">
 	<div style="display:inline-block; width: 500px; margin-right: 50px;">
 		<div id="band-chart"></div>
 	</div>

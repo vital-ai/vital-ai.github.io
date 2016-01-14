@@ -148,11 +148,13 @@ function drawPlot(targetID, record) {
 	      return a + b.weight; 
 	    }, 0);
 	
+	  /*
 	  svg.append("svg:text")
 	    .attr("class", "aster-score")
 	    .attr("dy", ".35em")
 	    .attr("text-anchor", "middle") // text-align: right
 	    .text(Math.round(score));
+	  */
 	
 //	});
 	
@@ -225,6 +227,7 @@ function onDataReady() {
 	for(var i = 0 ; i < Band_Histogram_Vectors.length; i++) {
 		if(i == 0) continue;
 		var name = Band_Histogram_Vectors[i][0];
+		if(name.length == 0) continue;
 		bandNameSel.append($('<option>', {value: name}).text(name));
 	}
 	
@@ -233,6 +236,7 @@ function onDataReady() {
 	for(var i = 0 ; i < Brand_Histogram_Vectors.length; i++) {
 		if(i == 0) continue;
 		var name = Brand_Histogram_Vectors[i][0];
+		if(name.length == 0) continue;
 		brandNameSel.append($('<option>', {value: name}).text(name));
 	}
 	
