@@ -1,0 +1,1591 @@
+"","Band","Brand","Affinity"
+"1","Adele","Nike",36
+"2","Adele","Adidas",42.09
+"3","Adele","Maybelline",44.84
+"4","Adele","Clinique",37.68
+"5","Adele","Red Bull",48.19
+"6","Adele","Monster",44.57
+"7","Adele","Levi's",33.24
+"8","Adele","Wrangler",19.96
+"9","Adele","McDonald's",31.87
+"10","Adele","Subway",27.45
+"11","Adele","Bud Light",29.61
+"12","Adele","Yuengling",27.92
+"13","Adele","Jack Daniel's Whiskey",50.57
+"14","Adele","Crown Royal Whiskey",46.63
+"15","Adele","Grey Goose Vodka",42.53
+"16","Adele","Absolut Vodka",51.1
+"17","Adele","Coach",41.12
+"18","Adele","Rolex",42.47
+"19","Adele","Kohl's",36.72
+"20","Adele","Macy's",37.76
+"21","Adele","Walmart",27.67
+"22","Adele","Target",29.87
+"23","Adele","Coca-Cola/Diet Coke",35.53
+"24","Adele","Dr. Pepper/Diet Dr. Pepper",45.39
+"25","Adele","Apple",42.84
+"26","Adele","Samsung",40.51
+"27","Adele","Toyota",36.71
+"28","Adele","Ford",31.54
+"29","Adele","Verizon",32.98
+"30","Adele","AT&T",30.59
+"31","Maroon 5","Nike",58.21
+"32","Maroon 5","Adidas",62.2
+"33","Maroon 5","Maybelline",50.2
+"34","Maroon 5","Clinique",36.81
+"35","Maroon 5","Red Bull",59.14
+"36","Maroon 5","Monster",49.96
+"37","Maroon 5","Levi's",41.97
+"38","Maroon 5","Wrangler",25.93
+"39","Maroon 5","McDonald's",37
+"40","Maroon 5","Subway",28.02
+"41","Maroon 5","Bud Light",44.41
+"42","Maroon 5","Yuengling",40.44
+"43","Maroon 5","Jack Daniel's Whiskey",44.22
+"44","Maroon 5","Crown Royal Whiskey",43.44
+"45","Maroon 5","Grey Goose Vodka",44.99
+"46","Maroon 5","Absolut Vodka",53.88
+"47","Maroon 5","Coach",46.11
+"48","Maroon 5","Rolex",39.81
+"49","Maroon 5","Kohl's",40.92
+"50","Maroon 5","Macy's",45.42
+"51","Maroon 5","Walmart",29.8
+"52","Maroon 5","Target",42.02
+"53","Maroon 5","Coca-Cola/Diet Coke",50.36
+"54","Maroon 5","Dr. Pepper/Diet Dr. Pepper",53.92
+"55","Maroon 5","Apple",53.42
+"56","Maroon 5","Samsung",54.11
+"57","Maroon 5","Toyota",48.45
+"58","Maroon 5","Ford",38.43
+"59","Maroon 5","Verizon",29.56
+"60","Maroon 5","AT&T",30.34
+"61","Bruno Mars","Nike",51.06
+"62","Bruno Mars","Adidas",52.71
+"63","Bruno Mars","Maybelline",48.44
+"64","Bruno Mars","Clinique",35.42
+"65","Bruno Mars","Red Bull",57.16
+"66","Bruno Mars","Monster",50.69
+"67","Bruno Mars","Levi's",32.62
+"68","Bruno Mars","Wrangler",18.57
+"69","Bruno Mars","McDonald's",36.04
+"70","Bruno Mars","Subway",26.65
+"71","Bruno Mars","Bud Light",40.64
+"72","Bruno Mars","Yuengling",36.64
+"73","Bruno Mars","Jack Daniel's Whiskey",40.92
+"74","Bruno Mars","Crown Royal Whiskey",39.91
+"75","Bruno Mars","Grey Goose Vodka",46.17
+"76","Bruno Mars","Absolut Vodka",52.97
+"77","Bruno Mars","Coach",45.86
+"78","Bruno Mars","Rolex",34.04
+"79","Bruno Mars","Kohl's",38.25
+"80","Bruno Mars","Macy's",46.16
+"81","Bruno Mars","Walmart",28.24
+"82","Bruno Mars","Target",41.7
+"83","Bruno Mars","Coca-Cola/Diet Coke",52.54
+"84","Bruno Mars","Dr. Pepper/Diet Dr. Pepper",56.36
+"85","Bruno Mars","Apple",44.37
+"86","Bruno Mars","Samsung",48.23
+"87","Bruno Mars","Toyota",39.9
+"88","Bruno Mars","Ford",32.24
+"89","Bruno Mars","Verizon",25.97
+"90","Bruno Mars","AT&T",27.09
+"91","Pink","Nike",57.02
+"92","Pink","Adidas",57.36
+"93","Pink","Maybelline",43.07
+"94","Pink","Clinique",26.76
+"95","Pink","Red Bull",72.94
+"96","Pink","Monster",70.44
+"97","Pink","Levi's",31.82
+"98","Pink","Wrangler",16.57
+"99","Pink","McDonald's",32.11
+"100","Pink","Subway",21.49
+"101","Pink","Bud Light",35.95
+"102","Pink","Yuengling",32.05
+"103","Pink","Jack Daniel's Whiskey",50.34
+"104","Pink","Crown Royal Whiskey",48.31
+"105","Pink","Grey Goose Vodka",42.4
+"106","Pink","Absolut Vodka",49.62
+"107","Pink","Coach",37.04
+"108","Pink","Rolex",35.41
+"109","Pink","Kohl's",31.08
+"110","Pink","Macy's",39.04
+"111","Pink","Walmart",26.99
+"112","Pink","Target",31.4
+"113","Pink","Coca-Cola/Diet Coke",46.36
+"114","Pink","Dr. Pepper/Diet Dr. Pepper",55.71
+"115","Pink","Apple",46.89
+"116","Pink","Samsung",48.45
+"117","Pink","Toyota",38.19
+"118","Pink","Ford",31.28
+"119","Pink","Verizon",28.54
+"120","Pink","AT&T",28.89
+"121","Coldplay","Nike",51.3
+"122","Coldplay","Adidas",57.05
+"123","Coldplay","Maybelline",54
+"124","Coldplay","Clinique",39.95
+"125","Coldplay","Red Bull",60.28
+"126","Coldplay","Monster",48.54
+"127","Coldplay","Levi's",37.47
+"128","Coldplay","Wrangler",21.64
+"129","Coldplay","McDonald's",35.5
+"130","Coldplay","Subway",31.31
+"131","Coldplay","Bud Light",39.94
+"132","Coldplay","Yuengling",38.54
+"133","Coldplay","Jack Daniel's Whiskey",50.79
+"134","Coldplay","Crown Royal Whiskey",47.2
+"135","Coldplay","Grey Goose Vodka",49.51
+"136","Coldplay","Absolut Vodka",56
+"137","Coldplay","Coach",44.8
+"138","Coldplay","Rolex",43.51
+"139","Coldplay","Kohl's",38.96
+"140","Coldplay","Macy's",44.26
+"141","Coldplay","Walmart",30.85
+"142","Coldplay","Target",37.86
+"143","Coldplay","Coca-Cola/Diet Coke",49.99
+"144","Coldplay","Dr. Pepper/Diet Dr. Pepper",56.71
+"145","Coldplay","Apple",51.89
+"146","Coldplay","Samsung",55.25
+"147","Coldplay","Toyota",44.95
+"148","Coldplay","Ford",35.82
+"149","Coldplay","Verizon",34.66
+"150","Coldplay","AT&T",33.93
+"151","Justin Timberlake","Nike",56.22
+"152","Justin Timberlake","Adidas",62.4
+"153","Justin Timberlake","Maybelline",53.26
+"154","Justin Timberlake","Clinique",42.54
+"155","Justin Timberlake","Red Bull",53.33
+"156","Justin Timberlake","Monster",48.11
+"157","Justin Timberlake","Levi's",39.54
+"158","Justin Timberlake","Wrangler",23.23
+"159","Justin Timberlake","McDonald's",34.56
+"160","Justin Timberlake","Subway",27.3
+"161","Justin Timberlake","Bud Light",43.44
+"162","Justin Timberlake","Yuengling",39.98
+"163","Justin Timberlake","Jack Daniel's Whiskey",42.09
+"164","Justin Timberlake","Crown Royal Whiskey",41.15
+"165","Justin Timberlake","Grey Goose Vodka",56.51
+"166","Justin Timberlake","Absolut Vodka",59.52
+"167","Justin Timberlake","Coach",56.96
+"168","Justin Timberlake","Rolex",48.71
+"169","Justin Timberlake","Kohl's",45.57
+"170","Justin Timberlake","Macy's",51.61
+"171","Justin Timberlake","Walmart",29.23
+"172","Justin Timberlake","Target",42.98
+"173","Justin Timberlake","Coca-Cola/Diet Coke",49.48
+"174","Justin Timberlake","Dr. Pepper/Diet Dr. Pepper",57.73
+"175","Justin Timberlake","Apple",54.07
+"176","Justin Timberlake","Samsung",56.57
+"177","Justin Timberlake","Toyota",43.08
+"178","Justin Timberlake","Ford",35.6
+"179","Justin Timberlake","Verizon",25.24
+"180","Justin Timberlake","AT&T",26.02
+"181","Katy Perry","Nike",49.98
+"182","Katy Perry","Adidas",56.8
+"183","Katy Perry","Maybelline",45.35
+"184","Katy Perry","Clinique",37.57
+"185","Katy Perry","Red Bull",55.39
+"186","Katy Perry","Monster",50.1
+"187","Katy Perry","Levi's",33.84
+"188","Katy Perry","Wrangler",18.7
+"189","Katy Perry","McDonald's",42.27
+"190","Katy Perry","Subway",28.24
+"191","Katy Perry","Bud Light",38.23
+"192","Katy Perry","Yuengling",41.47
+"193","Katy Perry","Jack Daniel's Whiskey",43.7
+"194","Katy Perry","Crown Royal Whiskey",46.47
+"195","Katy Perry","Grey Goose Vodka",44.73
+"196","Katy Perry","Absolut Vodka",49.42
+"197","Katy Perry","Coach",46.31
+"198","Katy Perry","Rolex",37.25
+"199","Katy Perry","Kohl's",38.99
+"200","Katy Perry","Macy's",44.57
+"201","Katy Perry","Walmart",29.95
+"202","Katy Perry","Target",42.03
+"203","Katy Perry","Coca-Cola/Diet Coke",54.92
+"204","Katy Perry","Dr. Pepper/Diet Dr. Pepper",62.41
+"205","Katy Perry","Apple",49.53
+"206","Katy Perry","Samsung",52.97
+"207","Katy Perry","Toyota",42.13
+"208","Katy Perry","Ford",35.98
+"209","Katy Perry","Verizon",28.36
+"210","Katy Perry","AT&T",28.76
+"211","Luke Bryan","Nike",45.83
+"212","Luke Bryan","Adidas",45.98
+"213","Luke Bryan","Maybelline",44.86
+"214","Luke Bryan","Clinique",33.13
+"215","Luke Bryan","Red Bull",47.75
+"216","Luke Bryan","Monster",44.13
+"217","Luke Bryan","Levi's",36.07
+"218","Luke Bryan","Wrangler",22.35
+"219","Luke Bryan","McDonald's",45.67
+"220","Luke Bryan","Subway",34.62
+"221","Luke Bryan","Bud Light",43.98
+"222","Luke Bryan","Yuengling",45.27
+"223","Luke Bryan","Jack Daniel's Whiskey",38.77
+"224","Luke Bryan","Crown Royal Whiskey",42.19
+"225","Luke Bryan","Grey Goose Vodka",37.09
+"226","Luke Bryan","Absolut Vodka",47.15
+"227","Luke Bryan","Coach",38.52
+"228","Luke Bryan","Rolex",23.88
+"229","Luke Bryan","Kohl's",38.28
+"230","Luke Bryan","Macy's",36.15
+"231","Luke Bryan","Walmart",34.33
+"232","Luke Bryan","Target",44.05
+"233","Luke Bryan","Coca-Cola/Diet Coke",57.17
+"234","Luke Bryan","Dr. Pepper/Diet Dr. Pepper",53.45
+"235","Luke Bryan","Apple",31.98
+"236","Luke Bryan","Samsung",34.7
+"237","Luke Bryan","Toyota",39.08
+"238","Luke Bryan","Ford",32.02
+"239","Luke Bryan","Verizon",23.37
+"240","Luke Bryan","AT&T",24.53
+"241","Beyonce","Nike",51.76
+"242","Beyonce","Adidas",59.49
+"243","Beyonce","Maybelline",46.13
+"244","Beyonce","Clinique",38.35
+"245","Beyonce","Red Bull",58.13
+"246","Beyonce","Monster",49.08
+"247","Beyonce","Levi's",30.65
+"248","Beyonce","Wrangler",18.15
+"249","Beyonce","McDonald's",32.44
+"250","Beyonce","Subway",26.03
+"251","Beyonce","Bud Light",37.51
+"252","Beyonce","Yuengling",34.63
+"253","Beyonce","Jack Daniel's Whiskey",46.81
+"254","Beyonce","Crown Royal Whiskey",47.47
+"255","Beyonce","Grey Goose Vodka",43.88
+"256","Beyonce","Absolut Vodka",51.86
+"257","Beyonce","Coach",38.22
+"258","Beyonce","Rolex",43.73
+"259","Beyonce","Kohl's",37.26
+"260","Beyonce","Macy's",43.3
+"261","Beyonce","Walmart",27.6
+"262","Beyonce","Target",40.52
+"263","Beyonce","Coca-Cola/Diet Coke",49.07
+"264","Beyonce","Dr. Pepper/Diet Dr. Pepper",53.7
+"265","Beyonce","Apple",48.75
+"266","Beyonce","Samsung",50.03
+"267","Beyonce","Toyota",36.48
+"268","Beyonce","Ford",32.03
+"269","Beyonce","Verizon",32.18
+"270","Beyonce","AT&T",28.66
+"271","U2","Nike",45.12
+"272","U2","Adidas",51.69
+"273","U2","Maybelline",47.73
+"274","U2","Clinique",35.24
+"275","U2","Red Bull",50.81
+"276","U2","Monster",48.77
+"277","U2","Levi's",31.81
+"278","U2","Wrangler",19.32
+"279","U2","McDonald's",34.7
+"280","U2","Subway",30.74
+"281","U2","Bud Light",39.55
+"282","U2","Yuengling",38.55
+"283","U2","Jack Daniel's Whiskey",55.89
+"284","U2","Crown Royal Whiskey",50.67
+"285","U2","Grey Goose Vodka",45.2
+"286","U2","Absolut Vodka",58.16
+"287","U2","Coach",35.9
+"288","U2","Rolex",45.1
+"289","U2","Kohl's",36.16
+"290","U2","Macy's",38.73
+"291","U2","Walmart",27.75
+"292","U2","Target",37.38
+"293","U2","Coca-Cola/Diet Coke",48.25
+"294","U2","Dr. Pepper/Diet Dr. Pepper",58.46
+"295","U2","Apple",53.42
+"296","U2","Samsung",49.38
+"297","U2","Toyota",38.67
+"298","U2","Ford",30.31
+"299","U2","Verizon",35.64
+"300","U2","AT&T",31.29
+"301","Taylor Swift","Nike",46.98
+"302","Taylor Swift","Adidas",52.61
+"303","Taylor Swift","Maybelline",57.69
+"304","Taylor Swift","Clinique",41.86
+"305","Taylor Swift","Red Bull",51.01
+"306","Taylor Swift","Monster",43.84
+"307","Taylor Swift","Levi's",37.66
+"308","Taylor Swift","Wrangler",25.37
+"309","Taylor Swift","McDonald's",41.1
+"310","Taylor Swift","Subway",37.77
+"311","Taylor Swift","Bud Light",50.43
+"312","Taylor Swift","Yuengling",47.4
+"313","Taylor Swift","Jack Daniel's Whiskey",49.1
+"314","Taylor Swift","Crown Royal Whiskey",47.97
+"315","Taylor Swift","Grey Goose Vodka",40.52
+"316","Taylor Swift","Absolut Vodka",52.54
+"317","Taylor Swift","Coach",43.82
+"318","Taylor Swift","Rolex",33.55
+"319","Taylor Swift","Kohl's",44.7
+"320","Taylor Swift","Macy's",46.36
+"321","Taylor Swift","Walmart",39.59
+"322","Taylor Swift","Target",50.22
+"323","Taylor Swift","Coca-Cola/Diet Coke",52.66
+"324","Taylor Swift","Dr. Pepper/Diet Dr. Pepper",55.97
+"325","Taylor Swift","Apple",48.99
+"326","Taylor Swift","Samsung",52.78
+"327","Taylor Swift","Toyota",45.51
+"328","Taylor Swift","Ford",36.95
+"329","Taylor Swift","Verizon",32.31
+"330","Taylor Swift","AT&T",32.59
+"331","Metallica","Nike",48.37
+"332","Metallica","Adidas",52.62
+"333","Metallica","Maybelline",39.87
+"334","Metallica","Clinique",32.78
+"335","Metallica","Red Bull",60.17
+"336","Metallica","Monster",60.23
+"337","Metallica","Levi's",36.75
+"338","Metallica","Wrangler",27.49
+"339","Metallica","McDonald's",26.65
+"340","Metallica","Subway",23.8
+"341","Metallica","Bud Light",33.49
+"342","Metallica","Yuengling",29.27
+"343","Metallica","Jack Daniel's Whiskey",51.39
+"344","Metallica","Crown Royal Whiskey",48.61
+"345","Metallica","Grey Goose Vodka",37.8
+"346","Metallica","Absolut Vodka",47.45
+"347","Metallica","Coach",33.39
+"348","Metallica","Rolex",39.28
+"349","Metallica","Kohl's",28.04
+"350","Metallica","Macy's",30.93
+"351","Metallica","Walmart",25.3
+"352","Metallica","Target",27.46
+"353","Metallica","Coca-Cola/Diet Coke",35.94
+"354","Metallica","Dr. Pepper/Diet Dr. Pepper",44.52
+"355","Metallica","Apple",37.95
+"356","Metallica","Samsung",39.1
+"357","Metallica","Toyota",38.89
+"358","Metallica","Ford",37.23
+"359","Metallica","Verizon",34.95
+"360","Metallica","AT&T",32.91
+"361","John Legend","Nike",27.39
+"362","John Legend","Adidas",32.42
+"363","John Legend","Maybelline",37.35
+"364","John Legend","Clinique",38.54
+"365","John Legend","Red Bull",36.26
+"366","John Legend","Monster",26.01
+"367","John Legend","Levi's",23.53
+"368","John Legend","Wrangler",13.14
+"369","John Legend","McDonald's",27.14
+"370","John Legend","Subway",23.97
+"371","John Legend","Bud Light",24.65
+"372","John Legend","Yuengling",25.38
+"373","John Legend","Jack Daniel's Whiskey",42.41
+"374","John Legend","Crown Royal Whiskey",41.71
+"375","John Legend","Grey Goose Vodka",44.39
+"376","John Legend","Absolut Vodka",43.47
+"377","John Legend","Coach",35.93
+"378","John Legend","Rolex",40
+"379","John Legend","Kohl's",34.16
+"380","John Legend","Macy's",32.78
+"381","John Legend","Walmart",23.2
+"382","John Legend","Target",25.74
+"383","John Legend","Coca-Cola/Diet Coke",31.07
+"384","John Legend","Dr. Pepper/Diet Dr. Pepper",35.36
+"385","John Legend","Apple",35.48
+"386","John Legend","Samsung",35.96
+"387","John Legend","Toyota",28.73
+"388","John Legend","Ford",23.78
+"389","John Legend","Verizon",24.47
+"390","John Legend","AT&T",24.55
+"391","George Strait","Nike",40.96
+"392","George Strait","Adidas",45.24
+"393","George Strait","Maybelline",56.41
+"394","George Strait","Clinique",41.31
+"395","George Strait","Red Bull",46.51
+"396","George Strait","Monster",36.64
+"397","George Strait","Levi's",48.01
+"398","George Strait","Wrangler",36.63
+"399","George Strait","McDonald's",41.62
+"400","George Strait","Subway",48.31
+"401","George Strait","Bud Light",45.01
+"402","George Strait","Yuengling",52.05
+"403","George Strait","Jack Daniel's Whiskey",52.43
+"404","George Strait","Crown Royal Whiskey",54.16
+"405","George Strait","Grey Goose Vodka",38.84
+"406","George Strait","Absolut Vodka",51.71
+"407","George Strait","Coach",36.55
+"408","George Strait","Rolex",37.44
+"409","George Strait","Kohl's",51.18
+"410","George Strait","Macy's",41.4
+"411","George Strait","Walmart",44.97
+"412","George Strait","Target",48.13
+"413","George Strait","Coca-Cola/Diet Coke",44.51
+"414","George Strait","Dr. Pepper/Diet Dr. Pepper",45.66
+"415","George Strait","Apple",32.94
+"416","George Strait","Samsung",37.98
+"417","George Strait","Toyota",43.73
+"418","George Strait","Ford",33.92
+"419","George Strait","Verizon",28.89
+"420","George Strait","AT&T",26.9
+"421","Imagine Dragons","Nike",50.86
+"422","Imagine Dragons","Adidas",56.7
+"423","Imagine Dragons","Maybelline",44.98
+"424","Imagine Dragons","Clinique",41.69
+"425","Imagine Dragons","Red Bull",54.3
+"426","Imagine Dragons","Monster",45.94
+"427","Imagine Dragons","Levi's",32.14
+"428","Imagine Dragons","Wrangler",20.08
+"429","Imagine Dragons","McDonald's",38.28
+"430","Imagine Dragons","Subway",30.08
+"431","Imagine Dragons","Bud Light",40.93
+"432","Imagine Dragons","Yuengling",39.43
+"433","Imagine Dragons","Jack Daniel's Whiskey",44.19
+"434","Imagine Dragons","Crown Royal Whiskey",47.09
+"435","Imagine Dragons","Grey Goose Vodka",38.13
+"436","Imagine Dragons","Absolut Vodka",49.58
+"437","Imagine Dragons","Coach",43.62
+"438","Imagine Dragons","Rolex",36.07
+"439","Imagine Dragons","Kohl's",41.76
+"440","Imagine Dragons","Macy's",45.98
+"441","Imagine Dragons","Walmart",30.55
+"442","Imagine Dragons","Target",44.5
+"443","Imagine Dragons","Coca-Cola/Diet Coke",52.39
+"444","Imagine Dragons","Dr. Pepper/Diet Dr. Pepper",56.69
+"445","Imagine Dragons","Apple",52.47
+"446","Imagine Dragons","Samsung",53.7
+"447","Imagine Dragons","Toyota",40.79
+"448","Imagine Dragons","Ford",35.53
+"449","Imagine Dragons","Verizon",28.71
+"450","Imagine Dragons","AT&T",30.12
+"451","Beatles","Nike",43.49
+"452","Beatles","Adidas",50.32
+"453","Beatles","Maybelline",49.3
+"454","Beatles","Clinique",39.97
+"455","Beatles","Red Bull",51.79
+"456","Beatles","Monster",41.19
+"457","Beatles","Levi's",34.99
+"458","Beatles","Wrangler",20.08
+"459","Beatles","McDonald's",44.14
+"460","Beatles","Subway",32.77
+"461","Beatles","Bud Light",41.42
+"462","Beatles","Yuengling",44.56
+"463","Beatles","Jack Daniel's Whiskey",46.66
+"464","Beatles","Crown Royal Whiskey",46.61
+"465","Beatles","Grey Goose Vodka",46.83
+"466","Beatles","Absolut Vodka",52.08
+"467","Beatles","Coach",47.8
+"468","Beatles","Rolex",39.59
+"469","Beatles","Kohl's",42.38
+"470","Beatles","Macy's",51.15
+"471","Beatles","Walmart",32.79
+"472","Beatles","Target",44.62
+"473","Beatles","Coca-Cola/Diet Coke",53.57
+"474","Beatles","Dr. Pepper/Diet Dr. Pepper",60.55
+"475","Beatles","Apple",58.51
+"476","Beatles","Samsung",58.11
+"477","Beatles","Toyota",43.79
+"478","Beatles","Ford",35.84
+"479","Beatles","Verizon",32.45
+"480","Beatles","AT&T",31.8
+"481","Eagles","Nike",46.47
+"482","Eagles","Adidas",52.13
+"483","Eagles","Maybelline",50.62
+"484","Eagles","Clinique",47.64
+"485","Eagles","Red Bull",52.4
+"486","Eagles","Monster",44.6
+"487","Eagles","Levi's",36.58
+"488","Eagles","Wrangler",22.64
+"489","Eagles","McDonald's",44.71
+"490","Eagles","Subway",38.32
+"491","Eagles","Bud Light",39.93
+"492","Eagles","Yuengling",44.97
+"493","Eagles","Jack Daniel's Whiskey",55.75
+"494","Eagles","Crown Royal Whiskey",56.81
+"495","Eagles","Grey Goose Vodka",54.11
+"496","Eagles","Absolut Vodka",64.17
+"497","Eagles","Coach",47.7
+"498","Eagles","Rolex",44.2
+"499","Eagles","Kohl's",49.01
+"500","Eagles","Macy's",48.01
+"501","Eagles","Walmart",36.03
+"502","Eagles","Target",43.4
+"503","Eagles","Coca-Cola/Diet Coke",56.65
+"504","Eagles","Dr. Pepper/Diet Dr. Pepper",59.62
+"505","Eagles","Apple",47.07
+"506","Eagles","Samsung",49.97
+"507","Eagles","Toyota",45.25
+"508","Eagles","Ford",37.23
+"509","Eagles","Verizon",34.81
+"510","Eagles","AT&T",34.57
+"511","Lady Antebellum","Nike",42.02
+"512","Lady Antebellum","Adidas",47.25
+"513","Lady Antebellum","Maybelline",40.81
+"514","Lady Antebellum","Clinique",32.33
+"515","Lady Antebellum","Red Bull",45.33
+"516","Lady Antebellum","Monster",38.89
+"517","Lady Antebellum","Levi's",31.28
+"518","Lady Antebellum","Wrangler",18.99
+"519","Lady Antebellum","McDonald's",34.43
+"520","Lady Antebellum","Subway",26.91
+"521","Lady Antebellum","Bud Light",42.96
+"522","Lady Antebellum","Yuengling",34.36
+"523","Lady Antebellum","Jack Daniel's Whiskey",39.82
+"524","Lady Antebellum","Crown Royal Whiskey",40.1
+"525","Lady Antebellum","Grey Goose Vodka",34.62
+"526","Lady Antebellum","Absolut Vodka",42.07
+"527","Lady Antebellum","Coach",43.83
+"528","Lady Antebellum","Rolex",28.67
+"529","Lady Antebellum","Kohl's",36.67
+"530","Lady Antebellum","Macy's",39.57
+"531","Lady Antebellum","Walmart",29.47
+"532","Lady Antebellum","Target",39.52
+"533","Lady Antebellum","Coca-Cola/Diet Coke",44.41
+"534","Lady Antebellum","Dr. Pepper/Diet Dr. Pepper",50.22
+"535","Lady Antebellum","Apple",43.21
+"536","Lady Antebellum","Samsung",47.66
+"537","Lady Antebellum","Toyota",38.5
+"538","Lady Antebellum","Ford",28.91
+"539","Lady Antebellum","Verizon",28.03
+"540","Lady Antebellum","AT&T",28.3
+"541","Lady Gaga","Nike",49.78
+"542","Lady Gaga","Adidas",53.47
+"543","Lady Gaga","Maybelline",37.39
+"544","Lady Gaga","Clinique",22.32
+"545","Lady Gaga","Red Bull",54.86
+"546","Lady Gaga","Monster",55.71
+"547","Lady Gaga","Levi's",23.31
+"548","Lady Gaga","Wrangler",10.69
+"549","Lady Gaga","McDonald's",26.19
+"550","Lady Gaga","Subway",18.03
+"551","Lady Gaga","Bud Light",34.27
+"552","Lady Gaga","Yuengling",28.13
+"553","Lady Gaga","Jack Daniel's Whiskey",42.04
+"554","Lady Gaga","Crown Royal Whiskey",39.77
+"555","Lady Gaga","Grey Goose Vodka",32.63
+"556","Lady Gaga","Absolut Vodka",40.76
+"557","Lady Gaga","Coach",27.79
+"558","Lady Gaga","Rolex",29.21
+"559","Lady Gaga","Kohl's",26.75
+"560","Lady Gaga","Macy's",34.5
+"561","Lady Gaga","Walmart",18.3
+"562","Lady Gaga","Target",30.66
+"563","Lady Gaga","Coca-Cola/Diet Coke",43.06
+"564","Lady Gaga","Dr. Pepper/Diet Dr. Pepper",47.42
+"565","Lady Gaga","Apple",47.97
+"566","Lady Gaga","Samsung",45.01
+"567","Lady Gaga","Toyota",28.55
+"568","Lady Gaga","Ford",23.37
+"569","Lady Gaga","Verizon",20.84
+"570","Lady Gaga","AT&T",18.93
+"571","Carrie Underwood","Nike",42.03
+"572","Carrie Underwood","Adidas",48.39
+"573","Carrie Underwood","Maybelline",56.03
+"574","Carrie Underwood","Clinique",44.53
+"575","Carrie Underwood","Red Bull",45.16
+"576","Carrie Underwood","Monster",36.63
+"577","Carrie Underwood","Levi's",44.3
+"578","Carrie Underwood","Wrangler",33
+"579","Carrie Underwood","McDonald's",49.76
+"580","Carrie Underwood","Subway",50.86
+"581","Carrie Underwood","Bud Light",45.68
+"582","Carrie Underwood","Yuengling",59.92
+"583","Carrie Underwood","Jack Daniel's Whiskey",49.69
+"584","Carrie Underwood","Crown Royal Whiskey",49.18
+"585","Carrie Underwood","Grey Goose Vodka",41.2
+"586","Carrie Underwood","Absolut Vodka",55.33
+"587","Carrie Underwood","Coach",43.58
+"588","Carrie Underwood","Rolex",41.61
+"589","Carrie Underwood","Kohl's",48.77
+"590","Carrie Underwood","Macy's",40.17
+"591","Carrie Underwood","Walmart",46.67
+"592","Carrie Underwood","Target",49.47
+"593","Carrie Underwood","Coca-Cola/Diet Coke",57.85
+"594","Carrie Underwood","Dr. Pepper/Diet Dr. Pepper",55.26
+"595","Carrie Underwood","Apple",36.46
+"596","Carrie Underwood","Samsung",38.36
+"597","Carrie Underwood","Toyota",48.04
+"598","Carrie Underwood","Ford",39.92
+"599","Carrie Underwood","Verizon",30.92
+"600","Carrie Underwood","AT&T",30.25
+"601","Lorde","Nike",34.79
+"602","Lorde","Adidas",42.42
+"603","Lorde","Maybelline",42.28
+"604","Lorde","Clinique",35
+"605","Lorde","Red Bull",40.67
+"606","Lorde","Monster",42.22
+"607","Lorde","Levi's",34.91
+"608","Lorde","Wrangler",21.66
+"609","Lorde","McDonald's",29.45
+"610","Lorde","Subway",24.14
+"611","Lorde","Bud Light",28.52
+"612","Lorde","Yuengling",24.26
+"613","Lorde","Jack Daniel's Whiskey",52.83
+"614","Lorde","Crown Royal Whiskey",44.31
+"615","Lorde","Grey Goose Vodka",42.85
+"616","Lorde","Absolut Vodka",45.27
+"617","Lorde","Coach",40.86
+"618","Lorde","Rolex",42
+"619","Lorde","Kohl's",32.41
+"620","Lorde","Macy's",37.04
+"621","Lorde","Walmart",30.13
+"622","Lorde","Target",26.29
+"623","Lorde","Coca-Cola/Diet Coke",27.69
+"624","Lorde","Dr. Pepper/Diet Dr. Pepper",36.5
+"625","Lorde","Apple",50.7
+"626","Lorde","Samsung",47.48
+"627","Lorde","Toyota",38.5
+"628","Lorde","Ford",39.67
+"629","Lorde","Verizon",34.95
+"630","Lorde","AT&T",33.69
+"631","Pink Floyd","Nike",39.96
+"632","Pink Floyd","Adidas",43.22
+"633","Pink Floyd","Maybelline",40.67
+"634","Pink Floyd","Clinique",33.31
+"635","Pink Floyd","Red Bull",57.47
+"636","Pink Floyd","Monster",48.97
+"637","Pink Floyd","Levi's",27.53
+"638","Pink Floyd","Wrangler",13.98
+"639","Pink Floyd","McDonald's",27.24
+"640","Pink Floyd","Subway",24.56
+"641","Pink Floyd","Bud Light",22.2
+"642","Pink Floyd","Yuengling",31.3
+"643","Pink Floyd","Jack Daniel's Whiskey",43.45
+"644","Pink Floyd","Crown Royal Whiskey",49.41
+"645","Pink Floyd","Grey Goose Vodka",43.3
+"646","Pink Floyd","Absolut Vodka",52.64
+"647","Pink Floyd","Coach",34.3
+"648","Pink Floyd","Rolex",41.24
+"649","Pink Floyd","Kohl's",27.69
+"650","Pink Floyd","Macy's",32.89
+"651","Pink Floyd","Walmart",26.41
+"652","Pink Floyd","Target",22.36
+"653","Pink Floyd","Coca-Cola/Diet Coke",36.42
+"654","Pink Floyd","Dr. Pepper/Diet Dr. Pepper",49.89
+"655","Pink Floyd","Apple",44.81
+"656","Pink Floyd","Samsung",39.95
+"657","Pink Floyd","Toyota",31.79
+"658","Pink Floyd","Ford",28.63
+"659","Pink Floyd","Verizon",29.8
+"660","Pink Floyd","AT&T",28.44
+"661","Rolling Stones","Nike",49.7
+"662","Rolling Stones","Adidas",48.75
+"663","Rolling Stones","Maybelline",36.72
+"664","Rolling Stones","Clinique",28.38
+"665","Rolling Stones","Red Bull",65.59
+"666","Rolling Stones","Monster",67.23
+"667","Rolling Stones","Levi's",29.06
+"668","Rolling Stones","Wrangler",19.71
+"669","Rolling Stones","McDonald's",30.9
+"670","Rolling Stones","Subway",25.76
+"671","Rolling Stones","Bud Light",30.06
+"672","Rolling Stones","Yuengling",32.69
+"673","Rolling Stones","Jack Daniel's Whiskey",50.4
+"674","Rolling Stones","Crown Royal Whiskey",43.51
+"675","Rolling Stones","Grey Goose Vodka",35.56
+"676","Rolling Stones","Absolut Vodka",44.07
+"677","Rolling Stones","Coach",26.55
+"678","Rolling Stones","Rolex",27.1
+"679","Rolling Stones","Kohl's",26.8
+"680","Rolling Stones","Macy's",31.86
+"681","Rolling Stones","Walmart",25.79
+"682","Rolling Stones","Target",27.34
+"683","Rolling Stones","Coca-Cola/Diet Coke",42.03
+"684","Rolling Stones","Dr. Pepper/Diet Dr. Pepper",55.26
+"685","Rolling Stones","Apple",34.37
+"686","Rolling Stones","Samsung",37.02
+"687","Rolling Stones","Toyota",33.38
+"688","Rolling Stones","Ford",32.6
+"689","Rolling Stones","Verizon",30.2
+"690","Rolling Stones","AT&T",31.15
+"691","Billy Joel","Nike",43
+"692","Billy Joel","Adidas",48.35
+"693","Billy Joel","Maybelline",46.54
+"694","Billy Joel","Clinique",38.32
+"695","Billy Joel","Red Bull",48.2
+"696","Billy Joel","Monster",44.86
+"697","Billy Joel","Levi's",35.49
+"698","Billy Joel","Wrangler",24.53
+"699","Billy Joel","McDonald's",38.38
+"700","Billy Joel","Subway",32.13
+"701","Billy Joel","Bud Light",38.11
+"702","Billy Joel","Yuengling",33.58
+"703","Billy Joel","Jack Daniel's Whiskey",52.29
+"704","Billy Joel","Crown Royal Whiskey",49.2
+"705","Billy Joel","Grey Goose Vodka",38.62
+"706","Billy Joel","Absolut Vodka",45.19
+"707","Billy Joel","Coach",38.36
+"708","Billy Joel","Rolex",33.53
+"709","Billy Joel","Kohl's",42.63
+"710","Billy Joel","Macy's",41.03
+"711","Billy Joel","Walmart",31.83
+"712","Billy Joel","Target",40.6
+"713","Billy Joel","Coca-Cola/Diet Coke",44.08
+"714","Billy Joel","Dr. Pepper/Diet Dr. Pepper",46.9
+"715","Billy Joel","Apple",49.58
+"716","Billy Joel","Samsung",49.19
+"717","Billy Joel","Toyota",41.87
+"718","Billy Joel","Ford",37.72
+"719","Billy Joel","Verizon",36.86
+"720","Billy Joel","AT&T",32.22
+"721","Rascal Flatts","Nike",44.62
+"722","Rascal Flatts","Adidas",48.24
+"723","Rascal Flatts","Maybelline",53.07
+"724","Rascal Flatts","Clinique",41.49
+"725","Rascal Flatts","Red Bull",48.39
+"726","Rascal Flatts","Monster",39.87
+"727","Rascal Flatts","Levi's",35.88
+"728","Rascal Flatts","Wrangler",23.86
+"729","Rascal Flatts","McDonald's",42.35
+"730","Rascal Flatts","Subway",36.65
+"731","Rascal Flatts","Bud Light",40.6
+"732","Rascal Flatts","Yuengling",42.08
+"733","Rascal Flatts","Jack Daniel's Whiskey",53.58
+"734","Rascal Flatts","Crown Royal Whiskey",54.41
+"735","Rascal Flatts","Grey Goose Vodka",39.63
+"736","Rascal Flatts","Absolut Vodka",59.08
+"737","Rascal Flatts","Coach",38.76
+"738","Rascal Flatts","Rolex",31.69
+"739","Rascal Flatts","Kohl's",44.99
+"740","Rascal Flatts","Macy's",45.46
+"741","Rascal Flatts","Walmart",34.46
+"742","Rascal Flatts","Target",44.05
+"743","Rascal Flatts","Coca-Cola/Diet Coke",50.14
+"744","Rascal Flatts","Dr. Pepper/Diet Dr. Pepper",55.07
+"745","Rascal Flatts","Apple",39.96
+"746","Rascal Flatts","Samsung",43.5
+"747","Rascal Flatts","Toyota",39.73
+"748","Rascal Flatts","Ford",30.94
+"749","Rascal Flatts","Verizon",29.79
+"750","Rascal Flatts","AT&T",28.75
+"751","Blake Shelton","Nike",38.01
+"752","Blake Shelton","Adidas",46.57
+"753","Blake Shelton","Maybelline",47.89
+"754","Blake Shelton","Clinique",38.26
+"755","Blake Shelton","Red Bull",37.38
+"756","Blake Shelton","Monster",38.07
+"757","Blake Shelton","Levi's",49.12
+"758","Blake Shelton","Wrangler",37.54
+"759","Blake Shelton","McDonald's",39.03
+"760","Blake Shelton","Subway",43.64
+"761","Blake Shelton","Bud Light",42.45
+"762","Blake Shelton","Yuengling",46.15
+"763","Blake Shelton","Jack Daniel's Whiskey",52.04
+"764","Blake Shelton","Crown Royal Whiskey",45.07
+"765","Blake Shelton","Grey Goose Vodka",30.14
+"766","Blake Shelton","Absolut Vodka",38.38
+"767","Blake Shelton","Coach",38.87
+"768","Blake Shelton","Rolex",26.26
+"769","Blake Shelton","Kohl's",45.95
+"770","Blake Shelton","Macy's",32.87
+"771","Blake Shelton","Walmart",44.68
+"772","Blake Shelton","Target",44.31
+"773","Blake Shelton","Coca-Cola/Diet Coke",39.6
+"774","Blake Shelton","Dr. Pepper/Diet Dr. Pepper",38.14
+"775","Blake Shelton","Apple",35.03
+"776","Blake Shelton","Samsung",35.42
+"777","Blake Shelton","Toyota",46.63
+"778","Blake Shelton","Ford",41.4
+"779","Blake Shelton","Verizon",29.03
+"780","Blake Shelton","AT&T",26.9
+"781","Foo Fighters","Nike",51.88
+"782","Foo Fighters","Adidas",53.13
+"783","Foo Fighters","Maybelline",31.25
+"784","Foo Fighters","Clinique",18.52
+"785","Foo Fighters","Red Bull",69.07
+"786","Foo Fighters","Monster",68.05
+"787","Foo Fighters","Levi's",21.13
+"788","Foo Fighters","Wrangler",10.92
+"789","Foo Fighters","McDonald's",29.18
+"790","Foo Fighters","Subway",21.77
+"791","Foo Fighters","Bud Light",27.56
+"792","Foo Fighters","Yuengling",28.04
+"793","Foo Fighters","Jack Daniel's Whiskey",41.66
+"794","Foo Fighters","Crown Royal Whiskey",40.29
+"795","Foo Fighters","Grey Goose Vodka",28.12
+"796","Foo Fighters","Absolut Vodka",40.73
+"797","Foo Fighters","Coach",24.93
+"798","Foo Fighters","Rolex",26.87
+"799","Foo Fighters","Kohl's",24.66
+"800","Foo Fighters","Macy's",31.74
+"801","Foo Fighters","Walmart",24.67
+"802","Foo Fighters","Target",31.26
+"803","Foo Fighters","Coca-Cola/Diet Coke",41.33
+"804","Foo Fighters","Dr. Pepper/Diet Dr. Pepper",47.45
+"805","Foo Fighters","Apple",38.36
+"806","Foo Fighters","Samsung",38.75
+"807","Foo Fighters","Toyota",28.87
+"808","Foo Fighters","Ford",26.44
+"809","Foo Fighters","Verizon",27.51
+"810","Foo Fighters","AT&T",25.36
+"811","Miranda Lambert","Nike",45.36
+"812","Miranda Lambert","Adidas",53.2
+"813","Miranda Lambert","Maybelline",52.4
+"814","Miranda Lambert","Clinique",37.78
+"815","Miranda Lambert","Red Bull",49.11
+"816","Miranda Lambert","Monster",46.67
+"817","Miranda Lambert","Levi's",41.64
+"818","Miranda Lambert","Wrangler",27.88
+"819","Miranda Lambert","McDonald's",36.48
+"820","Miranda Lambert","Subway",35.7
+"821","Miranda Lambert","Bud Light",42.96
+"822","Miranda Lambert","Yuengling",42.05
+"823","Miranda Lambert","Jack Daniel's Whiskey",52.49
+"824","Miranda Lambert","Crown Royal Whiskey",50.35
+"825","Miranda Lambert","Grey Goose Vodka",43.19
+"826","Miranda Lambert","Absolut Vodka",47.44
+"827","Miranda Lambert","Coach",45.15
+"828","Miranda Lambert","Rolex",41.33
+"829","Miranda Lambert","Kohl's",48.66
+"830","Miranda Lambert","Macy's",44.25
+"831","Miranda Lambert","Walmart",37.16
+"832","Miranda Lambert","Target",47.34
+"833","Miranda Lambert","Coca-Cola/Diet Coke",47.75
+"834","Miranda Lambert","Dr. Pepper/Diet Dr. Pepper",50.94
+"835","Miranda Lambert","Apple",45.14
+"836","Miranda Lambert","Samsung",48
+"837","Miranda Lambert","Toyota",48.06
+"838","Miranda Lambert","Ford",40.38
+"839","Miranda Lambert","Verizon",30.79
+"840","Miranda Lambert","AT&T",28.44
+"841","Michael Buble","Nike",26.64
+"842","Michael Buble","Adidas",30.23
+"843","Michael Buble","Maybelline",44.06
+"844","Michael Buble","Clinique",45.6
+"845","Michael Buble","Red Bull",32.26
+"846","Michael Buble","Monster",27.39
+"847","Michael Buble","Levi's",27.07
+"848","Michael Buble","Wrangler",16.22
+"849","Michael Buble","McDonald's",28.87
+"850","Michael Buble","Subway",25.89
+"851","Michael Buble","Bud Light",25.06
+"852","Michael Buble","Yuengling",27.58
+"853","Michael Buble","Jack Daniel's Whiskey",43.6
+"854","Michael Buble","Crown Royal Whiskey",40.44
+"855","Michael Buble","Grey Goose Vodka",51.68
+"856","Michael Buble","Absolut Vodka",50.07
+"857","Michael Buble","Coach",53.16
+"858","Michael Buble","Rolex",43.91
+"859","Michael Buble","Kohl's",38.9
+"860","Michael Buble","Macy's",45.84
+"861","Michael Buble","Walmart",22.49
+"862","Michael Buble","Target",27.89
+"863","Michael Buble","Coca-Cola/Diet Coke",33.06
+"864","Michael Buble","Dr. Pepper/Diet Dr. Pepper",34.09
+"865","Michael Buble","Apple",36.18
+"866","Michael Buble","Samsung",34.39
+"867","Michael Buble","Toyota",32.45
+"868","Michael Buble","Ford",26.12
+"869","Michael Buble","Verizon",25.92
+"870","Michael Buble","AT&T",24.95
+"871","One Republic","Nike",40.56
+"872","One Republic","Adidas",50
+"873","One Republic","Maybelline",46.21
+"874","One Republic","Clinique",32.95
+"875","One Republic","Red Bull",51.94
+"876","One Republic","Monster",49.82
+"877","One Republic","Levi's",29.07
+"878","One Republic","Wrangler",14.33
+"879","One Republic","McDonald's",34.22
+"880","One Republic","Subway",27.97
+"881","One Republic","Bud Light",38.21
+"882","One Republic","Yuengling",35.27
+"883","One Republic","Jack Daniel's Whiskey",49.24
+"884","One Republic","Crown Royal Whiskey",46.8
+"885","One Republic","Grey Goose Vodka",45.23
+"886","One Republic","Absolut Vodka",53.01
+"887","One Republic","Coach",39.72
+"888","One Republic","Rolex",37.27
+"889","One Republic","Kohl's",35.05
+"890","One Republic","Macy's",41.76
+"891","One Republic","Walmart",28.08
+"892","One Republic","Target",40.91
+"893","One Republic","Coca-Cola/Diet Coke",45.89
+"894","One Republic","Dr. Pepper/Diet Dr. Pepper",57.42
+"895","One Republic","Apple",53.75
+"896","One Republic","Samsung",52.42
+"897","One Republic","Toyota",38.8
+"898","One Republic","Ford",29.53
+"899","One Republic","Verizon",28.84
+"900","One Republic","AT&T",28.41
+"901","Casting Crowns","Nike",26.19
+"902","Casting Crowns","Adidas",35.11
+"903","Casting Crowns","Maybelline",27.8
+"904","Casting Crowns","Clinique",33.14
+"905","Casting Crowns","Red Bull",27.33
+"906","Casting Crowns","Monster",24.68
+"907","Casting Crowns","Levi's",21.84
+"908","Casting Crowns","Wrangler",17.83
+"909","Casting Crowns","McDonald's",32.32
+"910","Casting Crowns","Subway",32.95
+"911","Casting Crowns","Bud Light",24.34
+"912","Casting Crowns","Yuengling",36.63
+"913","Casting Crowns","Jack Daniel's Whiskey",28.12
+"914","Casting Crowns","Crown Royal Whiskey",28.35
+"915","Casting Crowns","Grey Goose Vodka",33.14
+"916","Casting Crowns","Absolut Vodka",29.25
+"917","Casting Crowns","Coach",24.47
+"918","Casting Crowns","Rolex",31.62
+"919","Casting Crowns","Kohl's",30.58
+"920","Casting Crowns","Macy's",33.23
+"921","Casting Crowns","Walmart",25.88
+"922","Casting Crowns","Target",33.21
+"923","Casting Crowns","Coca-Cola/Diet Coke",34.59
+"924","Casting Crowns","Dr. Pepper/Diet Dr. Pepper",37.72
+"925","Casting Crowns","Apple",32.93
+"926","Casting Crowns","Samsung",35.44
+"927","Casting Crowns","Toyota",30.64
+"928","Casting Crowns","Ford",25.1
+"929","Casting Crowns","Verizon",25.61
+"930","Casting Crowns","AT&T",26.19
+"931","Brad Paisley","Nike",49.01
+"932","Brad Paisley","Adidas",51.49
+"933","Brad Paisley","Maybelline",48.92
+"934","Brad Paisley","Clinique",33.11
+"935","Brad Paisley","Red Bull",54.89
+"936","Brad Paisley","Monster",47.47
+"937","Brad Paisley","Levi's",36.7
+"938","Brad Paisley","Wrangler",20.28
+"939","Brad Paisley","McDonald's",43.93
+"940","Brad Paisley","Subway",31.65
+"941","Brad Paisley","Bud Light",38.89
+"942","Brad Paisley","Yuengling",43.16
+"943","Brad Paisley","Jack Daniel's Whiskey",47.45
+"944","Brad Paisley","Crown Royal Whiskey",48.09
+"945","Brad Paisley","Grey Goose Vodka",43.9
+"946","Brad Paisley","Absolut Vodka",54.31
+"947","Brad Paisley","Coach",43.3
+"948","Brad Paisley","Rolex",33.56
+"949","Brad Paisley","Kohl's",38.8
+"950","Brad Paisley","Macy's",41.91
+"951","Brad Paisley","Walmart",34.87
+"952","Brad Paisley","Target",39.88
+"953","Brad Paisley","Coca-Cola/Diet Coke",49.3
+"954","Brad Paisley","Dr. Pepper/Diet Dr. Pepper",59.36
+"955","Brad Paisley","Apple",40.84
+"956","Brad Paisley","Samsung",46.31
+"957","Brad Paisley","Toyota",42.17
+"958","Brad Paisley","Ford",35.7
+"959","Brad Paisley","Verizon",28.88
+"960","Brad Paisley","AT&T",29.99
+"961","Bruce Springsteen","Nike",50
+"962","Bruce Springsteen","Adidas",53.52
+"963","Bruce Springsteen","Maybelline",44.73
+"964","Bruce Springsteen","Clinique",38
+"965","Bruce Springsteen","Red Bull",60.19
+"966","Bruce Springsteen","Monster",55.64
+"967","Bruce Springsteen","Levi's",38.63
+"968","Bruce Springsteen","Wrangler",25.61
+"969","Bruce Springsteen","McDonald's",35.62
+"970","Bruce Springsteen","Subway",32.67
+"971","Bruce Springsteen","Bud Light",32.73
+"972","Bruce Springsteen","Yuengling",39.52
+"973","Bruce Springsteen","Jack Daniel's Whiskey",56.94
+"974","Bruce Springsteen","Crown Royal Whiskey",55.13
+"975","Bruce Springsteen","Grey Goose Vodka",41.71
+"976","Bruce Springsteen","Absolut Vodka",55.31
+"977","Bruce Springsteen","Coach",32.08
+"978","Bruce Springsteen","Rolex",44.38
+"979","Bruce Springsteen","Kohl's",34.84
+"980","Bruce Springsteen","Macy's",31.68
+"981","Bruce Springsteen","Walmart",33.86
+"982","Bruce Springsteen","Target",29.64
+"983","Bruce Springsteen","Coca-Cola/Diet Coke",43.87
+"984","Bruce Springsteen","Dr. Pepper/Diet Dr. Pepper",52.01
+"985","Bruce Springsteen","Apple",43.93
+"986","Bruce Springsteen","Samsung",41.15
+"987","Bruce Springsteen","Toyota",40.57
+"988","Bruce Springsteen","Ford",38.88
+"989","Bruce Springsteen","Verizon",36.44
+"990","Bruce Springsteen","AT&T",34.08
+"991","Tool","Nike",39.21
+"992","Tool","Adidas",42.4
+"993","Tool","Maybelline",36.23
+"994","Tool","Clinique",29.51
+"995","Tool","Red Bull",44.97
+"996","Tool","Monster",50.51
+"997","Tool","Levi's",31.69
+"998","Tool","Wrangler",20.95
+"999","Tool","McDonald's",23.02
+"1000","Tool","Subway",21.92
+"1001","Tool","Bud Light",23.84
+"1002","Tool","Yuengling",25.64
+"1003","Tool","Jack Daniel's Whiskey",45.46
+"1004","Tool","Crown Royal Whiskey",43.39
+"1005","Tool","Grey Goose Vodka",45.21
+"1006","Tool","Absolut Vodka",45.6
+"1007","Tool","Coach",33.29
+"1008","Tool","Rolex",45.85
+"1009","Tool","Kohl's",27.88
+"1010","Tool","Macy's",33.56
+"1011","Tool","Walmart",21.63
+"1012","Tool","Target",23.18
+"1013","Tool","Coca-Cola/Diet Coke",24.59
+"1014","Tool","Dr. Pepper/Diet Dr. Pepper",36.17
+"1015","Tool","Apple",58.34
+"1016","Tool","Samsung",47.44
+"1017","Tool","Toyota",34.51
+"1018","Tool","Ford",34.13
+"1019","Tool","Verizon",36.2
+"1020","Tool","AT&T",32.86
+"1021","Train","Nike",45.16
+"1022","Train","Adidas",51.55
+"1023","Train","Maybelline",39.52
+"1024","Train","Clinique",35.89
+"1025","Train","Red Bull",54.11
+"1026","Train","Monster",49.24
+"1027","Train","Levi's",24.47
+"1028","Train","Wrangler",11.84
+"1029","Train","McDonald's",32.87
+"1030","Train","Subway",27.17
+"1031","Train","Bud Light",32.72
+"1032","Train","Yuengling",37.61
+"1033","Train","Jack Daniel's Whiskey",40.84
+"1034","Train","Crown Royal Whiskey",44.1
+"1035","Train","Grey Goose Vodka",41.12
+"1036","Train","Absolut Vodka",49.04
+"1037","Train","Coach",35
+"1038","Train","Rolex",25.67
+"1039","Train","Kohl's",34.46
+"1040","Train","Macy's",39.47
+"1041","Train","Walmart",24.89
+"1042","Train","Target",36.75
+"1043","Train","Coca-Cola/Diet Coke",51.4
+"1044","Train","Dr. Pepper/Diet Dr. Pepper",58.04
+"1045","Train","Apple",43.64
+"1046","Train","Samsung",47.65
+"1047","Train","Toyota",35.83
+"1048","Train","Ford",26.55
+"1049","Train","Verizon",23.77
+"1050","Train","AT&T",23.19
+"1051","Black Keys","Nike",48.93
+"1052","Black Keys","Adidas",51.86
+"1053","Black Keys","Maybelline",36.77
+"1054","Black Keys","Clinique",26.33
+"1055","Black Keys","Red Bull",60.67
+"1056","Black Keys","Monster",59.7
+"1057","Black Keys","Levi's",25.97
+"1058","Black Keys","Wrangler",12.77
+"1059","Black Keys","McDonald's",28.51
+"1060","Black Keys","Subway",24.16
+"1061","Black Keys","Bud Light",38.89
+"1062","Black Keys","Yuengling",36.15
+"1063","Black Keys","Jack Daniel's Whiskey",40.63
+"1064","Black Keys","Crown Royal Whiskey",36.15
+"1065","Black Keys","Grey Goose Vodka",36.23
+"1066","Black Keys","Absolut Vodka",45.99
+"1067","Black Keys","Coach",30.94
+"1068","Black Keys","Rolex",26
+"1069","Black Keys","Kohl's",28.54
+"1070","Black Keys","Macy's",35.36
+"1071","Black Keys","Walmart",25.48
+"1072","Black Keys","Target",35.6
+"1073","Black Keys","Coca-Cola/Diet Coke",44.51
+"1074","Black Keys","Dr. Pepper/Diet Dr. Pepper",51.4
+"1075","Black Keys","Apple",43.75
+"1076","Black Keys","Samsung",45.99
+"1077","Black Keys","Toyota",35.67
+"1078","Black Keys","Ford",23.83
+"1079","Black Keys","Verizon",22.99
+"1080","Black Keys","AT&T",25.03
+"1081","Eminem","Nike",35
+"1082","Eminem","Adidas",37.44
+"1083","Eminem","Maybelline",28.63
+"1084","Eminem","Clinique",16.71
+"1085","Eminem","Red Bull",48.48
+"1086","Eminem","Monster",53.02
+"1087","Eminem","Levi's",23.75
+"1088","Eminem","Wrangler",15.83
+"1089","Eminem","McDonald's",20.44
+"1090","Eminem","Subway",14.52
+"1091","Eminem","Bud Light",24.23
+"1092","Eminem","Yuengling",17.25
+"1093","Eminem","Jack Daniel's Whiskey",44.92
+"1094","Eminem","Crown Royal Whiskey",32.28
+"1095","Eminem","Grey Goose Vodka",24.99
+"1096","Eminem","Absolut Vodka",30.61
+"1097","Eminem","Coach",19.02
+"1098","Eminem","Rolex",20.38
+"1099","Eminem","Kohl's",16.92
+"1100","Eminem","Macy's",24.22
+"1101","Eminem","Walmart",15.07
+"1102","Eminem","Target",16.79
+"1103","Eminem","Coca-Cola/Diet Coke",23.42
+"1104","Eminem","Dr. Pepper/Diet Dr. Pepper",34.47
+"1105","Eminem","Apple",24.94
+"1106","Eminem","Samsung",27.32
+"1107","Eminem","Toyota",25.29
+"1108","Eminem","Ford",23.72
+"1109","Eminem","Verizon",23.56
+"1110","Eminem","AT&T",21.9
+"1111","Linkin Park","Nike",48.41
+"1112","Linkin Park","Adidas",55.68
+"1113","Linkin Park","Maybelline",37.9
+"1114","Linkin Park","Clinique",28.44
+"1115","Linkin Park","Red Bull",59.67
+"1116","Linkin Park","Monster",57.07
+"1117","Linkin Park","Levi's",39.04
+"1118","Linkin Park","Wrangler",26.62
+"1119","Linkin Park","McDonald's",31.86
+"1120","Linkin Park","Subway",29.67
+"1121","Linkin Park","Bud Light",30.56
+"1122","Linkin Park","Yuengling",30.77
+"1123","Linkin Park","Jack Daniel's Whiskey",50.38
+"1124","Linkin Park","Crown Royal Whiskey",46.01
+"1125","Linkin Park","Grey Goose Vodka",35.02
+"1126","Linkin Park","Absolut Vodka",44.67
+"1127","Linkin Park","Coach",31.1
+"1128","Linkin Park","Rolex",44.78
+"1129","Linkin Park","Kohl's",26.48
+"1130","Linkin Park","Macy's",29.71
+"1131","Linkin Park","Walmart",36.47
+"1132","Linkin Park","Target",28.37
+"1133","Linkin Park","Coca-Cola/Diet Coke",37.58
+"1134","Linkin Park","Dr. Pepper/Diet Dr. Pepper",39.04
+"1135","Linkin Park","Apple",41.61
+"1136","Linkin Park","Samsung",40.38
+"1137","Linkin Park","Toyota",39.72
+"1138","Linkin Park","Ford",43.35
+"1139","Linkin Park","Verizon",46.27
+"1140","Linkin Park","AT&T",44.22
+"1141","Paramore","Nike",43.33
+"1142","Paramore","Adidas",47.05
+"1143","Paramore","Maybelline",29.35
+"1144","Paramore","Clinique",20
+"1145","Paramore","Red Bull",52
+"1146","Paramore","Monster",52.93
+"1147","Paramore","Levi's",22.24
+"1148","Paramore","Wrangler",10.25
+"1149","Paramore","McDonald's",25.17
+"1150","Paramore","Subway",21.08
+"1151","Paramore","Bud Light",22.35
+"1152","Paramore","Yuengling",24.1
+"1153","Paramore","Jack Daniel's Whiskey",38.83
+"1154","Paramore","Crown Royal Whiskey",32.08
+"1155","Paramore","Grey Goose Vodka",32.13
+"1156","Paramore","Absolut Vodka",32.99
+"1157","Paramore","Coach",23.31
+"1158","Paramore","Rolex",30.67
+"1159","Paramore","Kohl's",23.44
+"1160","Paramore","Macy's",32.17
+"1161","Paramore","Walmart",20.46
+"1162","Paramore","Target",23.81
+"1163","Paramore","Coca-Cola/Diet Coke",33.53
+"1164","Paramore","Dr. Pepper/Diet Dr. Pepper",38.33
+"1165","Paramore","Apple",39.65
+"1166","Paramore","Samsung",39.26
+"1167","Paramore","Toyota",27.33
+"1168","Paramore","Ford",23.83
+"1169","Paramore","Verizon",27.66
+"1170","Paramore","AT&T",25.51
+"1171","Zac Brown Band","Nike",40.36
+"1172","Zac Brown Band","Adidas",44.26
+"1173","Zac Brown Band","Maybelline",32.58
+"1174","Zac Brown Band","Clinique",32
+"1175","Zac Brown Band","Red Bull",42
+"1176","Zac Brown Band","Monster",35.96
+"1177","Zac Brown Band","Levi's",32.82
+"1178","Zac Brown Band","Wrangler",24.03
+"1179","Zac Brown Band","McDonald's",32.76
+"1180","Zac Brown Band","Subway",33.26
+"1181","Zac Brown Band","Bud Light",39.38
+"1182","Zac Brown Band","Yuengling",42.56
+"1183","Zac Brown Band","Jack Daniel's Whiskey",38.2
+"1184","Zac Brown Band","Crown Royal Whiskey",41.67
+"1185","Zac Brown Band","Grey Goose Vodka",34.48
+"1186","Zac Brown Band","Absolut Vodka",43.74
+"1187","Zac Brown Band","Coach",28.22
+"1188","Zac Brown Band","Rolex",28
+"1189","Zac Brown Band","Kohl's",38.33
+"1190","Zac Brown Band","Macy's",35.51
+"1191","Zac Brown Band","Walmart",31.49
+"1192","Zac Brown Band","Target",37.86
+"1193","Zac Brown Band","Coca-Cola/Diet Coke",40.5
+"1194","Zac Brown Band","Dr. Pepper/Diet Dr. Pepper",49.61
+"1195","Zac Brown Band","Apple",38.27
+"1196","Zac Brown Band","Samsung",41.67
+"1197","Zac Brown Band","Toyota",43.33
+"1198","Zac Brown Band","Ford",28.03
+"1199","Zac Brown Band","Verizon",20.99
+"1200","Zac Brown Band","AT&T",23.13
+"1201","Drake","Nike",44.94
+"1202","Drake","Adidas",48.45
+"1203","Drake","Maybelline",50.93
+"1204","Drake","Clinique",44.3
+"1205","Drake","Red Bull",62.3
+"1206","Drake","Monster",61.62
+"1207","Drake","Levi's",36.48
+"1208","Drake","Wrangler",21.67
+"1209","Drake","McDonald's",30.25
+"1210","Drake","Subway",28.05
+"1211","Drake","Bud Light",28.73
+"1212","Drake","Yuengling",36.13
+"1213","Drake","Jack Daniel's Whiskey",56.1
+"1214","Drake","Crown Royal Whiskey",53.84
+"1215","Drake","Grey Goose Vodka",46.62
+"1216","Drake","Absolut Vodka",56.8
+"1217","Drake","Coach",37.16
+"1218","Drake","Rolex",40.12
+"1219","Drake","Kohl's",33.62
+"1220","Drake","Macy's",35.57
+"1221","Drake","Walmart",27.96
+"1222","Drake","Target",27.47
+"1223","Drake","Coca-Cola/Diet Coke",40.08
+"1224","Drake","Dr. Pepper/Diet Dr. Pepper",54.51
+"1225","Drake","Apple",37.33
+"1226","Drake","Samsung",37.75
+"1227","Drake","Toyota",36.18
+"1228","Drake","Ford",34.82
+"1229","Drake","Verizon",32.24
+"1230","Drake","AT&T",31.17
+"1231","Elton John","Nike",51.88
+"1232","Elton John","Adidas",63.28
+"1233","Elton John","Maybelline",51.61
+"1234","Elton John","Clinique",49.03
+"1235","Elton John","Red Bull",53.7
+"1236","Elton John","Monster",49.66
+"1237","Elton John","Levi's",37.05
+"1238","Elton John","Wrangler",29.34
+"1239","Elton John","McDonald's",41.77
+"1240","Elton John","Subway",39
+"1241","Elton John","Bud Light",40.34
+"1242","Elton John","Yuengling",45.66
+"1243","Elton John","Jack Daniel's Whiskey",47.52
+"1244","Elton John","Crown Royal Whiskey",52.07
+"1245","Elton John","Grey Goose Vodka",49.63
+"1246","Elton John","Absolut Vodka",64.09
+"1247","Elton John","Coach",48.8
+"1248","Elton John","Rolex",45.03
+"1249","Elton John","Kohl's",52.17
+"1250","Elton John","Macy's",55.01
+"1251","Elton John","Walmart",37.73
+"1252","Elton John","Target",54.38
+"1253","Elton John","Coca-Cola/Diet Coke",54.53
+"1254","Elton John","Dr. Pepper/Diet Dr. Pepper",62.52
+"1255","Elton John","Apple",58.66
+"1256","Elton John","Samsung",59.8
+"1257","Elton John","Toyota",48.18
+"1258","Elton John","Ford",42.36
+"1259","Elton John","Verizon",35.35
+"1260","Elton John","AT&T",33.31
+"1261","Journey","Nike",46.43
+"1262","Journey","Adidas",46.76
+"1263","Journey","Maybelline",36.14
+"1264","Journey","Clinique",28.29
+"1265","Journey","Red Bull",62.24
+"1266","Journey","Monster",53.35
+"1267","Journey","Levi's",21.62
+"1268","Journey","Wrangler",8.6
+"1269","Journey","McDonald's",27.39
+"1270","Journey","Subway",20.6
+"1271","Journey","Bud Light",26.76
+"1272","Journey","Yuengling",27.11
+"1273","Journey","Jack Daniel's Whiskey",33.24
+"1274","Journey","Crown Royal Whiskey",39.06
+"1275","Journey","Grey Goose Vodka",30.91
+"1276","Journey","Absolut Vodka",37.24
+"1277","Journey","Coach",31.07
+"1278","Journey","Rolex",31.14
+"1279","Journey","Kohl's",28.24
+"1280","Journey","Macy's",32.36
+"1281","Journey","Walmart",21.99
+"1282","Journey","Target",28.57
+"1283","Journey","Coca-Cola/Diet Coke",42.86
+"1284","Journey","Dr. Pepper/Diet Dr. Pepper",47.74
+"1285","Journey","Apple",33.59
+"1286","Journey","Samsung",38.32
+"1287","Journey","Toyota",26.14
+"1288","Journey","Ford",22.72
+"1289","Journey","Verizon",19.9
+"1290","Journey","AT&T",17.18
+"1291","Mumford and Sons","Nike",43.16
+"1292","Mumford and Sons","Adidas",44.93
+"1293","Mumford and Sons","Maybelline",45.55
+"1294","Mumford and Sons","Clinique",49.18
+"1295","Mumford and Sons","Red Bull",44.97
+"1296","Mumford and Sons","Monster",42.42
+"1297","Mumford and Sons","Levi's",37.79
+"1298","Mumford and Sons","Wrangler",28.24
+"1299","Mumford and Sons","McDonald's",32.25
+"1300","Mumford and Sons","Subway",37.25
+"1301","Mumford and Sons","Bud Light",33
+"1302","Mumford and Sons","Yuengling",42.66
+"1303","Mumford and Sons","Jack Daniel's Whiskey",44.88
+"1304","Mumford and Sons","Crown Royal Whiskey",46.21
+"1305","Mumford and Sons","Grey Goose Vodka",43.59
+"1306","Mumford and Sons","Absolut Vodka",50.74
+"1307","Mumford and Sons","Coach",35.36
+"1308","Mumford and Sons","Rolex",37.09
+"1309","Mumford and Sons","Kohl's",39.18
+"1310","Mumford and Sons","Macy's",35.15
+"1311","Mumford and Sons","Walmart",34.95
+"1312","Mumford and Sons","Target",33.53
+"1313","Mumford and Sons","Coca-Cola/Diet Coke",43.77
+"1314","Mumford and Sons","Dr. Pepper/Diet Dr. Pepper",49.9
+"1315","Mumford and Sons","Apple",42.84
+"1316","Mumford and Sons","Samsung",38.42
+"1317","Mumford and Sons","Toyota",44.71
+"1318","Mumford and Sons","Ford",34.58
+"1319","Mumford and Sons","Verizon",35.68
+"1320","Mumford and Sons","AT&T",34.32
+"1321","Muse","Nike",33.66
+"1322","Muse","Adidas",35.83
+"1323","Muse","Maybelline",34.88
+"1324","Muse","Clinique",33.38
+"1325","Muse","Red Bull",46.75
+"1326","Muse","Monster",48.23
+"1327","Muse","Levi's",23.13
+"1328","Muse","Wrangler",13.17
+"1329","Muse","McDonald's",22.84
+"1330","Muse","Subway",20.59
+"1331","Muse","Bud Light",18.67
+"1332","Muse","Yuengling",23.48
+"1333","Muse","Jack Daniel's Whiskey",46.14
+"1334","Muse","Crown Royal Whiskey",45.31
+"1335","Muse","Grey Goose Vodka",32.99
+"1336","Muse","Absolut Vodka",46.3
+"1337","Muse","Coach",25.88
+"1338","Muse","Rolex",32.92
+"1339","Muse","Kohl's",25
+"1340","Muse","Macy's",27.64
+"1341","Muse","Walmart",16.81
+"1342","Muse","Target",16.87
+"1343","Muse","Coca-Cola/Diet Coke",31.36
+"1344","Muse","Dr. Pepper/Diet Dr. Pepper",51.97
+"1345","Muse","Apple",38.19
+"1346","Muse","Samsung",34.13
+"1347","Muse","Toyota",24
+"1348","Muse","Ford",21.67
+"1349","Muse","Verizon",22.08
+"1350","Muse","AT&T",20.81
+"1351","Radiohead","Nike",29.64
+"1352","Radiohead","Adidas",32.72
+"1353","Radiohead","Maybelline",28.99
+"1354","Radiohead","Clinique",30.86
+"1355","Radiohead","Red Bull",36.29
+"1356","Radiohead","Monster",34.02
+"1357","Radiohead","Levi's",19.75
+"1358","Radiohead","Wrangler",9.86
+"1359","Radiohead","McDonald's",16.45
+"1360","Radiohead","Subway",14.33
+"1361","Radiohead","Bud Light",14.55
+"1362","Radiohead","Yuengling",17.67
+"1363","Radiohead","Jack Daniel's Whiskey",37.71
+"1364","Radiohead","Crown Royal Whiskey",37.28
+"1365","Radiohead","Grey Goose Vodka",36.65
+"1366","Radiohead","Absolut Vodka",38.78
+"1367","Radiohead","Coach",24.21
+"1368","Radiohead","Rolex",32.95
+"1369","Radiohead","Kohl's",20.09
+"1370","Radiohead","Macy's",24.63
+"1371","Radiohead","Walmart",14.73
+"1372","Radiohead","Target",13.57
+"1373","Radiohead","Coca-Cola/Diet Coke",17.86
+"1374","Radiohead","Dr. Pepper/Diet Dr. Pepper",36.65
+"1375","Radiohead","Apple",46.48
+"1376","Radiohead","Samsung",38.87
+"1377","Radiohead","Toyota",23.14
+"1378","Radiohead","Ford",22.72
+"1379","Radiohead","Verizon",24.85
+"1380","Radiohead","AT&T",22.28
+"1381","Toby Keith","Nike",38.32
+"1382","Toby Keith","Adidas",43.29
+"1383","Toby Keith","Maybelline",38.88
+"1384","Toby Keith","Clinique",31.69
+"1385","Toby Keith","Red Bull",38.05
+"1386","Toby Keith","Monster",41.65
+"1387","Toby Keith","Levi's",51.16
+"1388","Toby Keith","Wrangler",47.75
+"1389","Toby Keith","McDonald's",38.38
+"1390","Toby Keith","Subway",44.08
+"1391","Toby Keith","Bud Light",43.35
+"1392","Toby Keith","Yuengling",43.59
+"1393","Toby Keith","Jack Daniel's Whiskey",55.44
+"1394","Toby Keith","Crown Royal Whiskey",47.48
+"1395","Toby Keith","Grey Goose Vodka",29
+"1396","Toby Keith","Absolut Vodka",35.79
+"1397","Toby Keith","Coach",28.55
+"1398","Toby Keith","Rolex",28.56
+"1399","Toby Keith","Kohl's",43.39
+"1400","Toby Keith","Macy's",34.52
+"1401","Toby Keith","Walmart",43.54
+"1402","Toby Keith","Target",44.31
+"1403","Toby Keith","Coca-Cola/Diet Coke",34.23
+"1404","Toby Keith","Dr. Pepper/Diet Dr. Pepper",34.36
+"1405","Toby Keith","Apple",33.89
+"1406","Toby Keith","Samsung",40.87
+"1407","Toby Keith","Toyota",48.54
+"1408","Toby Keith","Ford",46.85
+"1409","Toby Keith","Verizon",31.54
+"1410","Toby Keith","AT&T",34.12
+"1411","Avicii","Nike",58.21
+"1412","Avicii","Adidas",59.72
+"1413","Avicii","Maybelline",50.81
+"1414","Avicii","Clinique",33.29
+"1415","Avicii","Red Bull",63.05
+"1416","Avicii","Monster",56.85
+"1417","Avicii","Levi's",35.07
+"1418","Avicii","Wrangler",22.46
+"1419","Avicii","McDonald's",30.49
+"1420","Avicii","Subway",26.41
+"1421","Avicii","Bud Light",37.48
+"1422","Avicii","Yuengling",38.37
+"1423","Avicii","Jack Daniel's Whiskey",52.9
+"1424","Avicii","Crown Royal Whiskey",49.33
+"1425","Avicii","Grey Goose Vodka",39.4
+"1426","Avicii","Absolut Vodka",55.1
+"1427","Avicii","Coach",32.91
+"1428","Avicii","Rolex",35.62
+"1429","Avicii","Kohl's",38.95
+"1430","Avicii","Macy's",41.93
+"1431","Avicii","Walmart",25.24
+"1432","Avicii","Target",35.71
+"1433","Avicii","Coca-Cola/Diet Coke",47.34
+"1434","Avicii","Dr. Pepper/Diet Dr. Pepper",54.7
+"1435","Avicii","Apple",48.29
+"1436","Avicii","Samsung",46.77
+"1437","Avicii","Toyota",41.71
+"1438","Avicii","Ford",30.39
+"1439","Avicii","Verizon",25.36
+"1440","Avicii","AT&T",22.79
+"1441","Chicago","Nike",33.41
+"1442","Chicago","Adidas",33.63
+"1443","Chicago","Maybelline",42.1
+"1444","Chicago","Clinique",41.38
+"1445","Chicago","Red Bull",33.03
+"1446","Chicago","Monster",29.91
+"1447","Chicago","Levi's",49.11
+"1448","Chicago","Wrangler",37.69
+"1449","Chicago","McDonald's",50.77
+"1450","Chicago","Subway",50.17
+"1451","Chicago","Bud Light",45.01
+"1452","Chicago","Yuengling",51.28
+"1453","Chicago","Jack Daniel's Whiskey",42.83
+"1454","Chicago","Crown Royal Whiskey",42.07
+"1455","Chicago","Grey Goose Vodka",26.8
+"1456","Chicago","Absolut Vodka",36.03
+"1457","Chicago","Coach",33.91
+"1458","Chicago","Rolex",21.03
+"1459","Chicago","Kohl's",55.71
+"1460","Chicago","Macy's",45.82
+"1461","Chicago","Walmart",45.18
+"1462","Chicago","Target",50.3
+"1463","Chicago","Coca-Cola/Diet Coke",50.66
+"1464","Chicago","Dr. Pepper/Diet Dr. Pepper",42.26
+"1465","Chicago","Apple",32.88
+"1466","Chicago","Samsung",39.42
+"1467","Chicago","Toyota",47.35
+"1468","Chicago","Ford",39.09
+"1469","Chicago","Verizon",31.66
+"1470","Chicago","AT&T",31.95
+"1471","Daft Punk","Nike",48.79
+"1472","Daft Punk","Adidas",53.33
+"1473","Daft Punk","Maybelline",37.45
+"1474","Daft Punk","Clinique",34.79
+"1475","Daft Punk","Red Bull",64.05
+"1476","Daft Punk","Monster",55.45
+"1477","Daft Punk","Levi's",24.93
+"1478","Daft Punk","Wrangler",11.32
+"1479","Daft Punk","McDonald's",29.31
+"1480","Daft Punk","Subway",24.52
+"1481","Daft Punk","Bud Light",26.65
+"1482","Daft Punk","Yuengling",32.14
+"1483","Daft Punk","Jack Daniel's Whiskey",41.72
+"1484","Daft Punk","Crown Royal Whiskey",43.21
+"1485","Daft Punk","Grey Goose Vodka",48.05
+"1486","Daft Punk","Absolut Vodka",51.44
+"1487","Daft Punk","Coach",36.34
+"1488","Daft Punk","Rolex",37.01
+"1489","Daft Punk","Kohl's",34.24
+"1490","Daft Punk","Macy's",40.81
+"1491","Daft Punk","Walmart",27.03
+"1492","Daft Punk","Target",30.34
+"1493","Daft Punk","Coca-Cola/Diet Coke",42.56
+"1494","Daft Punk","Dr. Pepper/Diet Dr. Pepper",58.35
+"1495","Daft Punk","Apple",51.85
+"1496","Daft Punk","Samsung",52.98
+"1497","Daft Punk","Toyota",37.45
+"1498","Daft Punk","Ford",30.5
+"1499","Daft Punk","Verizon",31.63
+"1500","Daft Punk","AT&T",29.98
+"1501","Depeche Mode","Nike",34.14
+"1502","Depeche Mode","Adidas",39.25
+"1503","Depeche Mode","Maybelline",36.37
+"1504","Depeche Mode","Clinique",31.69
+"1505","Depeche Mode","Red Bull",49.13
+"1506","Depeche Mode","Monster",50.16
+"1507","Depeche Mode","Levi's",20.64
+"1508","Depeche Mode","Wrangler",7.85
+"1509","Depeche Mode","McDonald's",22.76
+"1510","Depeche Mode","Subway",19.28
+"1511","Depeche Mode","Bud Light",22.44
+"1512","Depeche Mode","Yuengling",21
+"1513","Depeche Mode","Jack Daniel's Whiskey",42.19
+"1514","Depeche Mode","Crown Royal Whiskey",42.83
+"1515","Depeche Mode","Grey Goose Vodka",31.66
+"1516","Depeche Mode","Absolut Vodka",43
+"1517","Depeche Mode","Coach",31.06
+"1518","Depeche Mode","Rolex",29.79
+"1519","Depeche Mode","Kohl's",24.87
+"1520","Depeche Mode","Macy's",28.64
+"1521","Depeche Mode","Walmart",17.31
+"1522","Depeche Mode","Target",21.65
+"1523","Depeche Mode","Coca-Cola/Diet Coke",32.45
+"1524","Depeche Mode","Dr. Pepper/Diet Dr. Pepper",45.03
+"1525","Depeche Mode","Apple",39.25
+"1526","Depeche Mode","Samsung",39.04
+"1527","Depeche Mode","Toyota",25.9
+"1528","Depeche Mode","Ford",19.84
+"1529","Depeche Mode","Verizon",22.93
+"1530","Depeche Mode","AT&T",20.5
+"1531","Led Zeppelin","Nike",27.21
+"1532","Led Zeppelin","Adidas",31.08
+"1533","Led Zeppelin","Maybelline",34.41
+"1534","Led Zeppelin","Clinique",26.09
+"1535","Led Zeppelin","Red Bull",39.27
+"1536","Led Zeppelin","Monster",36.87
+"1537","Led Zeppelin","Levi's",18.59
+"1538","Led Zeppelin","Wrangler",8.81
+"1539","Led Zeppelin","McDonald's",17.59
+"1540","Led Zeppelin","Subway",14.8
+"1541","Led Zeppelin","Bud Light",16.89
+"1542","Led Zeppelin","Yuengling",16.78
+"1543","Led Zeppelin","Jack Daniel's Whiskey",40.62
+"1544","Led Zeppelin","Crown Royal Whiskey",34.23
+"1545","Led Zeppelin","Grey Goose Vodka",39.94
+"1546","Led Zeppelin","Absolut Vodka",39.61
+"1547","Led Zeppelin","Coach",28.11
+"1548","Led Zeppelin","Rolex",42.97
+"1549","Led Zeppelin","Kohl's",19.39
+"1550","Led Zeppelin","Macy's",29.29
+"1551","Led Zeppelin","Walmart",16.76
+"1552","Led Zeppelin","Target",14.19
+"1553","Led Zeppelin","Coca-Cola/Diet Coke",19.74
+"1554","Led Zeppelin","Dr. Pepper/Diet Dr. Pepper",32.06
+"1555","Led Zeppelin","Apple",44.1
+"1556","Led Zeppelin","Samsung",34.57
+"1557","Led Zeppelin","Toyota",23.55
+"1558","Led Zeppelin","Ford",22.13
+"1559","Led Zeppelin","Verizon",27.17
+"1560","Led Zeppelin","AT&T",25.54
+"1561","Mercy Me","Nike",28.93
+"1562","Mercy Me","Adidas",37.6
+"1563","Mercy Me","Maybelline",28.6
+"1564","Mercy Me","Clinique",31.67
+"1565","Mercy Me","Red Bull",33.33
+"1566","Mercy Me","Monster",26.57
+"1567","Mercy Me","Levi's",22.43
+"1568","Mercy Me","Wrangler",12.33
+"1569","Mercy Me","McDonald's",27.36
+"1570","Mercy Me","Subway",30.18
+"1571","Mercy Me","Bud Light",29.38
+"1572","Mercy Me","Yuengling",32.05
+"1573","Mercy Me","Jack Daniel's Whiskey",32.88
+"1574","Mercy Me","Crown Royal Whiskey",34.06
+"1575","Mercy Me","Grey Goose Vodka",34.7
+"1576","Mercy Me","Absolut Vodka",36.33
+"1577","Mercy Me","Coach",27.26
+"1578","Mercy Me","Rolex",28
+"1579","Mercy Me","Kohl's",32.66
+"1580","Mercy Me","Macy's",35.36
+"1581","Mercy Me","Walmart",26.5
+"1582","Mercy Me","Target",30.6
+"1583","Mercy Me","Coca-Cola/Diet Coke",32.91
+"1584","Mercy Me","Dr. Pepper/Diet Dr. Pepper",37.76
+"1585","Mercy Me","Apple",32.23
+"1586","Mercy Me","Samsung",35.9
+"1587","Mercy Me","Toyota",32.5
+"1588","Mercy Me","Ford",23.06
+"1589","Mercy Me","Verizon",23.28
+"1590","Mercy Me","AT&T",24.69
