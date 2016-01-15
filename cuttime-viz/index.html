@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style id="style-1-cropbar-clipper">
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+
+<h3 id="title" style="">CUTTIME.FM</h3>
+ 
+<div style="text-align: center;">
+	<div style="display:inline-block; width: 400px; margin-right: 50px;">
+		<span class="label">Band:</span> 
+		<select class="big-dropdown" id="band-name">
+			<option value="-">-</option>
+		</select>
+	</div>
+	<div style="text-align: center; display: inline-block; width: 200px; height: 50px; overflow: visible; vertical-align: middle;">
+		<span class="label">Affinity Score</span><br />
+		<span style="display: inline-block; width: 200px; height: 1px; overflow: visible; font-size: 72px;" id="affinity-score">-</span>
+	</div>
+	<div style="display:inline-block; width: 400px; margin-left: 50px;">
+		<span class="label">Brand:</span> 
+		<select class="big-dropdown" id="brand-name">
+			<option value="-">-</option>
+		</select>
+	</div>
+	<div style="clear: both"></div>
+</div> 
+
+
+<div id="charts-div" style="text-align: center;">
+	<div style="display:inline-block; width: 500px; margin-right: 50px;">
+		<div id="band-chart"></div>
+	</div>
+	<div style="display:inline-block; width: 500px; margin-left: 50px;">
+		<div id="brand-chart"></div>
+	</div>
+	<div style="clear: both"></div>
+</div> 
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/papaparse.js"></script>
+
+<script src="js/d3.v3.min.js"></script>
+
+<script src="js/d3.tip.v0.6.3.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body></html>
