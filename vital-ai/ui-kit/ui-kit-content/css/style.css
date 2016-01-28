@@ -106,6 +106,7 @@ p {
 
   font-weight: 300;
   margin-bottom: 20px;
+  text-align: center;
 }
 small {
   font-size: 84%;
@@ -989,17 +990,18 @@ section * {
  * Content 4 stylesheet  
  * */
 .content-4 {
-  padding-top: 130px;
+  padding-top: 50px;
   padding-bottom: 120px;
   position: relative;
 }
 .content-4 h3 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: center;
 }
 .content-4 p {
   font-size: 16px;
@@ -1054,13 +1056,13 @@ section * {
  * Content 5 stylesheet  
  * */
 .content-5 {
-  padding-top: 130px;
+  padding-top: 50px;
   padding-bottom: 120px;
   position: relative;
 }
 .content-5 .container > img {
   display: block;
-  margin: 0 auto 50px;
+  margin: 50px auto 20px;
 }
 .content-5 h3 {
   margin: 0 0 21px;
@@ -1076,7 +1078,7 @@ section * {
   }
 }
 .content-5 h3 + .lead {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1113,7 +1115,7 @@ section * {
   }
 }
 .content-5 .features > [class*="col-sm-"] p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: normal;
   color: #7f8c8d;
 }
