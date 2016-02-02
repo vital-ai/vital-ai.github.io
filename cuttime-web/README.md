@@ -1,3 +1,3 @@
-Vital AI Website
+Cuttime Website
 ================
 
