@@ -505,6 +505,7 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+ padding: 10px;
 }
 h1,
 .h1,
