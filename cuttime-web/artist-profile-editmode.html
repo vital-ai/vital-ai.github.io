@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Artist Profile | Brand View</title>
@@ -33,7 +37,7 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="index2.html" class="navbar-brand"><b>cuttime</b>.fm</a>
+              <a href="artist-dashboard.html" class="navbar-brand"><b>cuttime</b>.fm</a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>
@@ -42,21 +46,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Dashboard<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Artist(s)</a></li>
-                <li><a href="#">Reports</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="artist-dashboard.html">Dashboard</a></li>
+                  <li class="active"><a href="#">Artist(s)<span class="sr-only">(current)</span></a></li>
+                <li><a href="artist-savedsearches-reports.html">Reports</a></li>
+<li><a href="artist-settings.html">Settings</a></li>
+                  
             </div><!-- /.navbar-collapse -->
             <!-- Navbar Right Menu -->
               <div class="navbar-custom-menu">
@@ -126,10 +120,10 @@
                       <!-- Menu Footer-->
                       <li class="user-footer">
                         <div class="pull-left">
-                          <a href="#" class="btn btn-default btn-flat">Settings</a>
+                          <a href="artist-settings.html" class="btn btn-default btn-flat">Settings</a>
                         </div>
                         <div class="pull-right">
-                          <a href="#" class="btn btn-default btn-flat">Log out</a>
+                          <a href="index.html" class="btn btn-default btn-flat">Log out</a>
                         </div>
                       </li>
                     </ul>
@@ -147,7 +141,7 @@
           <section class="content">
 
            <div class="row">
-              <br><center><button type="button" class="btn btn-primary">Back to Dashboard</button></center>
+              <br><center><a href="artist-dashboard.html" class="btn btn-primary" rule="button">Back to Dashboard</a></center>
               </div> <br><br>
 
 <div class="alert alert-info" role="alert"><center>You are now in profile editing mode.</center></div>
@@ -286,7 +280,7 @@
 <div class="row">
 <center><button type="button" class="btn btn-default">Contact Artist</button>&nbsp;&nbsp;&nbsp;&nbsp;
 <button type="button" class="btn btn-default">Save Artist</button><br><br>
-    <button type="button" class="btn btn-primary">Back to Dashboard</button>
+    <a href="artist-dashboard.html" class="btn btn-primary" rule="button">Back to Dashboard</a>
     </center>  
               </div>
               
@@ -299,7 +293,6 @@
       <footer class="main-footer">
         <div class="container">
           <div class="pull-right hidden-xs">
-            <b>Version</b> 1.0.0
           </div>
           <strong>Copyright &copy; 2016 <a href="http://cuttime.fm">cuttime.fm</a>.</strong> All rights reserved.
         </div><!-- /.container -->
