@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Artist's Dashboard</title>
+    <title>Artist | Dashboard</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
@@ -221,7 +223,7 @@
                         <div class="col-sm-6">
                            <center>Lifetime Affinity</center><br>
                          <input type="text" class="knob" value="79" data-width="120" data-height="120" data-fgColor="#00c0ef">
-                            <div class="knob-label">=</div></div>
+                            <div class="knob-label"></div></div>
                           <center><button type="button" class="btn btn-default">View Profile</button></center>
                       </div>
                           
@@ -265,7 +267,52 @@
                 <canvas id="pieChart" style="height:250px"></canvas>
           </div>
           
-        <div class="col-sm-6">
+        <div class="col-sm-5">
+                      <p class="text-center">
+                        <center><h3>Age</h3></center>
+                      </p>
+                      <div class="progress-group">
+                        <span class="progress-text">18-24</span>
+                        <span class="progress-number"><b>36</b>/100</span>
+                        <div class="progress sm">
+                          <div class="progress-bar progress-bar-aqua" style="width: 36%"></div>
+                        </div>
+                      </div><!-- /.progress-group -->
+                      <div class="progress-group">
+                        <span class="progress-text">25-34</span>
+                        <span class="progress-number"><b>24</b>/100</span>
+                        <div class="progress sm">
+                          <div class="progress-bar progress-bar-red" style="width: 24%"></div>
+                        </div>
+                      </div><!-- /.progress-group -->
+                      <div class="progress-group">
+                        <span class="progress-text">35-44</span>
+                        <span class="progress-number"><b>30</b>/100</span>
+                        <div class="progress sm">
+                          <div class="progress-bar progress-bar-green" style="width: 30%"></div>
+                        </div>
+                      </div><!-- /.progress-group -->
+                      <div class="progress-group">
+                        <span class="progress-text">45-54</span>
+                        <span class="progress-number"><b>5</b>/100</span>
+                        <div class="progress sm">
+                          <div class="progress-bar progress-bar-yellow" style="width: 5%"></div>
+                        </div>
+                      </div><!-- /.progress-group -->
+                       <div class="progress-group">
+                        <span class="progress-text">55-64</span>
+                        <span class="progress-number"><b>3</b>/100</span>
+                        <div class="progress sm">
+                          <div class="progress-bar progress-bar-aque" style="width: 3%"></div>
+                        </div>
+                      </div><!-- /.progress-group -->
+                       <div class="progress-group">
+                        <span class="progress-text">65+</span>
+                        <span class="progress-number"><b>1</b>/100</span>
+                        <div class="progress sm">
+                          <div class="progress-bar progress-bar-red" style="width: 1%"></div>
+                        </div>
+                      </div><!-- /.progress-group -->
             
           </div>
             </div>
@@ -273,6 +320,71 @@
             
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
+            
+            <div class="row">
+            <div class="col-md-8">
+             <!-- MAP & BOX PANE -->
+              <div class="box box-success">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Visitors Report</h3>
+                  <div class="box-tools pull-right">
+                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <div class="row">
+                    <div class="col-md-9 col-sm-8">
+                      <div class="pad">
+                        <!-- Map will be created here -->
+                        <div id="world-map-markers" style="height: 325px;"></div>
+                      </div>
+                    </div><!-- /.col -->
+                    <div class="col-md-3 col-sm-4">
+                      <div class="pad box-pane-right bg-green" style="min-height: 280px">
+                        <div class="description-block margin-bottom">
+                          <div class="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
+                          <h5 class="description-header">8390</h5>
+                          <span class="description-text">Visits</span>
+                        </div><!-- /.description-block -->
+                        <div class="description-block margin-bottom">
+                          <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
+                          <h5 class="description-header">30%</h5>
+                          <span class="description-text">Referrals</span>
+                        </div><!-- /.description-block -->
+                        <div class="description-block">
+                          <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
+                          <h5 class="description-header">70%</h5>
+                          <span class="description-text">Organic</span>
+                        </div><!-- /.description-block -->
+                      </div>
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+                </div></div>
+            
+            <div class="box box-default">
+              <div class="box-header with-border">
+                <h3 class="box-title">Descriptors</h3>
+              </div>
+              <div class="box-body">
+                  <div class="col-sm-6">
+                  <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br><br>
+                   <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br><br>
+                   <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br><br>
+                   <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br>
+                  </div>
+<div class="col-sm-6">
+                  <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br><br>
+                   <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br><br>
+                   <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br><br>
+                   <img src="img/descriptors_icon.jpg"> &nbsp;&nbsp; Descriptors <br>
+                  </div>
+                  </div>
+              </div><!-- /.box-body -->
+            </div><!-- /.box --> 
+            
                    
             <div class="box box-default">
               <div class="box-header with-border">
@@ -317,6 +429,9 @@
                 </center>
 </div>
         
+            
+            
+            
           </section><!-- /.content -->
         </div><!-- /.container -->
       </div><!-- /.content-wrapper -->
@@ -346,13 +461,18 @@
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
         
+    <!-- Chart JS -->   
     <script src="plugins/chartjs/Chart.min.js"></script>
-     <!-- Chart JS -->   
-     
+        
+    <!-- jQuery Knob --> 
     <script src="plugins/knob/jquery.knob.js"></script>
-    <!-- jQuery Knob -->
-        
-        
+     
+    <!-- jvectormap -->   
+    <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    
+     <!-- Sparkline -->
+    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
 
    
     <script> 
