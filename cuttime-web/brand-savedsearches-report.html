@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Brand | Dashboard</title>
+    <title>Brand | Saved Search Reports</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
@@ -19,8 +23,6 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +39,7 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="brand-dashboard.html" class="navbar-brand"><b>cuttime</b>.fm</a>
+              <a href="brand-profile.html" class="navbar-brand"><b>cuttime</b>.fm</a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>
@@ -46,11 +48,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Dashboard<span class="sr-only">(current)</span></a></li>
+                <li><a href="brand-dashboard.html">Dashboard</a></li>
                 <li><a href="brand-admin.html">Brand(s)</a></li>
-                <li><a href="brand-savedsearches-reports.html">Reports</a></li>
-<li><a href="brand-settings.html">Settings</a></li>
-                  
+                <li class="active"><a href="#">Reports<span class="sr-only">(current)</span></a></li>
+                  <li><a href="brand-settings.html">Settings</a></li>
             </div><!-- /.navbar-collapse -->
             <!-- Navbar Right Menu -->
               <div class="navbar-custom-menu">
@@ -84,7 +85,7 @@
                           </li><!-- end message -->
                         </ul><!-- /.menu -->
                       </li>
-                      <li class="footer"><a href="#">See All Messages</a></li>
+                      <li class="footer"><a href="brand-inbox.html">See All Messages</a></li>
                     </ul>
                   </li><!-- /.messages-menu -->
                   <!-- User Account Menu -->
@@ -120,7 +121,7 @@
                       <!-- Menu Footer-->
                       <li class="user-footer">
                         <div class="pull-left">
-                          <a href="artist-settings.html" class="btn btn-default btn-flat">Settings</a>
+                          <a href="brand-settings.html" class="btn btn-default btn-flat">Settings</a>
                         </div>
                         <div class="pull-right">
                           <a href="index.html" class="btn btn-default btn-flat">Log out</a>
@@ -133,84 +134,106 @@
           </div><!-- /.container-fluid -->
         </nav>
       </header>
-          
-          <div class="content-wrapper">
+      <!-- Full Width Column -->
+      <div class="content-wrapper">
         <div class="container">
           <!-- Content Header (Page header) -->            
     <!-- Main content -->
-       <section class="content">
+       <section class="content">  
            
-           <div class="row"><center>
-           <button type="button" class="btn btn-primary">Back to Dashboard</button></center></div><br>
-           
-               <div class="box box-default">
+<div class="box box-default">
               <div class="box-header with-border">
-                <h2 class="box-title">Search Results</h2>
-                   </div>
-                   
-                   
-              <div class="box-body">
-               
-                  <div class="row">
-                      <div class="col-sm-2 col-sm-offset-4">
-                      <img src="img/pharell_williams_icon.jpg"> Pharell Williams
-                      </div>
-
-             <div class="col-sm-2"><br>
-                      <button type="button" class="btn btn-default">View Profile</button><br><br>
-                  <button type="button" class="btn btn-default">Share Results</button>
-
-                      </div>
-</div>
- <br><br>
-            
-          <div class="row">
-                  <div class="col-sm-4">
-                      <center><h3><a href="">Current Affinity</a></h3><p>Displaying the last 6 months</p><br><input type="text" class="knob" value="64" data-width="200" data-height="200" data-fgColor="#00c0ef"></center></div>
-              <div class="col-sm-4">
-                  <center><h3><a href="">Lifetime Affinity</a></h3><br><br><input type="text" class="knob" value="88" data-width="200" data-height="200" data-fgColor="#00c0ef"></center></div>
-                  
-<div class="col-sm-4">
-              <center>
-                  <h3><a href="">Affinity Timeframe</a></h3><p>Displaying the last 12 months</p><br><input type="text" class="knob" value="67" data-width="200" data-height="200" data-fgColor="#00c0ef"><br>
-   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Start Date &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Date</a></li>
-    <li><a href="#">Date</a></li>
-    <li><a href="#">Date</a></li>
-    <li><a href="#">Date</a></li>
-  </ul>
-  &nbsp;
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    End Date &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Date</a></li>
-    <li><a href="#">Date</a></li>
-    <li><a href="#">Date</a></li>
-    <li><a href="#">Date</a></li>
-  </ul>
-    
-    </center>
+                <h2 class="box-title">Saved Searches and Reports</h2>
               </div>
-                 <center><button type="button" class="btn btn-primary">Affinity Score Overview</button></center> 
-                  </div>
+              <div class="box-body">
+              <div class="row">    
+               <center><div class="col-sm-2"><br>
+                 <img src="img/vans_logo.jpg" width="114px"><br>
+                   Vans<br>
+                   <a href="">New Search ></a>
+                   </div></center>
+                   
+<div class="col-sm-2">
+    <div class="container">            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Saved Searches</th>
+        <th>Download Report</th>
+        <th>Weekly Report</th>
+<th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="">Bring Me The Horizon Score ></a></td>
+        <td><button type="button" class="btn btn-primary">Pdf</button>
+<button type="button" class="btn btn-primary">Excel</button>
+<button type="button" class="btn btn-primary">Email</button>
+</td>
+        <td>Monday, 10am EST</td>
+      <td><button type="button" class="btn btn-primary">Change</button>
+        <button type="button" class="btn btn-default">Delete Search</button>
+          </td>
+      </tr>
+      <tr>
+        <td><a href="">BMTH Look-A-Like Artists ></a></td>
+        <td><button type="button" class="btn btn-primary">Pdf</button>
+<button type="button" class="btn btn-primary">Excel</button>
+<button type="button" class="btn btn-primary">Email</button></td>
+          <td></td>
+        <td><button type="button" class="btn btn-primary">Schedule</button>
+        <button type="button" class="btn btn-default">Delete Search</button></td>
+      </tr>
+    </tbody>
+  </table>
+    </div></div></div>
+         
+        <hr>   
 
+ <div class="row">    
+               <center><div class="col-sm-2"><br>
+                 <img src="img/lee_logo.jpg" width="114px"><br>
+                   Rihanna<br>
+                   <a href="">New Search ></a>
+                   </div></center>
+                   
+<div class="col-sm-2">
+    <div class="container">            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Saved Searches</th>
+        <th>Download Report</th>
+        <th>Weekly Report</th>
+<th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="">Garth Brooks For Lee? ></a></td>
+        <td><button type="button" class="btn btn-primary">Pdf</button>
+<button type="button" class="btn btn-primary">Excel</button>
+<button type="button" class="btn btn-primary">Email</button>
+</td>
+        <td>Tuesday, 12pm PST</td>
+      <td><button type="button" class="btn btn-primary">Change</button>
+        <button type="button" class="btn btn-default">Delete Search</button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+    </div></div></div>
+ 
               </div><!-- /.box-body -->
-            </div><!-- /.box --> 
-           
-           <div class="row"><center>
-               <button type="button" class="btn btn-default">Start New Search</button>
-               <button type="button" class="btn btn-default">Save Search</button></center>
-           </div><br><br>
-          
-        <div class="row">
+            </div><!-- /.box -->
+
+  <div class="row">
             <div class="col-xs-12">
               <div class="box box-info">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Recommended Affinities to Vans</h3>
+                  <i class="fa fa-bar-chart-o"></i>
+                  <h3 class="box-title">Saved Brands</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     <button class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -218,7 +241,7 @@
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <div class="row">
-                   <center>Here's a few more options we found based on what you've just searched for. All of these artists have similar characteristics, but might be a bit more budget friendly.</center>
+                      
                       
                     <div class="col-sm-4">
                       <center><h3><a href="">Bring Me The Horizon</a></h3></center><br>
@@ -230,13 +253,14 @@
                            <center>Lifetime Affinity</center><br>
                          <input type="text" class="knob" value="93" data-width="120" data-height="120" data-fgColor="#f56954">
                             <div class="knob-label"></div></div>
-            <center><button type="button" class="btn btn-default">View Profile</button><br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
+            <center><a href="artist-profile-brandview.html" class="btn btn-default" rule="button">View Profile</a>
+                        <br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
                     </div><!-- ./col -->
                       
                       
                       
                       <div class="col-sm-4">
-                      <center><h3><a href="">Rihanna</a></h3></center><br>
+                      <center><h3><a href="">Justin Bieber</a></h3></center><br>
                         <div class="col-sm-6">
                           <center>Current Affinity</center><br>
                       <input type="text" class="knob" value="84" data-width="120" data-height="120" data-fgColor="#00c0ef">
@@ -245,11 +269,12 @@
                            <center>Lifetime Affinity</center><br>
                          <input type="text" class="knob" value="79" data-width="120" data-height="120" data-fgColor="#00c0ef">
                             <div class="knob-label"></div></div>
-                          <center><button type="button" class="btn btn-default">View Profile</button><br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
+                          <center><a href="artist-profile-brandview.html" class="btn btn-default" rule="button">View Profile</a><br><br><button type="button" class="btn btn-default">Contact Artist</button>
+                          </center>
                       </div>
                           
                           <div class="col-sm-4">
-                      <center><h3><a href="">Justin Bieber</a></h3></center><br>
+                      <center><h3><a href="">Rihanna</a></h3></center><br>
                         <div class="col-sm-6">
                           <center>Current Affinity</center><br>
                       <input type="text" class="knob" value="70" data-width="120" data-height="120" data-fgColor="#f5efa1">
@@ -258,26 +283,27 @@
                            <center>Lifetime Affinity</center><br>
                          <input type="text" class="knob" value="75" data-width="120" data-height="120" data-fgColor="#f5efa1">
                             <div class="knob-label"></div></div>
-                              <center><button type="button" class="btn btn-default">View Profile</button><br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
+                              <center><a href="artist-profile-brandview.html" class="btn btn-default" rule="button">View Profile</a>
+                              <br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
                       </div>
                       
                   </div><!-- /.row -->
-                    
-                    <hr>
-                    
-           <div class="row">
-                    
-                <div class="col-sm-4">
+
+     <hr> <div class="row">
+                      
+                      
+                    <div class="col-sm-4">
                       <center><h3><a href="">Coldplay</a></h3></center><br>
                         <div class="col-sm-6">
                           <center>Current Affinity</center><br>
-                      <input type="text" class="knob" value="85" data-width="120" data-height="120" data-fgColor="#ffc356">
+                      <input type="text" class="knob" value="80" data-width="120" data-height="120" data-fgColor="#ffc356">
                             <div class="knob-label"></div></div>
                         <div class="col-sm-6">
                            <center>Lifetime Affinity</center><br>
-                         <input type="text" class="knob" value="93" data-width="120" data-height="120" data-fgColor="#ffc356">
+                         <input type="text" class="knob" value="83" data-width="120" data-height="120" data-fgColor="#ffc356">
                             <div class="knob-label"></div></div>
-            <center><button type="button" class="btn btn-default">View Profile</button><br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
+            <center><a href="artist-profile-brandview.html" class="btn btn-default" rule="button">View Profile</a>
+                        <br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
                     </div><!-- ./col -->
                       
                       
@@ -286,173 +312,62 @@
                       <center><h3><a href="">Wiz Khalifa</a></h3></center><br>
                         <div class="col-sm-6">
                           <center>Current Affinity</center><br>
-                      <input type="text" class="knob" value="84" data-width="120" data-height="120" data-fgColor="#7ddaba">
+                      <input type="text" class="knob" value="83" data-width="120" data-height="120" data-fgColor="#a889bd">
                             <div class="knob-label"></div></div>
                         <div class="col-sm-6">
                            <center>Lifetime Affinity</center><br>
-                         <input type="text" class="knob" value="79" data-width="120" data-height="120" data-fgColor="#7ddaba">
+                         <input type="text" class="knob" value="75" data-width="120" data-height="120" data-fgColor="#a889bd">
                             <div class="knob-label"></div></div>
-                          <center><button type="button" class="btn btn-default">View Profile</button><br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
+                          <center><a href="artist-profile-brandview.html" class="btn btn-default" rule="button">View Profile</a><br><br><button type="button" class="btn btn-default">Contact Artist</button>
+                          </center>
                       </div>
                           
                           <div class="col-sm-4">
                       <center><h3><a href="">Kanye</a></h3></center><br>
                         <div class="col-sm-6">
                           <center>Current Affinity</center><br>
-                      <input type="text" class="knob" value="70" data-width="120" data-height="120" data-fgColor="#a889bd">
+                      <input type="text" class="knob" value="69" data-width="120" data-height="120" data-fgColor="#7ddaba">
                             <div class="knob-label"></div></div>
                         <div class="col-sm-6">
                            <center>Lifetime Affinity</center><br>
-                         <input type="text" class="knob" value="75" data-width="120" data-height="120" data-fgColor="#a889bd">
+                         <input type="text" class="knob" value="72" data-width="120" data-height="120" data-fgColor="#7ddaba">
                             <div class="knob-label"></div></div>
-                              <center><button type="button" class="btn btn-default">View Profile</button><br><br><button type="button" class="btn btn-default">Contact Artist</button></center>
-                      </div>    
-                    
-                    </div><br><br>
-                    <center><button type="button" class="btn btn-primary">More Recommended Affinities</button></center>
-                  </div><!-- /.box body -->
-                  
-                </div></div></div>
-           
-           <div class="box box-default">
-              <div class="box-header with-border">
-                <h2 class="box-title">Download the Detailed Report</h2>
-                   </div>
-                   
-              <div class="box-body">
-                 <center><div class="row">
-               <div class="col-sm-3 col-sm-offset-2">
-                   <button type="button" class="btn btn-primary">Download PDF</button>
-                  </div>
-              <div class="col-sm-2">
-                   Or
-                  </div>
-            <div class="col-sm-3">
-                   <button type="button" class="btn btn-primary">Download Excel</button>
-                  </div></div><br>
-   <h3>Or Email me at</h3><br><br>
+                              <center><a href="artist-profile-brandview.html" class="btn btn-default" rule="button">View Profile</a>
+                              <br><br><button type="button" class="btn btn-default">Contact Artist</button>
+                              </center>
+                      </div>
+                      
+                  </div><!-- /.row -->   
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+            </div><!-- /.col -->
+          </div><!-- /.row --> 
 
-            <div class="row">
-            <div class="col-sm-4 col-sm-offset-2">
-                     <form role="form">
-            <div class="form-group">
-    <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            </form>  
-         </div> 
-                     
-            <div class="col-sm-2">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    File Name &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">File Name</a></li>
-    <li><a href="#">File Name</a></li>
-    <li><a href="#">File Name</a></li>
-    <li><a href="#">File Name</a></li>
-  </ul>
-            </div>
-                     
-            <div class="col-sm-2">
-                <button type="button" class="btn btn-default">Send Now</button>
-            </div>
-</div>
-                     
-            <div class="row">
-        <div class="col-sm-3 col-sm-offset-1">
-                <img src="img/synced_tick.png">Email Weekly Report
-                </div>
-                
-        <div class="col-sm-2">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    File Name &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">File Name</a></li>
-    <li><a href="#">File Name</a></li>
-    <li><a href="#">File Name</a></li>
-    <li><a href="#">File Name</a></li>
-  </ul>
-                </div>
- 
-                <div class="col-sm-2">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Day &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Day</a></li>
-    <li><a href="#">Day</a></li>
-    <li><a href="#">Day</a></li>
-    <li><a href="#">Day</a></li>
-  </ul>
-                </div>
-                     
-              <div class="col-sm-2">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Time &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Time</a></li>
-    <li><a href="#">Time</a></li>
-    <li><a href="#">Time</a></li>
-    <li><a href="#">Time</a></li>
-  </ul>
-                </div>
-                
-              <div class="col-sm-2">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Timezone &nbsp;<span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Timezone</a></li>
-    <li><a href="#">Timezone</a></li>
-    <li><a href="#">Timezone</a></li>
-    <li><a href="#">Timezone</a></li>
-  </ul>
-                </div>
-                    
-                     </div>
-
-</center><br>
-
-              </div><!-- /.box-body -->
-            </div><!-- /.box --> 
-           
            
            <div class="row">
-           <center><button type="button" class="btn btn-primary">Start New Search</button></center>
-           </div>
-           
-            </section></div></div>
-
+               <center><a href="brand-dashboard.html" class="btn btn-primary" rule="button">Go to Dashboard</a></center></div>
+            
+          </section><!-- /.content -->
+        </div><!-- /.container -->
+      </div><!-- /.content-wrapper -->
+        
+        
+        
+        
       <footer class="main-footer">
         <div class="container">
-          <div class="pull-right hidden-xs">
-          </div>
           <strong>Copyright &copy; 2016 <a href="http://cuttime.fm">cuttime.fm</a>.</strong> All rights reserved.
         </div><!-- /.container -->
       </footer>
     </div><!-- ./wrapper -->
-
-    <!-- jQuery 2.1.4 -->
-    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <!-- Bootstrap 3.3.5 -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- SlimScroll -->
-    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
-    <!-- FastClick -->
-    <script src="plugins/fastclick/fastclick.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/app.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
-        
-    <!-- jQuery Knob --> 
+     
+        <!-- jQuery Knob --> 
     <script src="plugins/knob/jquery.knob.js"></script>
-
-
-<script>
-         
+     
+     <script> 
+        
+      $(function () {
+          
         /* jQueryKnob */
 
         $(".knob").knob({
@@ -511,9 +426,13 @@
         });
         /* END JQUERY KNOB */          
           
+});
         
-    </script>
-
+      </script>   
+        
+        
+        
+        
       
   </body>
 </html>
