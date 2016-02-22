@@ -509,7 +509,7 @@
                 bgColor: this.$.data('bgcolor') || '#EEEEEE',
                 angleOffset: this.$.data('angleoffset') || 0,
                 angleArc: this.$.data('anglearc') || 360,
-                inline: true
+                inline: false
             }, this.o);
         };
 
