@@ -3328,7 +3328,7 @@ section * {
   margin-top: 36px;
 }
 .header-11-sub {
-  padding-top: 165px;
+  padding-top: 210px;
   padding-bottom: 110px;
   color: #bdc3c7;
   position: relative;
@@ -3336,7 +3336,7 @@ section * {
 .header-11-sub h3 {
   font-size: 33px;
   font-weight: normal;
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -3344,7 +3344,7 @@ section * {
 .header-11-sub p {
   font-size: 16px;
   font-weight: normal;
-  color: #3c5166;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .header-11-sub .additional-links {
@@ -3366,7 +3366,7 @@ section * {
   color: #16191c;
 }
 .header-11-sub .background {
-  background-image: url("../../../common-files/img/aspenbackground.png");
+  background-image: url("../../../common-files/img/forest-photo.jpg");
   opacity: 100;
   filter: alpha(opacity=10000);
   opacity: 1;
@@ -3374,12 +3374,12 @@ section * {
 }
 @media (max-width: 767px) {
   .header-11-sub .background {
-    background: #f6f6f2;
+    background-image: url("../../../common-files/img/forest-photo.jpg");
   }
 }
 @media (max-width: 767px) {
   .header-11-sub {
-    padding-top: 68px;
+    padding-top: 150px;
     padding-bottom: 70px;
   }
   .header-11-sub .player {
@@ -3388,13 +3388,13 @@ section * {
 }
 @media (max-width: 480px) {
   .header-11-sub {
-    padding-top: 68px;
+    padding-top: 150px;
     padding-bottom: 70px;
   }
   .header-11-sub h3 {
     font-size: 26px;
     font-weight: normal;
-    color: #2c3e50;
+    color: #ffffff;
   }
 }
 .header-11-sub .signup-form form {
