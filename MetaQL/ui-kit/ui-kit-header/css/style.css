@@ -3374,7 +3374,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-11-sub .background {
-    background: #f6f6f2;
+  background-image: url("../../../common-files/img/stream.jpg");
   }
 }
 @media (max-width: 767px) {
