@@ -782,12 +782,12 @@ section * {
   line-height: 1.6;
 }
 .contacts-2 a {
-  color: #1abc9c;
+  color: #46a5e4;
 }
 .contacts-2 a:hover,
 .contacts-2 a:focus,
 .contacts-2 a.active {
-  color: #15967d;
+  color: #008ae5;
 }
 .contacts-2 form {
   margin: 0;

@@ -3367,7 +3367,7 @@ section * {
   color: #16191c;
 }
 .header-11-sub .background, .header-1-sub .background {
-  background-image: url("../../../common-files/img/background.jpg");
+  background-image: url("../../../common-files/img/haley_background.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -3375,7 +3375,7 @@ section * {
 }
 @media (max-width: 767px) {
   .header-11-sub .background, ..header-1-sub .background {
-    background-image: url("../../../common-files/img/background.jpg");
+    background-image: url("../../../common-files/img/haley_background.jpg");
   }
 }
 @media (max-width: 767px) {
