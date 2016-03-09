@@ -1152,7 +1152,7 @@ label {
   color: #b2bcc5;
 }
 .form-control {
-  border: 2px solid #bdc3c7;
+  border: 2px solid #ffffff;
   color: #34495e;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -1168,7 +1168,7 @@ label {
 }
 .form-group.focus .form-control,
 .form-control:focus {
-  border-color: #1abc9c;
+  border-color: #2496e1;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
