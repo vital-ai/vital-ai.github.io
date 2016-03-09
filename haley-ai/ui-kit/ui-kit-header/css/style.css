@@ -847,7 +847,7 @@ section * {
 .header-1 .navbar {
   position: absolute;
   z-index: 2;
-  top: 0px;
+  top: 45px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -3341,11 +3341,12 @@ section * {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
-.header-11-sub p {
+.header-11-sub p, .header-1-sub p {
   font-size: 16px;
   font-weight: normal;
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.7 !important;
 }
 .header-11-sub .additional-links {
   opacity: 80;
@@ -3365,7 +3366,7 @@ section * {
 .header-11-sub .additional-links a.active {
   color: #16191c;
 }
-.header-11-sub .background {
+.header-11-sub .background, .header-1-sub .background {
   background-image: url("../../../common-files/img/background.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
@@ -3373,7 +3374,7 @@ section * {
   filter: alpha(opacity=75);
 }
 @media (max-width: 767px) {
-  .header-11-sub .background {
+  .header-11-sub .background, ..header-1-sub .background {
     background-image: url("../../../common-files/img/background.jpg");
   }
 }
