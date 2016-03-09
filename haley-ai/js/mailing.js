@@ -3,12 +3,15 @@
 
 var hostPort = 'dashboard.vital.ai';
 
+var protocol = 'https';
+
 if( window.location.hostname.indexOf('dev.') == 0) {
   //development URL
-  hostPort = 'localhost:8080'
+  hostPort = 'localhost:8080';
+  protocol = 'http';
 }
 
-var eburl = 'https://' + hostPort + '/eventbus';
+var eburl = protocol + '://' + hostPort + '/eventbus';
 
 console.log("EventBus URL:", eburl); 
 
@@ -24,9 +27,9 @@ function mailing_signup(email, successCallback, errorCallback) {
 	
 	console.log('signing up, email', email)
 	
-	eb.send('lili.mailing.signup', {email: email}, function(result) {
+	eb.send('haley.mailing.signup', {email: email}, function(result) {
 		
-		console.log('lili.mailing.signup result: ', result)
+		console.log('haley.mailing.signup result: ', result)
 		
 		if(result.status == 'ok') {
 			
@@ -47,9 +50,9 @@ function mailing_remove(email, code, successCallback, errorCallback) {
 	
 	console.log('remove, email', email)
 	
-	eb.send('lili.mailing.remove', {email: email, code: code}, function(result) {
+	eb.send('haley.mailing.remove', {email: email, code: code}, function(result) {
 		
-		console.log('lili.mailing.remove result: ', result)
+		console.log('haley.mailing.remove result: ', result)
 		
 		if(result.status == 'ok') {
 			
