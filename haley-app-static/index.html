@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" href="img/haley_favicon.ico">
     <title>Haley.ai | Interface</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -25,20 +26,24 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="hold-transition skin-blue layout-top-nav">
+  <!-- ADD THE CLASS sidedar-collapse TO HIDE THE SIDEBAR PRIOR TO LOADING THE SITE -->
+  <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">
+    <!-- Site wrapper -->
     <div class="wrapper">
 
       <header class="main-header">
-        <nav class="navbar navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-                
-                 <!-- Sidebar toggle button-->
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </a>
-                
+            
+            <div class="navbar-header">
               <a href="index2.html" class="navbar-brand"><img src="img/haleylogo_offwhite_normal.png" width="90px"></a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
@@ -49,7 +54,7 @@
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Interface<span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Admin</a></li>
+                <li><a href="#">Rules</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -73,114 +78,98 @@
               <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                   <!-- Messages: style can be found in dropdown.less-->
-                  <li class="dropdown messages-menu">
-                    <!-- Menu toggle button -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <i class="fa fa-envelope-o"></i>
-                      <span class="label label-success">4</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li class="header">You have 4 messages</li>
-                      <li>
-                        <!-- inner menu: contains the messages -->
-                        <ul class="menu">
-                          <li><!-- start message -->
-                            <a href="#">
-                              <div class="pull-left">
-                                <!-- User Image -->
-                                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                              </div>
-                              <!-- Message title and timestamp -->
-                              <h4>
-                                Support Team
-                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                              </h4>
-                              <!-- The message -->
-                              <p>Why not buy a new awesome theme?</p>
-                            </a>
-                          </li><!-- end message -->
-                        </ul><!-- /.menu -->
-                      </li>
-                      <li class="footer"><a href="#">See All Messages</a></li>
-                    </ul>
-                  </li><!-- /.messages-menu -->
-
-                  <!-- User Account Menu -->
-                  <li class="dropdown user user-menu">
-                    <!-- Menu Toggle Button -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <!-- The user image in the navbar-->
-                      <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                      <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                      <span class="hidden-xs">Alexander Pierce</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <!-- The user image in the menu -->
-                      <li class="user-header">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                        <p>
-                          Alexander Pierce - Web Developer
-                          <small>Member since Nov. 2012</small>
-                        </p>
-                      </li>
-                      <!-- Menu Body -->
-                      <li class="user-body">
-                        <div class="col-xs-4 text-center">
-                          <a href="#">Followers</a>
-                        </div>
-                        <div class="col-xs-4 text-center">
-                          <a href="#">Sales</a>
-                        </div>
-                        <div class="col-xs-4 text-center">
-                          <a href="#">Friends</a>
-                        </div>
-                      </li>
-                      <!-- Menu Footer-->
-                      <li class="user-footer">
-                        <div class="pull-left">
-                          <a href="#" class="btn btn-default btn-flat">Profile</a>
-                        </div>
-                        <div class="pull-right">
-                          <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                        </div>
-                      </li>
+                  
+                </ul>
+                    <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      <li><!-- start message -->
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          </div>
+                          <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                          </h4>
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li><!-- end message -->
                     </ul>
                   </li>
+                  <li class="footer"><a href="#">See All Messages</a></li>
                 </ul>
-                  
+              </li>
+
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Alexander Pierce</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      Alexander Pierce - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-clone"></i></a>
+              </li>
+            </ul>
               </div><!-- /.navbar-custom-menu -->
-          </div><!-- /.container-fluid -->
+            
+            
+
         </nav>
       </header>
-        
-        <!-- Left side column. contains the logo and sidebar -->
+
+      <!-- =============================================== -->
+
+      <!-- Left side column. contains the sidebar -->
       <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-          <!-- Sidebar user panel -->
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p>Alexander Pierce</p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>
-          <!-- search form -->
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-          </form>
-          <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">Channels</li>
-            <li class="active treeview">
+            <li class="header">CHANNELS</li>
+            <li class="treeview">
               <a href="#">
                 <i class="fa fa-home"></i> <span>House</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
@@ -208,74 +197,42 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-pie-chart"></i>
+                <i class="fa fa-bed"></i>
                 <span>Hotel</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-share"></i> <span>Multilevel</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
-                      <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Bed</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Toilet</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Kitchen</a></li>
                       </ul>
                     </li>
                   </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-              </ul>
-            </li>
-            <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-          </ul>
+
+           
         </section>
         <!-- /.sidebar -->
       </aside>
-      <!-- Full Width Column -->
+
+      <!-- =============================================== -->
+
+      <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-        <div class="container">
-          <!-- Content Header (Page header)
-          <section class="content-header">
-            <h1>
-              Top Navigation
-              <small>Example 2.0</small>
-            </h1>
-            <ol class="breadcrumb">
-              <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-              <li><a href="#">Layout</a></li>
-              <li class="active">Top Navigation</li>
-            </ol>
-          </section> -->
+        <!-- Content Header (Page header) -->
+    
 
           <!-- Main content -->
           <section class="content">
               
 <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                   <!-- DIRECT CHAT -->
                   <div class="box box-warning direct-chat direct-chat-warning">
                     <div class="box-header with-border">
-                      <h3 class="box-title">Chat</h3>
+                      <h3 class="box-title">Channel: MyHome</h3>
                       <div class="box-tools pull-right">
                         <span data-toggle="tooltip" title="3 New Cards" class="badge bg-yellow">3</span>
-                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+                        
                       </div>
                     </div><!-- /.box-header -->
                     <div class="box-body">
@@ -302,7 +259,7 @@
                             <span class="direct-chat-name pull-left">Haley</span>
                             <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="img/haley_icon.png" alt="message user image"><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
                             Hello! My name is Haley, how may I help you?
                           </div><!-- /.direct-chat-text -->
@@ -325,12 +282,69 @@
                             <span class="direct-chat-name pull-left">Haley</span>
                             <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="img/haley_icon.png" alt="message user image"><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
-                           Sure. Here it is. <br>
+                           Sure. Here it is.
+         <a href="#">
+                <i class="fa fa-star-o"></i> <span></span><br> 
+              </a>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188822.9742449608!2d-71.19758635331878!3d42.31354167787729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C+MA!5e0!3m2!1sen!2sus!4v1457987751939" width="625" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
                           </div><!-- /.direct-chat-text -->
                         </div><!-- /.direct-chat-msg -->
+                          
+                          
+                            <!-- Message to the right -->
+                        <div class="direct-chat-msg right">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-right">Alexander Pierce</span>
+                            <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="dist/img/user2-160x160.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            Turn on the lights.
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+                          
+                            <div class="direct-chat-msg">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">Lamp</span>
+                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="img/light.png" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                           Haley turned me on!
+
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+
+                          
+                          
+                                <!-- Message to the right -->
+                        <div class="direct-chat-msg right">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-right">Alexander Pierce</span>
+                            <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="dist/img/user2-160x160.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                            Play the Beatles.
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+                          
+                            <div class="direct-chat-msg">
+                          <div class="direct-chat-info clearfix">
+                            <span class="direct-chat-name pull-left">Speaker</span>
+                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                          </div><!-- /.direct-chat-info -->
+                          <img class="direct-chat-img" src="img/speaker.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <div class="direct-chat-text">
+                           I'm now streaming the Beatles.
+
+                          </div><!-- /.direct-chat-text -->
+                        </div><!-- /.direct-chat-msg -->
+
+                          
+                          
 
                         <!-- Message to the right -->
                         <div class="direct-chat-msg right">
@@ -350,9 +364,11 @@
                             <span class="direct-chat-name pull-left">Haley</span>
                             <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="img/haley_icon.png" alt="message user image"><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
-                           No problem, here you go!<br>
+                           No problem, here you go!<a href="#">
+                <i class="fa fa-star-o"></i> <span></span><br> 
+              </a><br>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380510.6841270589!2d-88.01303475826762!3d41.83390249552009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C+IL!5e0!3m2!1sen!2sus!4v1457987895788" width="625" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
                           </div><!-- /.direct-chat-text -->
                         </div><!-- /.direct-chat-msg -->
@@ -373,92 +389,17 @@
                             <span class="direct-chat-name pull-left">Haley</span>
                             <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                           </div><!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                          <img class="direct-chat-img" src="img/haley_icon.png" alt="message user image"><!-- /.direct-chat-img -->
                           <div class="direct-chat-text">
-                           It is currently raining, don't forget to bring your umbrella!
+                           It is currently raining, don't forget to bring your umbrella!<a href="#">
+                <i class="fa fa-star-o"></i> <span></span><br> 
+              </a><br>
 <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=42.3583&lon=-71.0603&name=New York City"> </iframe>
                           </div><!-- /.direct-chat-text -->
                         </div><!-- /.direct-chat-msg -->
 
                       </div><!--/.direct-chat-messages-->
 
-                      <!-- Contacts are loaded here -->
-                      <div class="direct-chat-contacts">
-                        <ul class="contacts-list">
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="dist/img/user1-128x128.jpg">
-                              <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Count Dracula
-                                  <small class="contacts-list-date pull-right">2/28/2015</small>
-                                </span>
-                                <span class="contacts-list-msg">How have you been? I was...</span>
-                              </div><!-- /.contacts-list-info -->
-                            </a>
-                          </li><!-- End Contact Item -->
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="dist/img/user7-128x128.jpg">
-                              <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Sarah Doe
-                                  <small class="contacts-list-date pull-right">2/23/2015</small>
-                                </span>
-                                <span class="contacts-list-msg">I will be waiting for...</span>
-                              </div><!-- /.contacts-list-info -->
-                            </a>
-                          </li><!-- End Contact Item -->
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="dist/img/user3-128x128.jpg">
-                              <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Nadia Jolie
-                                  <small class="contacts-list-date pull-right">2/20/2015</small>
-                                </span>
-                                <span class="contacts-list-msg">I'll call you back at...</span>
-                              </div><!-- /.contacts-list-info -->
-                            </a>
-                          </li><!-- End Contact Item -->
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="dist/img/user5-128x128.jpg">
-                              <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Nora S. Vans
-                                  <small class="contacts-list-date pull-right">2/10/2015</small>
-                                </span>
-                                <span class="contacts-list-msg">Where is your new...</span>
-                              </div><!-- /.contacts-list-info -->
-                            </a>
-                          </li><!-- End Contact Item -->
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="dist/img/user6-128x128.jpg">
-                              <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  John K.
-                                  <small class="contacts-list-date pull-right">1/27/2015</small>
-                                </span>
-                                <span class="contacts-list-msg">Can I take a look at...</span>
-                              </div><!-- /.contacts-list-info -->
-                            </a>
-                          </li><!-- End Contact Item -->
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="dist/img/user8-128x128.jpg">
-                              <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Kenneth M.
-                                  <small class="contacts-list-date pull-right">1/4/2015</small>
-                                </span>
-                                <span class="contacts-list-msg">Never mind I found...</span>
-                              </div><!-- /.contacts-list-info -->
-                            </a>
-                          </li><!-- End Contact Item -->
-                        </ul><!-- /.contatcts-list -->
-                      </div><!-- /.direct-chat-pane -->
                     </div><!-- /.box-body -->
                     <div class="box-footer">
                       <form action="#" method="post">
@@ -473,18 +414,34 @@
                   </div><!--/.direct-chat -->
                 </div><!-- /.col -->
 
+              </div><!-- /.row -->
+              
+              
+        
+              
+          </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+       <center> <strong>Copyright &copy; 2016 <a href="http://haley.ai">Haley.ai</a>.</strong></center>
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+      
     
-    
-    
-    
- <div class="col-sm-4">
-                  <!-- SAVED CARDS -->
-                  <div class="box box-warning direct-chat direct-chat-warning">
+          <!-- Home tab content -->
+
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                    <div class="col-sm-10 col-sm-offset-1">
+                    <div class="box box-warning direct-chat direct-chat-warning">
                     <div class="box-header with-border">
                       <h3 class="box-title">Saved Cards</h3>
                       <div class="box-tools pull-right">
                         <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
-                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                       </div>
                     </div><!-- /.box-header -->
                     <div class="box-body">
@@ -518,10 +475,6 @@
                           <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=42.3583&lon=-71.0603&name=New York City"> </iframe>
                       </div>
               
-
-                
-
-
                       </div><!--/.direct-chat-messages-->
                     </div><!-- /.box-body -->
                     <div class="box-footer">
@@ -530,21 +483,19 @@
                       </form>
                     </div><!-- /.box-footer-->
                   </div><!--/.direct-chat -->
-                </div><!-- /.col -->
+                    </div>
+                </a>
+              </li>
+              
+            </ul><!-- /.control-sidebar-menu -->
 
-              </div><!-- /.row -->
-              
-              
+         
+
         
-              
-          </section><!-- /.content -->
-        </div><!-- /.container -->
-      </div><!-- /.content-wrapper -->
-      <footer class="main-footer">
-        <div class="container">
-         <center><strong>Copyright &copy; 2016 haley.ai</strong></center>
-        </div><!-- /.container -->
-      </footer>
+      </aside><!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.4 -->
