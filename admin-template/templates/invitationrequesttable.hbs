@@ -1,0 +1,64 @@
+<div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Invitation Requests</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="col-lg-6" style="float:left">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+                    
+                    <div class="col-lg-6" align="right">
+              
+                        Show Entries: &nbsp;
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    10 <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">10</a></li>
+    <li><a href="#">25</a></li>
+    <li><a href="#">50</a></li>
+    <li><a href="#">100</a></li>
+  </ul>
+                        </div></div>
+<br><br><br>
+         
+                  <table class="table table-striped">
+                    <tr>
+                      <th style="width: 10px">Index</th>
+                      <th>Email</th>
+                      <th>Status</th>
+                      <th>Customer</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    {{#each items}}<tr>
+                    
+                      <td>{{index}}</td>
+                      <td>{{email}}</td>
+                      <td>{{status}}</td>
+                    <td>{{customer}}</td>
+                      <td>{{button}}</td>
+                        <td><button type="button" class="btn btn-success">Accept</button>&nbsp;
+<button type="button" class="btn btn-danger">Retire</button>&nbsp;
+                            <button type="button" class="btn btn-warning">Re-send</button>&nbsp;
+            <button type="button" class="btn btn-info">Details</button></td>
+                    </tr>{{/each}}
+                    
+                  </table>
+                 <hr>
+                    <center><ul class="pagination pagination-sm no-margin">
+                      <li><a href="#">&laquo;</a></li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul></center><br>
+                   
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->

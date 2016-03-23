@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link rel="shortcut icon" href="img/vital_favicon.ico">
-    <title>Vital AI | Products</title>
+    <title>Vital AI | Invitation Requests</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -92,11 +92,11 @@ var thecontentheader = JST['templates/contentheader.hbs'];
     
 
 var context={
-    "header": "Products",
-    "subheader": "Add Product",
+    "header": "Invitation Requests",
+    "subheader": "Add Invitation",
     "directory1": "Home",
-    "directory2": "Products",
-    "directory3": "Add Product",
+    "directory2": "Customers",
+    "directory3": "Add Customer",
   };
  
            
@@ -117,13 +117,13 @@ var context={
 <div class="content-placeholder-4"></div>
 
     
-<script id="add-product">
+<script id="add-invitationrequest">
 
-var theaddproduct = JST['templates/add-product.hbs'];
+var theaddinvitationrequest = JST['templates/add-invitationrequest.hbs'];
     
     
   // Pass our data to the template
-  var theCompiledHtml = theaddproduct(context);
+  var theCompiledHtml = theaddinvitationrequest(context);
   
     
   // Add the compiled html to the page

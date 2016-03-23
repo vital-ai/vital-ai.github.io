@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link rel="shortcut icon" href="img/vital_favicon.ico">
-    <title>Vital AI | Products</title>
+    <title>Vital AI | Invitation Requests</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -34,7 +34,7 @@
 <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-<script type='text/javascript' src='/js/templates.js'></script>        
+<script type='text/javascript' src='js/templates.js'></script>        
         
      <div class="content-placeholder-1"></div>
     
@@ -92,13 +92,11 @@ var thecontentheader = JST['templates/contentheader.hbs'];
     
 
 var context={
-    "header": "Products",
-    "subheader": "Add Product",
+    "header": "Admin",
+    "subheader": "Invitation Requests",
     "directory1": "Home",
-    "directory2": "Products",
-    "directory3": "Add Product",
+    "directory2": "Invitation Requests",
   };
- 
            
     
   // Pass our data to the template
@@ -116,14 +114,45 @@ var context={
             
 <div class="content-placeholder-4"></div>
 
+  
     
-<script id="add-product">
+    
+<script id="invitationrequest-table">
 
-var theaddproduct = JST['templates/add-product.hbs'];
+var theinvitationrequesttable = JST['templates/invitationrequesttable.hbs'];
     
+
+var context={
     
+    items: [
+        {index: "1",
+    email: "johnsmith@live.com",
+    status: "Active",
+    customer: "John Smith"
+  },
+    
+    {index: "2",
+    email: "samsmith@gmail.com",
+    status: "Active",
+    customer: "John Smith",
+  },
+        
+        {index: "3",
+    email: "paulsmith@live.com",
+    status: "Active",
+    customer: "Paul Smith"
+  },
+        
+        {index: "4",
+    email: "will@gmail.com",
+    status: "Active",
+    customer: "Will Smith"
+  }
+   ]
+};
+
   // Pass our data to the template
-  var theCompiledHtml = theaddproduct(context);
+  var theCompiledHtml = theinvitationrequesttable(context);
   
     
   // Add the compiled html to the page
