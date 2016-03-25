@@ -13,18 +13,25 @@
       </tr>
     </thead>
     <tbody>
-      {{#each items}}<tr>
-        <td>{{index}}</td>
-        <td>{{id}}</td>
-        <td>{{name}}</td>
-        <td>{{terms}}</td>
-        <td>{{startdate}}</td>
-        <td>{{enddate}}</td>
-        <td><a class="btn btn-info" href="#">Show More Details</a></td>
-      </tr>{{/each}}
+      {{#each items}}<tr class="accordion-toggle"  data-toggle="collapse" data-target="#collapse{{number}}">
+    <td>{{index}}</td>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{terms}}</td>
+    <td>{{startdate}}</td>
+    <td>{{enddate}}</td>
+</tr>
+      
+<tr>
+    <td></td>
+    <td colspan="6">
+        <div id="collapse{{number}}" class="collapse in">
+            Release Notes <br/>
+            {{notes}} <br/>
+        </div></td>
+</tr>{{/each}}
+
     </tbody>
   </table>
-    
-    
 </div>
 <br><br><br><br><br>

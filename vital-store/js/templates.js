@@ -43,25 +43,31 @@ this["JST"]["templates/myproductscontent.hbs"] = Handlebars.template({"1":functi
 this["JST"]["templates/myproductscontent2.hbs"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<tr>\n        <td>"
+  return "<tr class=\"accordion-toggle\"  data-toggle=\"collapse\" data-target=\"#collapse"
+    + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
+    + "\">\n    <td>"
     + alias4(((helper = (helper = helpers.index || (depth0 != null ? depth0.index : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"index","hash":{},"data":data}) : helper)))
-    + "</td>\n        <td>"
+    + "</td>\n    <td>"
     + alias4(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"id","hash":{},"data":data}) : helper)))
-    + "</td>\n        <td>"
+    + "</td>\n    <td>"
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "</td>\n        <td>"
+    + "</td>\n    <td>"
     + alias4(((helper = (helper = helpers.terms || (depth0 != null ? depth0.terms : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"terms","hash":{},"data":data}) : helper)))
-    + "</td>\n        <td>"
+    + "</td>\n    <td>"
     + alias4(((helper = (helper = helpers.startdate || (depth0 != null ? depth0.startdate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"startdate","hash":{},"data":data}) : helper)))
-    + "</td>\n        <td>"
+    + "</td>\n    <td>"
     + alias4(((helper = (helper = helpers.enddate || (depth0 != null ? depth0.enddate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"enddate","hash":{},"data":data}) : helper)))
-    + "</td>\n        <td><a class=\"btn btn-info\" href=\"#\">Show More Details</a></td>\n      </tr>";
+    + "</td>\n</tr>\n      \n<tr>\n    <td></td>\n    <td colspan=\"6\">\n        <div id=\"collapse"
+    + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
+    + "\" class=\"collapse in\">\n            Release Notes <br/>\n            "
+    + alias4(((helper = (helper = helpers.notes || (depth0 != null ? depth0.notes : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"notes","hash":{},"data":data}) : helper)))
+    + " <br/>\n        </div></td>\n</tr>";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "<br><br><br><br><br><br><br><br>\n\n<div class=\"container\">        \n  <table class=\"table table-hover\">\n    <thead>\n      <tr>\n        <th>Index</th>\n        <th>Product ID</th>\n        <th>Product Name</th>\n        <th>Terms</th>\n        <th>Subscription Start Date</th>\n        <th>Subscription End Date</th>\n      </tr>\n    </thead>\n    <tbody>\n      "
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n    </tbody>\n  </table>\n    \n    \n</div>\n<br><br><br><br><br>";
+    + "\n\n    </tbody>\n  </table>\n</div>\n<br><br><br><br><br>\n";
 },"useData":true});
 
 this["JST"]["templates/productscontent.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
