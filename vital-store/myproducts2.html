@@ -89,17 +89,59 @@ var context={};
             
          
         <div class="content-placeholder-2"></div>
-      <script id="home-content">
+      <script id="products-content2">
 
-var thehomecontent = JST['templates/homecontent.hbs'];
+var theproductscontent2 = JST['templates/myproductscontent2.hbs'];
     
 
-var context={};
+var context={
+    
+items: [
+        {index: "1",
+    id: "vdk-beta-1",
+    name: "Vital AI Development Kit",
+    terms: "Beta Subscription",
+    startdate: "1/19/2016 12:00pm",
+    enddate: "4/14/2016 12:00pm"
+  },
+    
+    {index: "Version",
+    id: "Release Notes",
+    name: "Download",
+    terms: "Documentation",
+    startdate: "Install",
+    enddate: "Uninstall"
+  },
+    
+    {index: "0.2.302",
+    id: "readme.txt",
+    name: "tar.gz | zip",
+    terms: "javadocs.zip",
+    startdate: ".sh",
+    enddate: ".sh"
+  },
+    
+    {index: "2",
+    id: "vital-utils-020",
+    name: "Vital AI Utilities",
+    terms: "Beta Subscription",
+    startdate: "-",
+    enddate: "-"
+  },
+        
+        {index: "3",
+    id: "vdk-beta-1",
+    name: "Vital AI Development Kit",
+    terms: "Beta Subscription",
+    startdate: "1/19/2016 12:00pm",
+    enddate: "4/14/2016 12:00pm"
+  }
+   ]
+};
 
-           
     
   // Pass our data to the template
-  var theCompiledHtml = thehomecontent(context);
+  var theCompiledHtml = theproductscontent2(context);
     
 
   // Add the compiled html to the page

@@ -568,8 +568,9 @@ fieldset[disabled] .btn {
   top: 2px;
 }
 .btn-default {
-  color: #ffffff;
-  background-color: #bdc3c7;
+  color: #bdc3c7;
+  background-color: #ffffff;
+  border: 2px solid;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -889,7 +890,7 @@ fieldset[disabled] .btn-link:focus {
   white-space: normal;
 }
 .btn-default .caret {
-  border-top-color: #ffffff;
+  border-top-color: #bdc3c7;
 }
 .btn-primary .caret,
 .btn-success .caret,

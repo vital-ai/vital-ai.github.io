@@ -17753,10 +17753,10 @@ body .colapsed-menu::-webkit-scrollbar {
   font-weight: 500;
   padding-right: 22px;
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: inherit;
   color: #919497;
   display: block;
-  border-right: 1px #272a2e solid;
+  border-right: 1px #919497 solid;
 }
 .dockbar .main-menu dl dd a:hover,
 .dockbar .main-menu dl dd a:focus,
@@ -17848,7 +17848,7 @@ body .colapsed-menu::-webkit-scrollbar {
   color: #1b1f23;
 }
 body {
-  padding-top: 112px;
+  padding-top: 70px;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

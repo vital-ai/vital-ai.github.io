@@ -89,9 +89,9 @@ var context={};
             
          
         <div class="content-placeholder-2"></div>
-      <script id="home-content">
+      <script id="products-content">
 
-var thehomecontent = JST['templates/homecontent.hbs'];
+var theproductscontent = JST['templates/productscontent.hbs'];
     
 
 var context={};
@@ -99,15 +99,15 @@ var context={};
            
     
   // Pass our data to the template
-  var theCompiledHtml = thehomecontent(context);
+  var theCompiledHtml = theproductscontent(context);
     
 
   // Add the compiled html to the page
   $('.content-placeholder-2').html(theCompiledHtml);
 
 </script>    
-                
-            
+
+        
      <div class="content-placeholder-3"></div>
       <script id="footer">
 
@@ -126,6 +126,7 @@ var context={};
   $('.content-placeholder-3').html(theCompiledHtml);
 
 </script>  
+
 
         </div>
 
