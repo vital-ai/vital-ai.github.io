@@ -9,14 +9,42 @@
     <tbody>
     {{#each gridrow}}
         <tr>
-            <td>{{col1}}</td>
-            <td>{{col2}}</td>
-            <td>{{col3}}</td>
+            <div class="plans"><td>
+                <div class="plan">
+                <div class="title">
+                <div class="img"><img src="{{col1.img}}" width="140" height="140" alt=""></div>
+                <div>{{col1.title}}</div>
+                </div>
+                <div>{{col1.description}}</div>
+                    <br><a class="btn btn-primary" href="#">Subscribe</a>   </div>
+            </td>
+                 
+                
+            <td><div class="plan">
+                <div class="title">
+                <div class="img"><img src="{{col2.img}}" width="140" height="140" alt=""></div>
+                <div>{{col2.title}}</div>
+                </div>
+                <div>{{col2.description}}</div>
+                    <br><a class="btn btn-primary" href="#">Subscribe</a>   </div></td>
+                
+                
+                
+                <td><div class="plan">
+                <div class="title">
+                <div class="img"><img src="{{col3.img}}" width="140" height="140" alt=""></div>
+                <div>{{col3.title}}</div>
+                </div>
+                <div>{{col3.description}}</div>
+                    <br><a class="btn btn-primary" href="#">Subscribe</a>   </div></td>
+            
+            
+            </div>
         </tr>
     {{/each}}
     </tbody>
 </table>
-{{/each}}
+    {{/each}}
             
             <div class="plans">
             <div class="plan">
