@@ -10,18 +10,70 @@
         <th>Terms</th>
         <th>Subscription Start Date</th>
         <th>Subscription End Date</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
-      {{#each items}}<tr>
-        <td>{{index}}</td>
-        <td>{{id}}</td>
-        <td>{{name}}</td>
-        <td>{{terms}}</td>
-        <td>{{startdate}}</td>
-        <td>{{enddate}}</td>
-        <td><a class="btn btn-info" href="#">Show More Details</a></td>
-      </tr>{{/each}}
+      {{#each items}}<tr class="accordion-toggle"  data-toggle="collapse" data-target="#collapse{{number}}">
+    <td>{{index}}</td>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{terms}}</td>
+    <td>{{startdate}}</td>
+    <td>{{enddate}}</td>
+    <td></td>
+    <td><button type="button" class="btn btn-info">Show Details</button></td>
+</tr>
+      
+<tr>
+    <td><div id="collapse{{number}}" class="collapse in">
+    Version<br/>
+            {{version}} <br/>
+    </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+            Release Notes <br/>
+            {{notes}} <br/>
+        </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+           Download <br/>
+            {{download}} <br/>
+        </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+            Documentation <br/>
+            {{documentation}} <br/>
+        </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+            Install <br/>
+            {{install}} <br/>
+        </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+            Uninstall <br/>
+            {{uninstall}} <br/>
+        </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+            License File<br/>
+            {{license}} <br/>
+        </div></td>
+    
+    <td>
+        <div id="collapse{{number}}" class="collapse in">
+            <button type="button" class="btn btn-info btn-sm">Product History<button type="button" class="btn btn-danger btn-sm">Cancel Subscription 
+        </div></td>
+    
+</tr>{{/each}}
 
     </tbody>
   </table>

@@ -89,40 +89,25 @@ var context={};
             
          
         <div class="content-placeholder-2"></div>
-      <script id="products-content">
+      <script id="mailinglist-content">
 
-var theproductscontent = JST['templates/productscontent.hbs'];
+var themailinglistcontent = JST['templates/mailinglistcontent.hbs'];
+    
 
-var context = {
-    grid: [{
-     
-        gridrow: [{
-            col1: 'a',
-            col2: 'b',
-            col3: 'c'
-        }, {
-            col1: 'd',
-            col2: 'e',
-            col3: 'f'
-        }, {
-            col1: 'g',
-            col2: 'h',
-            col3: 'i'
-        }]
-    }]
-};
+var context={};
 
+           
     
   // Pass our data to the template
-  var theCompiledHtml = theproductscontent(context);
+  var theCompiledHtml = themailinglistcontent(context);
     
 
   // Add the compiled html to the page
   $('.content-placeholder-2').html(theCompiledHtml);
 
 </script>    
-
-        
+                
+            
      <div class="content-placeholder-3"></div>
       <script id="footer">
 
@@ -141,7 +126,6 @@ var context={};
   $('.content-placeholder-3').html(theCompiledHtml);
 
 </script>  
-
 
         </div>
 

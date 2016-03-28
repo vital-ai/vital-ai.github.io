@@ -85,9 +85,9 @@ var context={};
   $('.content-placeholder-1').html(theCompiledHtml);
 
 </script>  
-            
-            
-         
+        
+      
+        
         <div class="content-placeholder-2"></div>
       <script id="products-content">
 
@@ -97,34 +97,59 @@ var theproductscontent = JST['templates/myproductscontent.hbs'];
 var context={
     
 items: [
-        {index: "1",
+        {
+    number: "One",
+    index: "1",
     id: "vdk-beta-1",
     name: "Vital AI Development Kit",
     terms: "Beta Subscription",
     startdate: "1/19/2016 12:00pm",
-    enddate: "4/14/2016 12:00pm"
-  },
+    enddate: "4/14/2016 12:00pm",
+    version: "0.2.302",
+    notes: "readme.txt",
+    download: "tar.gz | zip",
+    documentation: 	"javadocs.zip",
+    install: ".sh",
+    uninstall: ".sh",
+    license: ".lic"
+  },  
     
-    {index: "2",
+    {
+    number: "Two",
+    index: "2",
     id: "vital-utils-020",
     name: "Vital AI Utilities",
     terms: "Beta Subscription",
     startdate: "-",
-    enddate: "-"
+    enddate: "-",
+    version: "0.2.301",
+    notes: "readme.txt",
+    download: "tar.gz | zip",
+    documentation: 	"javadocs.zip",
+    install: ".sh",
+    uninstall: ".sh",
+    license: ".lic"
   },
         
-        {index: "3",
+        {
+    number: "Three",
+    index: "3",
     id: "vdk-beta-1",
     name: "Vital AI Development Kit",
     terms: "Beta Subscription",
     startdate: "1/19/2016 12:00pm",
-    enddate: "4/14/2016 12:00pm"
+    enddate: "4/14/2016 12:00pm",
+    version: "0.2.301",
+    notes: "readme.txt",
+    download: "tar.gz | zip",
+    documentation: 	"javadocs.zip",
+    install: ".sh",
+    uninstall: ".sh",
+    license: ".lic"
   }
    ]
 };
 
-
-           
     
   // Pass our data to the template
   var theCompiledHtml = theproductscontent(context);

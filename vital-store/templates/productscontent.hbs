@@ -1,7 +1,23 @@
 <!-- price-3 --> 
             <a name="products"></a>
       <section class="price-3">
+ 
         <div class="container">
+                     
+         {{#each grid}}
+<table>
+    <tbody>
+    {{#each gridrow}}
+        <tr>
+            <td>{{col1}}</td>
+            <td>{{col2}}</td>
+            <td>{{col3}}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+{{/each}}
+            
             <div class="plans">
             <div class="plan">
               <div class="title">
