@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="common-files/css/icon-font.css">
         <!-- end -->
         <link rel="stylesheet" href="common-files/css/animations.css">
+        <link rel="stylesheet" href="common-files/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="common-files/js/jquery-1.10.2.min.js"></script>
         
         <!-- If you don't use any of these blocks just remove unnecessary CSS files -->
         <!-- blog -->
@@ -35,8 +38,6 @@
         <!-- projects -->
         <link rel="stylesheet" href="ui-kit/ui-kit-projects/css/style.css">
 
-        <link rel="stylesheet" href="css/style.css">
-
 <script type="text/javascript">
         
           var _gaq = _gaq || [];
@@ -50,173 +51,81 @@
           })();
         
         </script>
+  </head>
 
-    </head>
-
-    <body>
-        
-        <div class="page-wrapper">   
-
-        <a name="home"></a>
-            
-
-<!-- header-1 -->
-        <header class="header-1">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar col-sm-12 navbar-fixed-top" role="navigation" style="display: none;">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle"></button>
-                            <a class="brand" href="http://vital.ai/"><img src="img/vitalai_offwhite.png" height="50" alt=""></a>
-                         
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav pull-right">
-                                <li>
-                                    <a href="#">HOME</a>
-			      </li>
-			      
-			      
-			      <li>
-                                    <a href="#">PRODUCTS</a>
-                              </li>
-
-				<li>
-                                    <a href="#">MYPRODUCTS</a>
-                                </li>
-                           
-                                <li>
-                                    <a href="#">MYACCOUNT</a>
-                                </li>
-                                <li>
-                                    <a href="http://vital-ai.github.io/vital-documentation/index.html">DOCUMENTATION</a>
-                                </li>
-                                <li>
-                                    <a href="#">MAILING LIST</a>
-                                </li>
-                               
-                                <li> <form class="navbar-form pull-left">
-                  <a class="btn btn-primary" href="#">LOG IN</a>
-                </form></li>
-
-                            </ul>
-                            
-                           <!-- <ul class="subnav">
-                                
-                                
-                                <li>
-                                    <a target=_blank
-                                    href="http://vital-ai.github.io/vital-documentation/">Documentation</a>
-                                </li>
-                                <li>
-                                    <a href="http://vital.ai/site/terms-of-service.html">Terms of Service</a>
-                                </li>
-                                <li>
-                                    <a href="http://vital.ai/site/privacy-policy.html">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="https://dashboard.vital.ai/mailingAdd.html">Mailing List Management</a>
-                                </li>
-                            </ul> -->
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-            
-        <section class="header-1-sub" style="height: 0px; overflow: hidden;">
-           
-            <div id="pt-main" class="page-transitions pt-perspective">
-            </div>
-           
-        </section>
-        
-        <!-- fake section displayed underneath the floating nav bar when scroll-y=0 -->
-        <section style="height: 76px; overflow: hidden; background-color: rgb(54, 57, 64);">
-        </section>
-        
-            <!-- content-2 -->
-      <section class="content-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <h3>Vital AI Development Kit</h3>
-              <p>The Vital AI Development Kit (VDK) provides a suite of software to streamline the flow of data across your application architecture and integrate with analytical frameworks using the Vital Service API. The key tool is VitalSigns, which provides a consistent data model used by all software modules.
-              </p>
-              <div class="btns">
-                <a class="btn btn-primary" href="#">Subscribe</a>
-                <a href="#"><b>Learn More</b></a>
-              </div>
-            </div>
-            <div class="col-sm-5 col-sm-offset-1">
-              <img src="img/vdk_cube.png" width="380px">
-            </div>
-          </div>
-        </div>
-      </section>
-            
-            
-            
-            
-<footer class="footer-10">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <nav>
-                    <h6>Vital AI</h6>
-                    <ul>
-                        <li><a href="http://vital.ai/#tech">Tech</a></li>
-                        <li><a target=_blank href="http://vitalai.com">Blog: http://vitalai.com</a></li>
-                        <li><a href="http://vital.ai/#team">Team</a></li>
-                        <li><a href="http://vital.ai/#join">Join Us</a></li>
-                        <li><a href="http://vital.ai/#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-                <nav>
-                    <h6>Products &amp; Services</h6>
-                    <ul>
-                        <li><a href="http://vital.ai/#product">Development Kit</a></li>
-                        <li><a href="http://vital.ai/#product">App Platform</a></li>
-                        <li><a href="http://vital.ai/#product">App Platform + Source</a></li>
-                        <li><a href="http://vital.ai/#data-science-services">Data Science</a></li>
-                        <li><a href="http://vital.ai/#software-development">Software Development</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="col-sm-3 col-sm-offset-2">
-                <nav>
-                    <h6>Resources</h6>
-                    <ul>
-                        <li><a target=_blank
-                href="http://vital-ai.github.io/vital-documentation/">Documentation</a></li>
-		      <li><a target=_blank
-		      href="http://support.vital.ai">Support Forum</a></li>
-		      <li><a target=_blank
-		      href="http://vital.ai/discussion-list.html">Discussion List</a></li>
-                        <li><a href="http://vital.ai/site/terms-of-service.html">Terms of Service</a></li>
-                        <li><a href="http://vital.ai/site/privacy-policy.html">Privacy Policy</a></li>
-                        <!-- <li><a target=_blank href="login.html">Customer Portal Login</a></li> -->
-                        <li><a
-                href="https://dashboard.vital.ai/mailingAdd.html">Manage Mailing List Membership</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-   
     
-</footer>
+    
+<div class="page-wrapper">
 
+   
+<script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script type='text/javascript' src='js/templates.js'></script> 
+            
 
+    <body>     
+      
+<div class="content-placeholder-1"></div>
+    
+<script id="header2">
 
+var theheader2 = JST['templates/header2.hbs'];
+    
 
+var context={};
+ 
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = theheader2(context);
+    
 
+  // Add the compiled html to the page
+  $('.content-placeholder-1').html(theCompiledHtml);
 
+</script>  
+            
+            
+         
+        <div class="content-placeholder-2"></div>
+      <script id="home-content">
+
+var thehomecontent = JST['templates/homecontent.hbs'];
+    
+
+var context={};
+
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = thehomecontent(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-2').html(theCompiledHtml);
+
+</script>    
+                
+            
+     <div class="content-placeholder-3"></div>
+      <script id="footer">
+
+var thefooter = JST['templates/footer.hbs'];
+    
+
+var context={};
+
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = thefooter(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-3').html(theCompiledHtml);
+
+</script>  
 
         </div>
 
