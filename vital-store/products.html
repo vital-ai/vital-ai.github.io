@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="common-files/css/animations.css">
         <link rel="stylesheet" href="common-files/css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-fix.css">
     <script src="common-files/js/jquery-1.10.2.min.js"></script>
         
         <!-- If you don't use any of these blocks just remove unnecessary CSS files -->
@@ -70,6 +71,7 @@
     
 <script id="header">
 
+
 var theheader = JST['templates/header.hbs'];
     
 
@@ -116,18 +118,72 @@ var context = {
             }, },
                   
         {
-            col1: 'd',
-            col2: 'e',
-            col3: 'f'
+            col1: {
+            	img: 'img/vitalutilities.png',
+            	title: 'Vital Utilities',
+            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            },
+            col2: {
+            	img: 'img/vitalcytoscape.png',
+            	title: 'Vital Cytoscape',
+            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            },
+            col3: {
+            	img: 'img/vitaldynamodb.png',
+            	title: 'Vital Dynamodb',
+            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            }
         }, {
-            col1: 'g',
-            col2: 'h',
-            col3: 'i'
+            col1: {
+            	img: 'img/vitalprime.png',
+            	title: 'Vital Prime',
+            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            },
+            col2: {
+            	img: 'img/vitalsparql.png',
+            	title: 'Vital Sparql',
+            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            },
+            col3: {
+            	img: 'img/vitalsql.png',
+            	title: 'Vital SQL',
+            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+            }
+        }, {
+        	col1: {
+        		img: 'img/vitalvertx.png',
+        		title: 'Vital Vert.x',
+        		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        	}, 
+        	col2: {
+        		img: 'img/vitalgroovy.png',
+        		title: 'Vital Groovy',
+        		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        	},
+        	col3: {
+        		img: 'img/vitaljs.png',
+        		title: 'Vital JS',
+        		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        	}
         }]
     }]
 };
-
     
+  //just create simple list of products
+  context.grid2 = [];
+  for(var i = 0 ; i < context.grid.length; i++) {
+	  var gridRowObj = context.grid[i];
+	  var gridrow = gridRowObj.gridrow;
+	  for(var j = 0 ; j < gridrow.length; j++) {
+		  var row = gridrow[j];
+		  //3 col objects
+		  context.grid2.push(row.col1);
+		  context.grid2.push(row.col2);
+		  context.grid2.push(row.col3);
+	  }
+  }
+  
+  console.log('grid2', context.grid2);
   // Pass our data to the template
   var theCompiledHtml = theproductscontent(context);
     

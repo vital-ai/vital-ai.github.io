@@ -1,0 +1,91 @@
+/* fixes collapsible table rows */
+tr.collapse.in { 
+	display: table-row;
+}
+
+/*
+tr.collapsing {
+	  -webkit-transition: height 3.5s ease;
+          transition: height 3.5s ease;
+} 
+*/
+
+.myproduct-table-row {
+	display: block; 
+	width: 100%;
+} 
+.myproduct-table-row td {
+	padding: 8px;
+}
+
+.responsive .product {
+	height: 460px;
+	margin-bottom: 40px;	
+}
+
+.responsive .product {
+	text-align: center;
+    color: #bdc3c7;
+    font-size: 18px;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.product:nth-child(2) {
+		border-left: 2px solid #e5e5e5;
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.product:nth-child(3n-1) {
+		border-left: 2px solid #e5e5e5;
+		border-right: 2px solid #e5e5e5;
+	}
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.product:nth-child(4n-2) {
+		border-left: 2px solid #e5e5e5;
+		border-right: 2px solid #e5e5e5;
+	}
+	.product:nth-child(4n-1) {
+		border-right: 2px solid #e5e5e5;
+	}
+}
+
+.responsive .product b {
+	color: #7f8c8d;
+    font-weight: 500;
+}
+
+.responsive .product .description {
+	margin: 30px 0 35px;
+    line-height: 28px;
+}
+
+.responsive .product > * {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.responsive .product .btn {
+   min-width: 170px;
+   font-weight: 500;
+}
+
+.responsive .product .title {
+	color: #2c3e50;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}

@@ -15,7 +15,7 @@
       </tr>
     </thead>
     <tbody>
-      {{#each items}}<tr class="accordion-toggle"  data-toggle="collapse" data-target="#collapse{{number}}">
+    {{#each items}}<tr class="accordion-toggle">
     <td>{{index}}</td>
     <td>{{id}}</td>
     <td>{{name}}</td>
@@ -23,56 +23,62 @@
     <td>{{startdate}}</td>
     <td>{{enddate}}</td>
     <td></td>
-    <td><button type="button" class="btn btn-info">Show Details</button></td>
-</tr>
-      
-<tr>
-    <td><div id="collapse{{number}}" class="collapse in">
+    <td><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse{{number}}">Show Details</button></td>
+  </tr>
+
+  <!-- make it a nested table -->      
+  <tr id="collapse{{number}}" class="panel-collapse collapse">
+    <td colspan="8">
+	<table class="myproduct-table-row"><tr>
+    <td><div>
     Version<br/>
             {{version}} <br/>
     </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
             Release Notes <br/>
             {{notes}} <br/>
         </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
            Download <br/>
             {{download}} <br/>
         </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
             Documentation <br/>
             {{documentation}} <br/>
         </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
             Install <br/>
             {{install}} <br/>
         </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
             Uninstall <br/>
             {{uninstall}} <br/>
         </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
             License File<br/>
             {{license}} <br/>
         </div></td>
     
     <td>
-        <div id="collapse{{number}}" class="collapse in">
+        <div>
             <a href="producthistory.html" type="button" class="btn btn-info btn-sm" role="button">Product History</a><button type="button" class="btn btn-danger btn-sm">Cancel Subscription 
         </div></td>
     
+    </tr>
+    </table>
+    </td>
 </tr>{{/each}}
 
     </tbody>
