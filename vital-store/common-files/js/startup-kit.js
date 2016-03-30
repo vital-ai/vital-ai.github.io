@@ -56,7 +56,8 @@ $(function () {
             $('body > .colapsed-menu').addClass('show-menu');
             if($('#header-dockbar').length) {
                  $('body > .colapsed-menu').css({
-                    top: $('#header-dockbar').height()
+                	//DK disabled top offset 
+                    //top: $('#header-dockbar').height()
                 });
             }
             setTimeout(function() {
@@ -128,7 +129,8 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             $('.navbar-collapse#' + headerClass.substr(1)).removeClass('collapse');
             if($('#header-dockbar').length) {
                 $('.navbar-collapse#' + headerClass.substr(1)).css({
-                    top: $('#header-dockbar').height()
+                	//DK disabled top offset 
+                    //top: $('#header-dockbar').height()
                 });
             }
             setTimeout(function() {
