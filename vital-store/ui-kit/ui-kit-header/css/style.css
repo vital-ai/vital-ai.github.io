@@ -890,7 +890,7 @@ section * {
   color: rgba(0, 0, 0, 0.4);
 }
 .header-1 .navbar .nav > li.active > a {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(63,191,127,0.7);
 }
 .header-1 .navbar .nav > li.active > a:hover,
 .header-1 .navbar .nav > li.active > a:focus,
