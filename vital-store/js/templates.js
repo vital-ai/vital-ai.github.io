@@ -37,9 +37,9 @@ this["JST"]["templates/myproductscontent.hbs"] = Handlebars.template({"1":functi
     + alias4(((helper = (helper = helpers.enddate || (depth0 != null ? depth0.enddate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"enddate","hash":{},"data":data}) : helper)))
     + "</td>\n    <td></td>\n    <td><button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#collapse"
     + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
-    + "\">Show Details</button></td>\n  </tr>\n\n  <!-- make it a nested table -->      \n  <tr id=\"collapse"
+    + "\">Show Details</button></td>\n  </tr>\n\n  <!-- make it a nested table -->      \n  <tr>\n    <td class=\"details-cell\" colspan=\"8\">\n    <div id=\"collapse"
     + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
-    + "\" class=\"panel-collapse collapse\">\n    <td colspan=\"8\">\n	<table class=\"myproduct-table-row\"><tr>\n    <td><div>\n    Version<br/>\n            "
+    + "\" class=\"panel-collapse collapse\" style=\"height: 0px;\">\n	<table class=\"myproduct-table-row\"><tr>\n    <td><div>\n    Version<br/>\n            "
     + alias4(((helper = (helper = helpers.version || (depth0 != null ? depth0.version : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"version","hash":{},"data":data}) : helper)))
     + " <br/>\n    </div></td>\n    \n    <td>\n        <div>\n            Release Notes <br/>\n            "
     + alias4(((helper = (helper = helpers.notes || (depth0 != null ? depth0.notes : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"notes","hash":{},"data":data}) : helper)))
@@ -53,11 +53,11 @@ this["JST"]["templates/myproductscontent.hbs"] = Handlebars.template({"1":functi
     + alias4(((helper = (helper = helpers.uninstall || (depth0 != null ? depth0.uninstall : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"uninstall","hash":{},"data":data}) : helper)))
     + " <br/>\n        </div></td>\n    \n    <td>\n        <div>\n            License File<br/>\n            "
     + alias4(((helper = (helper = helpers.license || (depth0 != null ? depth0.license : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"license","hash":{},"data":data}) : helper)))
-    + " <br/>\n        </div></td>\n    \n    <td>\n        <div>\n            <a href=\"producthistory.html\" type=\"button\" class=\"btn btn-info btn-sm\" role=\"button\">Product History</a><button type=\"button\" class=\"btn btn-danger btn-sm\">Cancel Subscription \n        </div></td>\n    \n    </tr>\n    </table>\n    </td>\n</tr>";
+    + " <br/>\n        </div></td>\n    \n    <td style=\"width: 200px;\">\n        <div style=\"text-align: center;\">\n            <a href=\"producthistory.html\" type=\"button\" class=\"btn btn-info btn-sm\" role=\"button\">Product History</a> <button type=\"button\" class=\"btn btn-danger btn-sm\">Cancel Subscription</button> \n        </div></td>\n    \n    </tr>\n    </table>\n    </div>\n    </td>\n</tr>";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<br><br><br><br><br><br><br><br>\n\n<div class=\"container\">        \n  <table class=\"table table-hover\">\n    <thead>\n      <tr>\n        <th>Index</th>\n        <th>Product ID</th>\n        <th>Product Name</th>\n        <th>Terms</th>\n        <th>Subscription Start Date</th>\n        <th>Subscription End Date</th>\n        <th></th>\n        <th></th>\n      </tr>\n    </thead>\n    <tbody>\n    "
+  return "<br><br><br><br><br><br><br><br>\n\n<div class=\"container\">        \n  <table class=\"myproducts table table-hover\">\n    <thead>\n      <tr>\n        <th>Index</th>\n        <th>Product ID</th>\n        <th>Product Name</th>\n        <th>Terms</th>\n        <th>Subscription Start Date</th>\n        <th>Subscription End Date</th>\n        <th></th>\n        <th></th>\n      </tr>\n    </thead>\n    <tbody>\n    "
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n\n    </tbody>\n  </table>\n</div>\n<br><br><br><br><br>\n";
 },"useData":true});
@@ -89,77 +89,21 @@ this["JST"]["templates/producthistorycontent.hbs"] = Handlebars.template({"1":fu
 },"useData":true});
 
 this["JST"]["templates/productscontent.hbs"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<table>\n    <tbody>\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.gridrow : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </tbody>\n</table>\n";
-},"2":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
-
-  return "        <tr>\n            <div class=\"plans\"><td>\n                <div class=\"plan\">\n                <div class=\"title\">\n                <div class=\"img\"><img src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col1 : depth0)) != null ? stack1.img : stack1), depth0))
-    + "\" width=\"140\" height=\"140\" alt=\"\"></div>\n                <div>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col1 : depth0)) != null ? stack1.title : stack1), depth0))
-    + "</div>\n                </div>\n                <div>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col1 : depth0)) != null ? stack1.description : stack1), depth0))
-    + "</div>\n                    <br><a class=\"btn btn-primary\" href=\"#\">Subscribe</a>   </div>\n            </td>\n                 \n                \n            <td><div class=\"plan\">\n                <div class=\"title\">\n                <div class=\"img\"><img src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col2 : depth0)) != null ? stack1.img : stack1), depth0))
-    + "\" width=\"140\" height=\"140\" alt=\"\"></div>\n                <div>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col2 : depth0)) != null ? stack1.title : stack1), depth0))
-    + "</div>\n                </div>\n                <div>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col2 : depth0)) != null ? stack1.description : stack1), depth0))
-    + "</div>\n                    <br><a class=\"btn btn-primary\" href=\"#\">Subscribe</a>   </div></td>\n                \n                \n                \n                <td><div class=\"plan\">\n                <div class=\"title\">\n                <div class=\"img\"><img src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col3 : depth0)) != null ? stack1.img : stack1), depth0))
-    + "\" width=\"140\" height=\"140\" alt=\"\"></div>\n                <div>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col3 : depth0)) != null ? stack1.title : stack1), depth0))
-    + "</div>\n                </div>\n                <div>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col3 : depth0)) != null ? stack1.description : stack1), depth0))
-    + "</div>\n                    <br><a class=\"btn btn-primary\" href=\"#\">Subscribe</a>   </div></td>\n            \n            \n            </div>\n        </tr>\n";
-},"4":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "\n			<div class=\"product col-xs-12 col-sm-6 col-md-4 col-lg-3\">\n				<div class=\"img\">\n					<img src=\""
     + alias4(((helper = (helper = helpers.img || (depth0 != null ? depth0.img : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"img","hash":{},"data":data}) : helper)))
-    + "\" width=\"140\" height=\"140\" alt=\"\">\n				</div>\n				<div class=\"title\">\n					<br> "
+    + "\" width=\"140\" height=\"140\" alt=\"\">\n				</div>\n				<div class=\"title\">\n					<br><span title=\""
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n				</div>\n				<div class=\"description\">\n					"
+    + "\">"
+    + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "</span>\n				</div>\n				<div class=\"description dot-ellipsis dot-resize-update\">\n					"
     + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper)))
-    + " <br> <b>unlimited</b> data <br> <b>unlimited</b>\n					users\n				</div>\n				<a class=\"btn btn-primary\" href=\"#\">Subscribe</a>\n			</div>\n			\n";
-},"6":function(container,depth0,helpers,partials,data) {
+    + "\n				</div>\n				<a class=\"btn btn-primary\" href=\"#\">Subscribe</a>\n			</div>\n			\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.gridrow : depth0),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"7":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
-
-  return "		<br><br><br>\n            <div class=\"plans\">\n            <div class=\"plan\">\n              <div class=\"title\">\n                <div class=\"img\">\n                  <img src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col1 : depth0)) != null ? stack1.img : stack1), depth0))
-    + "\" width=\"140\" height=\"140\" alt=\"\">\n                </div><br>\n                "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col1 : depth0)) != null ? stack1.title : stack1), depth0))
-    + "\n              </div>\n              <div class=\"description\">\n                "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col1 : depth0)) != null ? stack1.description : stack1), depth0))
-    + "\n                <br>\n                <b>unlimited</b> data\n                <br>\n                <b>unlimited</b> users\n              </div>\n              <a class=\"btn btn-primary\" href=\"#\">Subscribe</a>\n            </div>\n            <div class=\"plan plan-2\">\n              <div class=\"title\">\n                <div class=\"img\">\n                  <img src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col2 : depth0)) != null ? stack1.img : stack1), depth0))
-    + "\" width=\"140\" height=\"140\" alt=\"\">\n                </div><br>\n                "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col2 : depth0)) != null ? stack1.title : stack1), depth0))
-    + "\n              </div>\n              <div class=\"description\">\n                "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col2 : depth0)) != null ? stack1.description : stack1), depth0))
-    + "\n                <br>\n                <b>unlimited</b> data\n                <br>\n                <b>unlimited</b> users\n              </div>\n              <a class=\"btn btn-primary\" href=\"#\">Subscribe</a>\n            </div>\n            <div class=\"plan\">\n              <div class=\"title\">\n                <div class=\"img\">\n                  <img src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col3 : depth0)) != null ? stack1.img : stack1), depth0))
-    + "\" width=\"140\" height=\"140\" alt=\"\">\n                </div><br>\n                "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col3 : depth0)) != null ? stack1.title : stack1), depth0))
-    + "\n              </div>\n              <div class=\"description\">\n                "
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.col3 : depth0)) != null ? stack1.description : stack1), depth0))
-    + " \n                <br>\n                <b>unlimited</b> data\n                <br>\n                <b>unlimited</b> users\n              </div>\n              <a class=\"btn btn-primary\" href=\"#\">Subscribe</a>\n            </div>\n        </div>\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {};
-
-  return "<!-- price-3 --> \n            <a name=\"products\"></a>\n      <section class=\"price-3\">\n \n        <div class=\"container\">\n                     \n                     <h3 style=\"margin: 30px;\">Broken</h3>\n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.grid : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        \n        \n    <h3 style=\"margin: 30px;\">fully responsive</h3>\n    \n    <div class=\"row responsive\">\n    \n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.grid2 : depth0),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </div>\n            \n            \n    <h3 style=\"margin: 30px;\">Fixed 3 columns</h3>\n    \n"
-    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.grid : depth0),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </div>\n        <!--/.container-->\n      </section>";
+  return "<!-- price-3 --> \n<a name=\"products\"></a>\n<section class=\"price-3\">\n \n<div class=\"container\">\n                     \n    <!-- <h3 style=\"margin: 30px;\">fully responsive</h3> -->\n    \n    <div class=\"row responsive\">\n    \n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.grid : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "    </div>\n            \n</div>\n<!--/.container-->\n</section>";
 },"useData":true});

@@ -1,7 +1,7 @@
 <br><br><br><br><br><br><br><br>
 
 <div class="container">        
-  <table class="table table-hover">
+  <table class="myproducts table table-hover">
     <thead>
       <tr>
         <th>Index</th>
@@ -27,8 +27,9 @@
   </tr>
 
   <!-- make it a nested table -->      
-  <tr id="collapse{{number}}" class="panel-collapse collapse">
-    <td colspan="8">
+  <tr>
+    <td class="details-cell" colspan="8">
+    <div id="collapse{{number}}" class="panel-collapse collapse" style="height: 0px;">
 	<table class="myproduct-table-row"><tr>
     <td><div>
     Version<br/>
@@ -71,13 +72,14 @@
             {{license}} <br/>
         </div></td>
     
-    <td>
-        <div>
-            <a href="producthistory.html" type="button" class="btn btn-info btn-sm" role="button">Product History</a><button type="button" class="btn btn-danger btn-sm">Cancel Subscription 
+    <td style="width: 200px;">
+        <div style="text-align: center;">
+            <a href="producthistory.html" type="button" class="btn btn-info btn-sm" role="button">Product History</a> <button type="button" class="btn btn-danger btn-sm">Cancel Subscription</button> 
         </div></td>
     
     </tr>
     </table>
+    </div>
     </td>
 </tr>{{/each}}
 

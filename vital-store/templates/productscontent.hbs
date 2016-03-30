@@ -1,69 +1,24 @@
 <!-- price-3 --> 
-            <a name="products"></a>
-      <section class="price-3">
+<a name="products"></a>
+<section class="price-3">
  
-        <div class="container">
+<div class="container">
                      
-                     <h3 style="margin: 30px;">Broken</h3>
-         {{#each grid}}
-<table>
-    <tbody>
-    {{#each gridrow}}
-        <tr>
-            <div class="plans"><td>
-                <div class="plan">
-                <div class="title">
-                <div class="img"><img src="{{col1.img}}" width="140" height="140" alt=""></div>
-                <div>{{col1.title}}</div>
-                </div>
-                <div>{{col1.description}}</div>
-                    <br><a class="btn btn-primary" href="#">Subscribe</a>   </div>
-            </td>
-                 
-                
-            <td><div class="plan">
-                <div class="title">
-                <div class="img"><img src="{{col2.img}}" width="140" height="140" alt=""></div>
-                <div>{{col2.title}}</div>
-                </div>
-                <div>{{col2.description}}</div>
-                    <br><a class="btn btn-primary" href="#">Subscribe</a>   </div></td>
-                
-                
-                
-                <td><div class="plan">
-                <div class="title">
-                <div class="img"><img src="{{col3.img}}" width="140" height="140" alt=""></div>
-                <div>{{col3.title}}</div>
-                </div>
-                <div>{{col3.description}}</div>
-                    <br><a class="btn btn-primary" href="#">Subscribe</a>   </div></td>
-            
-            
-            </div>
-        </tr>
-    {{/each}}
-    </tbody>
-</table>
-    {{/each}}
-        
-        
-    <h3 style="margin: 30px;">fully responsive</h3>
+    <!-- <h3 style="margin: 30px;">fully responsive</h3> -->
     
     <div class="row responsive">
     
-		{{#each grid2}}
+		{{#each grid}}
 
 			<div class="product col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="img">
 					<img src="{{img}}" width="140" height="140" alt="">
 				</div>
 				<div class="title">
-					<br> {{title}}
+					<br><span title="{{title}}">{{title}}</span>
 				</div>
-				<div class="description">
-					{{description}} <br> <b>unlimited</b> data <br> <b>unlimited</b>
-					users
+				<div class="description dot-ellipsis dot-resize-update">
+					{{description}}
 				</div>
 				<a class="btn btn-primary" href="#">Subscribe</a>
 			</div>
@@ -71,64 +26,6 @@
 		{{/each}}
     </div>
             
-            
-    <h3 style="margin: 30px;">Fixed 3 columns</h3>
-    
-	{{#each grid}}
-    	{{#each gridrow}}
-		<br><br><br>
-            <div class="plans">
-            <div class="plan">
-              <div class="title">
-                <div class="img">
-                  <img src="{{col1.img}}" width="140" height="140" alt="">
-                </div><br>
-                {{col1.title}}
-              </div>
-              <div class="description">
-                {{col1.description}}
-                <br>
-                <b>unlimited</b> data
-                <br>
-                <b>unlimited</b> users
-              </div>
-              <a class="btn btn-primary" href="#">Subscribe</a>
-            </div>
-            <div class="plan plan-2">
-              <div class="title">
-                <div class="img">
-                  <img src="{{col2.img}}" width="140" height="140" alt="">
-                </div><br>
-                {{col2.title}}
-              </div>
-              <div class="description">
-                {{col2.description}}
-                <br>
-                <b>unlimited</b> data
-                <br>
-                <b>unlimited</b> users
-              </div>
-              <a class="btn btn-primary" href="#">Subscribe</a>
-            </div>
-            <div class="plan">
-              <div class="title">
-                <div class="img">
-                  <img src="{{col3.img}}" width="140" height="140" alt="">
-                </div><br>
-                {{col3.title}}
-              </div>
-              <div class="description">
-                {{col3.description}} 
-                <br>
-                <b>unlimited</b> data
-                <br>
-                <b>unlimited</b> users
-              </div>
-              <a class="btn btn-primary" href="#">Subscribe</a>
-            </div>
-        </div>
-		{{/each}}
-    {{/each}}
-        </div>
-        <!--/.container-->
-      </section>
+</div>
+<!--/.container-->
+</section>

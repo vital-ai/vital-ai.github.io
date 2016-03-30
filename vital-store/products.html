@@ -60,6 +60,7 @@
 
    
 <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type='text/javascript' src='js/jquery.dotdotdot-1.8.1.min.js'></script> 
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script type='text/javascript' src='js/templates.js'></script> 
@@ -95,95 +96,70 @@ var context={};
 
 var theproductscontent = JST['templates/productscontent.hbs'];
 
+//context is just the source data, the grid is a presentation layer, the data should be raw
 var context = {
     grid: [{
-     
-        gridrow: [{
-            col1: {
-                 img: 'img/vdk.png',
-                 title: 'Vital AI Development Kit',
-                 description: 'Use the Vital AI Development Kit (VDK) to rapidly build Intelligent Applications.'
-            },
-            
-            col2: {
-                 img: 'img/aspen.png',
-                 title: 'Aspen',
-                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-            },
-            
-            col3: {
-                 img: 'img/aspendatascripts.png',
-                 title: 'Aspen DataScripts',
-                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
-            }, },
-                  
-        {
-            col1: {
-            	img: 'img/vitalutilities.png',
-            	title: 'Vital Utilities',
-            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-            },
-            col2: {
-            	img: 'img/vitalcytoscape.png',
-            	title: 'Vital Cytoscape',
-            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-            },
-            col3: {
-            	img: 'img/vitaldynamodb.png',
-            	title: 'Vital Dynamodb',
-            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-            }
-        }, {
-            col1: {
-            	img: 'img/vitalprime.png',
-            	title: 'Vital Prime',
-            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-            },
-            col2: {
-            	img: 'img/vitalsparql.png',
-            	title: 'Vital Sparql',
-            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-            },
-            col3: {
-            	img: 'img/vitalsql.png',
-            	title: 'Vital SQL',
-            	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-            }
-        }, {
-        	col1: {
-        		img: 'img/vitalvertx.png',
-        		title: 'Vital Vert.x',
-        		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        	}, 
-        	col2: {
-        		img: 'img/vitalgroovy.png',
-        		title: 'Vital Groovy',
-        		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        	},
-        	col3: {
-        		img: 'img/vitaljs.png',
-        		title: 'Vital JS',
-        		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
-        	}
-        }]
+		img: 'img/vdk.png',
+        title: 'Vital AI Development Kit',
+        description: 'Use the Vital AI Development Kit (VDK) to rapidly build Intelligent Applications. Use the Vital AI Development Kit (VDK) to rapidly build Intelligent Applications. Use the Vital AI Development Kit (VDK) to rapidly build Intelligent Applications. Use the Vital AI Development Kit (VDK) to rapidly build Intelligent Applications. Use the Vital AI Development Kit (VDK) to rapidly build Intelligent Applications.'
+	},
+    {
+		img: 'img/aspen.png',
+        title: 'Aspen',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+	},
+    {
+    	img: 'img/aspendatascripts.png',
+        title: 'Aspen DataScripts',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+	},
+	{
+    	img: 'img/vitalutilities.png',
+		title: 'Vital Utilities',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+	},
+    {
+    	img: 'img/vitalcytoscape.png',
+        title: 'Vital Cytoscape',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+	},
+	{
+		img: 'img/vitaldynamodb.png',
+		title: 'Vital Dynamodb',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+	},
+	{
+    	img: 'img/vitalprime.png',
+    	title: 'Vital Prime',
+    	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+    },
+    {
+    	img: 'img/vitalsparql.png',
+		title: 'Vital Sparql',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+	},
+    {
+    	img: 'img/vitalsql.png',
+    	title: 'Vital SQL',
+    	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+    },
+    {
+		img: 'img/vitalvertx.png',
+        title: 'Vital Vert.x',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+	}, 
+    {
+    	img: 'img/vitalgroovy.png',
+        title: 'Vital Groovy',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+	},
+	{
+		img: 'img/vitaljs.png',
+		title: 'Vital JS',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
     }]
 };
     
-  //just create simple list of products
-  context.grid2 = [];
-  for(var i = 0 ; i < context.grid.length; i++) {
-	  var gridRowObj = context.grid[i];
-	  var gridrow = gridRowObj.gridrow;
-	  for(var j = 0 ; j < gridrow.length; j++) {
-		  var row = gridrow[j];
-		  //3 col objects
-		  context.grid2.push(row.col1);
-		  context.grid2.push(row.col2);
-		  context.grid2.push(row.col3);
-	  }
-  }
-  
-  console.log('grid2', context.grid2);
   // Pass our data to the template
   var theCompiledHtml = theproductscontent(context);
     
