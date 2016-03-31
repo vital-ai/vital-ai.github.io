@@ -881,6 +881,12 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.083;
   border-radius: 3px;
 }
+.btn-xxs {
+  padding: 4px 6px;
+  font-size: 10px;
+  line-height: 1;
+  border-radius: 2px;
+}
 .btn-tip {
   font-weight: 300;
   padding-left: 10px;

@@ -51,9 +51,9 @@ this["JST"]["templates/myproductscontent.hbs"] = Handlebars.template({"1":functi
     + alias4(((helper = (helper = helpers.startdate || (depth0 != null ? depth0.startdate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"startdate","hash":{},"data":data}) : helper)))
     + "</td>\n    <td>"
     + alias4(((helper = (helper = helpers.enddate || (depth0 != null ? depth0.enddate : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"enddate","hash":{},"data":data}) : helper)))
-    + "</td>\n    <td></td>\n    <td><button type=\"button\" class=\"btn btn-info\" data-toggle=\"collapse\" data-target=\"#collapse"
+    + "</td>\n    <td></td>\n    <td><button type=\"button\" class=\"btn btn-primary btn-xs\" data-toggle=\"collapse\" data-target=\"#collapse"
     + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
-    + "\">Show Details</button></td>\n  </tr>\n\n  <!-- make it a nested table -->      \n  <tr>\n    <td class=\"details-cell\" colspan=\"8\">\n    <div id=\"collapse"
+    + "\" >Show Details</button></td>\n  </tr>\n\n  <!-- make it a nested table -->      \n  <tr>\n    <td class=\"details-cell\" colspan=\"8\">\n    <div id=\"collapse"
     + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
     + "\" class=\"panel-collapse collapse\" style=\"height: 0px;\">\n	<table class=\"myproduct-table-row\"><tr>\n    <td><div>\n    Version<br/>\n            "
     + alias4(((helper = (helper = helpers.version || (depth0 != null ? depth0.version : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"version","hash":{},"data":data}) : helper)))
@@ -69,7 +69,7 @@ this["JST"]["templates/myproductscontent.hbs"] = Handlebars.template({"1":functi
     + alias4(((helper = (helper = helpers.uninstall || (depth0 != null ? depth0.uninstall : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"uninstall","hash":{},"data":data}) : helper)))
     + " <br/>\n        </div></td>\n    \n    <td>\n        <div>\n            License File<br/>\n            "
     + alias4(((helper = (helper = helpers.license || (depth0 != null ? depth0.license : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"license","hash":{},"data":data}) : helper)))
-    + " <br/>\n        </div></td>\n    \n    <td style=\"width: 200px;\">\n        <div style=\"text-align: center;\">\n            <a href=\"producthistory.html\" type=\"button\" class=\"btn btn-info btn-sm\" role=\"button\">Product History</a> <button type=\"button\" class=\"btn btn-danger btn-sm\">Cancel Subscription</button> \n        </div></td>\n    \n    </tr>\n    </table>\n    </div>\n    </td>\n</tr>";
+    + " <br/>\n        </div></td>\n    \n    <td style=\"width: 260px;\">\n        <div style=\"text-align: center;\">\n            <a href=\"producthistory.html\" type=\"button\" class=\"btn btn-info btn-xxs\" role=\"button\">Product History</a> <button type=\"button\" class=\"btn btn-danger btn-xxs\">Cancel Subscription</button> \n        </div></td>\n    \n    </tr>\n    </table>\n    </div>\n    </td>\n</tr>";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 

@@ -17585,6 +17585,7 @@ body .colapsed-menu::-webkit-scrollbar {
   overflow: visible;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .dockbar.navbar-fixed-top .colapsed-menu {
   display: none;
 }
