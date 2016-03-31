@@ -16895,7 +16895,7 @@ body {
   }
   .dockbar .menu-btn span {
     content: '';
-    background-image: url("../../../common-files/icons/menu-icon@2x.png");
+    background-image: url("../common-files/icons/menu-icon@2x.png");
     -webkit-background-size: 17px 12px;
     -moz-background-size: 17px 12px;
     -o-background-size: 17px 12px;
