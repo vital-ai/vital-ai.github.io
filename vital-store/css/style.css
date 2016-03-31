@@ -16895,7 +16895,7 @@ body {
   }
   .dockbar .menu-btn span {
     content: '';
-    background-image: url("../common-files/icons/menu-icon@2x.png");
+    background-image: url("../common-files/icons/menu-icon-header-17@2x.png");
     -webkit-background-size: 17px 12px;
     -moz-background-size: 17px 12px;
     -o-background-size: 17px 12px;
@@ -16978,7 +16978,7 @@ body {
 .dockbar .main-menu dl dd a:hover,
 .dockbar .main-menu dl dd a:focus,
 .dockbar .main-menu dl dd a.active {
-  color: #ffffff;
+  color: #696969;
 }
 .dockbar .main-menu dl dd a.active {
   text-decoration: none;
@@ -17039,16 +17039,16 @@ body .colapsed-menu dl dd dd {
 body .colapsed-menu dl dd > a {
   display: block;
   padding: 0 0 0 35px;
-  color: #5b5e61;
+  color: #7f8c8d;
 }
 body .colapsed-menu dl dd > a:hover,
 body .colapsed-menu dl dd > a:focus,
 body .colapsed-menu dl dd > a.active {
-  color: #ffffff;
+  color: #566263;
 }
 body .colapsed-menu dl dd > a.active {
   text-decoration: none;
-  color: white;
+  color: #566263;
 }
 body .colapsed-menu dl dd > a.active:after {
   display: none;
@@ -17574,6 +17574,7 @@ body .colapsed-menu::-webkit-scrollbar {
   -moz-transition: z-index 4s ease 0s;
   -o-transition: z-index 4s ease 0s;
   transition: z-index 4s ease 0s;
+  position: fixed; 
   display: block;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -17761,11 +17762,11 @@ body .colapsed-menu::-webkit-scrollbar {
 .dockbar .main-menu dl dd a:hover,
 .dockbar .main-menu dl dd a:focus,
 .dockbar .main-menu dl dd a.active {
-  color: #ffffff;
+  color: #595959;
 }
 .dockbar .main-menu dl dd a.active {
   text-decoration: none;
-  color: white;
+  color: #696969;
 }
 .dockbar .sub-menu {
   background-color: #ebebeb;
