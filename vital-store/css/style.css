@@ -17763,10 +17763,12 @@ body .colapsed-menu::-webkit-scrollbar {
 .dockbar .main-menu dl dd a:focus,
 .dockbar .main-menu dl dd a.active {
   color: #595959;
+  font-weight: bold;
 }
 .dockbar .main-menu dl dd a.active {
   text-decoration: none;
   color: #696969;
+  font-weight:bold;
 }
 .dockbar .sub-menu {
   background-color: #ebebeb;
