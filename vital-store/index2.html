@@ -37,9 +37,7 @@
         <link rel="stylesheet" href="ui-kit/ui-kit-price/css/style.css">
         <!-- projects -->
         <link rel="stylesheet" href="ui-kit/ui-kit-projects/css/style.css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        
+
 <script type="text/javascript">
         
           var _gaq = _gaq || [];
@@ -127,7 +125,27 @@ var context={};
   // Add the compiled html to the page
   $('.content-placeholder-3').html(theCompiledHtml);
 
+</script> 
+        
+        <div class="content-placeholder-4"></div>
+      <script id="login">
+
+var thelogin = JST['templates/login.hbs'];
+    
+
+var context={};
+
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = thelogin(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-4').html(theCompiledHtml);
+
 </script>  
+
 
         </div>
 
