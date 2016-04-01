@@ -56,16 +56,20 @@ tr.collapsing {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) /*and (max-width: 1199px)*/ {
 	
 	.product:nth-child(3n-1) {
 		border-left: 2px solid #e5e5e5;
-		border-right: 2px solid #e5e5e5;
+	}
+	
+	.product:nth-child(3n-0) {
+		border-left: 2px solid #e5e5e5;
 	}
 	
 }
 
 /* Large devices (large desktops, 1200px and up) */
+/* 4 columns only
 @media (min-width: 1200px) { 
 	.product:nth-child(4n-2) {
 		border-left: 2px solid #e5e5e5;
@@ -75,6 +79,7 @@ tr.collapsing {
 		border-right: 2px solid #e5e5e5;
 	}
 }
+*/
 
 .responsive .product b {
 	color: #7f8c8d;
