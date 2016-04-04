@@ -126,7 +126,27 @@ var context={};
   $('.content-placeholder-3').html(theCompiledHtml);
 
 </script> 
+        
+        <div class="content-placeholder-4"></div>
+      <script id="login">
+
+var thelogin = JST['templates/login.hbs'];
     
+
+var context={};
+
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = thelogin(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-4').html(theCompiledHtml);
+
+</script>  
+
+
         </div>
 
         <!-- Placed at the end of the document so the pages load faster -->
