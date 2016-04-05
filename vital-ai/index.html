@@ -57,195 +57,93 @@
         
         <div class="page-wrapper">   
 
-        <a name="home"></a>
+<script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script type='text/javascript' src='js/templates.js'></script> 
             
+      <div class="content-placeholder-1"></div>
+    
+<script id="header">
 
-<!-- header-1 -->
-        <header class="header-1">
-            <div class="container">
-                <div class="row">
-                    <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle"></button>
-                            <a class="brand" href="#home"><img src="img/vitalai_offwhite.png" height="50" width="200" alt=""></a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav pull-right">
-                                <li>
-                                    <a href="#home">HOME</a>
-			      </li>
-
-<li>
-                                    <a href="#solutions">SOLUTIONS</a>
-			      </li>
-
-				<li>
-                                    <a href="pages/tech.html">TECH</a>
-                                </li>
-                                
-<li>
-                                    <a href="pages/about-us.html">ABOUT US</a>
-			      </li>
-                           
-                                <li>
-                                    <a target=_blank href="http://vital-ai.github.io/vital-documentation/">DOCUMENTATION</a>
-                                </li>
-
-                                <li>
-                                    <a target=_blank href="http://vitalai.com">BLOG</a>
-                                </li>
-<li>
-                                    <a href="http://vital-ai.github.io/vital-store/index2.html">CONSOLE</a>
-                                </li>
-                               <li style="max-width:110px">
-                                   <form class="navbar-form pull-left">
-                  <a class="btn btn-primary" href="http://vital-ai.github.io/vital-store/signup.html">SIGN UP</a>
-                </form>
-                                </li>
-                                <li> <form class="navbar-form pull-left">
-                  <a class="btn btn-info" href="http://vital-ai.github.io/vital-store/index.html">&nbsp;&nbsp;LOG IN&nbsp;&nbsp;</a>
-                </form></li>
-
-
-                            </ul>
-                            <ul class="subnav">
-                                
-                                
-                                <li>
-                                    <a target=_blank
-                                    href="http://vital-ai.github.io/vital-documentation/">Documentation</a>
-                                </li>
-                                <li>
-                                    <a href="terms-of-service.html">Terms of Service</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="mailing-list-management.html">Mailing List Management</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-            
-            
-<section class="header-1-sub">
-            <div id="pt-main" class="page-transitions pt-perspective">
-                <div class="pt-page pt-page-1">
-                    <div class="background">
-                        &nbsp;
-                    </div>
-                    <div class="caption">
-                        <div class="container col-sm-6 col-sm-offset-4">
-                            
-                            <div class="hero-unit">
-                                <h3>Vital A.I. Consulting Services</h3>
-                            </div>    
-
-                            <p class="lead">Application Development.  Artificial Intelligence. Predictive Analytics.  Data Science.  Data Governance.
-<br> Our Team will help you launch Intelligent, Data-Driven Applications.</p>
-
-                        </div>
-
-                    </div>
+var theheader = JST['templates/header.hbs'];
     
 
-                </div>
-                <div class="pt-page pt-page-2">
-                    <div class="background">
-                        &nbsp;
-                    </div>
-                    <div class="caption">
-                <div class="container col-sm-7 col-sm-offset-4">
+var context={};
+    
+  // Pass our data to the template
+  var theCompiledHtml = theheader(context);
+    
 
+  // Add the compiled html to the page
+  $('.content-placeholder-1').html(theCompiledHtml);
 
-                            <div class="hero-unit">
-                                <h3>Vital A.I. Development Toolkit (VDK)</h3>
-                            </div>
-
-                            <p class="lead">Use the Vital A.I. Development Kit (VDK) to rapidly build Intelligent Applications. <br>Download the VDK today!</p>                        
-                        </div>
-                    </div>
-
-                            
-
-                </div>
-                <div class="pt-page pt-page-3">
-                    <div class="background">
-                        &nbsp;
-                    </div>
-                    <div class="caption">
-
-                        <div class="container col-sm-7 col-sm-offset-4">
-                            <div class="hero-unit">
-                                <h3>Apache Spark and Hadoop</h3>
-                            </div>
-                        <p class="lead">Let us help you utilize Apache Spark for lightning-fast data processing. 
-<img src="img/spark-logo.png" alt="Spark Logo" style="width:220px;height:117px;" align="right">
-
-</p>
-                        </div>
-                       
-                        
-                    </div>
-                </div>
-                <div class="container controls">
-
-
-                    <a class="control-prev" href="#"><span class="fui-arrow-left"> </span></a>
-                    <a class="control-next" href="#"><span class="fui-arrow-right"> </span></a>
-
-                    
-
-                </div>
-            </div>
+</script>        
+     
+               <!-- fake section displayed underneath the floating nav bar when scroll-y=0 -->
+        <section style="height: 70px; overflow: hidden; background-color: rgb(54, 57, 64);">
         </section>
 
+      <div class="content-placeholder-2"></div>
+    
+<script id="banner">
+
+var thebanner = JST['templates/banner.hbs'];
+    
+
+var context={};
+    
+  // Pass our data to the template
+  var theCompiledHtml = thebanner(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-2').html(theCompiledHtml);
+
+</script> 
             
-<section class="content-11 subscribe-form">
-    <div class="container">
-        <div class="row" style="">
-            <div class="col-sm-4 signup-els" style="line-height: 60px;">
-                <span>Find out more about Vital AI!</span>
-            </div>
-            <div class="col-sm-4 signup-els" style="line-height: 60px;">
-                <input id="input-email" class="signup-form" placeholder="Enter your e-mail" spellcheck="false" type="text" />
-            </div>
-            <div class="col-sm-3 signup-els" style="line-height: 60px;">
-                <button id="signup" type="button" class="btn btn-large btn-primary signup-form">Join our mailing list!</button>
-            </div>
-            <div class="col-sm-12 text-success" id="signup-success" style="display: none;">
-              Thanks for joining the mailing list!
-            </div>
-            <div class="col-sm-12 text-danger" id="signup-error" style="display: none;">
-              ERROR!
-            </div>
-        </div>
-    </div>
 
+                <!-- fake section displayed underneath the floating nav bar when scroll-y=0 -->
+        <section style="height: 0px; overflow: hidden; background-color: rgb(54, 57, 64);">
+        </section> 
 
-</section>
+<div class="content-placeholder-3"></div>
+    
+<script id="joinmailinglist">
 
-<a name="download"></a>
-    <section class="content-36">
-    <div class="container">
-        <h2>Download the Vital AI Development Kit (VDK) today!<br>Start building Intelligent Applications.</h2>
-        <a class="btn btn-success" target=_blank
-    href="https://dashboard.vital.ai">Download: Vital AI Development Kit</a>
-        <p>Vital AI Development Kit, Beta Release</p> <br><br><p>The Beta Program includes:</p><br>
-        Database Connections: Vital SQL, Vital SPARQL, Vital DynamoDB<br>
-Apache Spark: Aspen (Machine Learning on Spark)<br>
-Application Infrastructure: Vital Prime<br>
-Web Application Development: Vital JavaScript, Vital VertX<br>
-Visualization: Cytoscape Plugin<br>
-JVM Scripting: Groovy<br>
-      Plus: Sample Code, Documentation, and Utilities<br><br>
-          <p>The free Beta Program is available until April 15, 2016 with ongoing releases.</p>
-    </div>
-</section>
+var thejoinmailinglist = JST['templates/joinmailinglist.hbs'];
+    
+
+var context={};
+    
+  // Pass our data to the template
+  var theCompiledHtml = thejoinmailinglist(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-3').html(theCompiledHtml);
+
+</script>
+
+<div class="content-placeholder-4"></div>
+    
+<script id="downloadvdk">
+
+var thedownloadvdk = JST['templates/downloadvdk.hbs'];
+    
+
+var context={};
+    
+  // Pass our data to the template
+  var theCompiledHtml = thedownloadvdk(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-4').html(theCompiledHtml);
+
+</script>
+            
+            
             
 <a name="solutions"></a>
             
@@ -389,61 +287,25 @@ Use data model in ongoing production data analytics jobs</p>
     <!--/.container-->
 </section>
             
-            <footer class="footer-10">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <nav>
-                    <h6>Vital AI</h6>
-                    <ul>
-                        <li><a href="pages/tech.html">Tech</a></li>
-                        <li><a href="pages/about-us.html">About Us</a></li>
-                        <li><a href="pages/about-us.html#contact">Contact</a></li>
-<li><a target=_blank href="http://vitalai.com">Blog: http://vitalai.com</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-                <nav>
-                    <h6>Products &amp; Services</h6>
-                    <ul>
-                        <li><a href="#download">Development Kit</a></li>
-                        <li><a href="#product">Software Development</a></li>
-                        <li><a href="#product">Data Science</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="col-sm-3 col-sm-offset-2">
-                <nav>
-                    <h6>Resources</h6>
-                    <ul>
-                        <li><a target=_blank
-                href="http://vital-ai.github.io/vital-documentation/">Documentation</a></li>
-		      <li><a target=_blank
-		      href="http://support.vital.ai">Support Forum</a></li>
-		      <li><a target=_blank
-		      href="discussion-list.html">Discussion List</a></li>
-                        <li><a href="site/terms-of-service.html">Terms of Service</a></li>
-                        <li><a href="site/privacy-policy.html">Privacy Policy</a></li>
-                        <!-- <li><a target=_blank href="login.html">Customer Portal Login</a></li> -->
-                        <li><a
-                href="https://dashboard.vital.ai/mailingAdd.html">Manage Mailing List Membership</a></li>
-                    </ul>
-                </nav>
-            </div>
-           <center> Copyright © 2016 Vital AI, LLC </center>
-        </div>
-    </div>
-   
+<div class="content-placeholder-10"></div>
     
-</footer>
+<script id="footer">
 
+var thefooter = JST['templates/footer.hbs'];
+    
 
+var context={};
+ 
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = thefooter(context);
+    
 
+  // Add the compiled html to the page
+  $('.content-placeholder-10').html(theCompiledHtml);
 
-
-
+</script>  
 
         </div>
 

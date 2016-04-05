@@ -106,7 +106,6 @@ p {
 
   font-weight: 300;
   margin-bottom: 20px;
-  text-align: center;
 }
 small {
   font-size: 84%;
@@ -990,18 +989,17 @@ section * {
  * Content 4 stylesheet  
  * */
 .content-4 {
-  padding-top: 50px;
+  padding-top: 130px;
   padding-bottom: 120px;
   position: relative;
 }
 .content-4 h3 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 24px;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 300;
 }
 .content-4 p {
   font-size: 16px;
@@ -1056,13 +1054,13 @@ section * {
  * Content 5 stylesheet  
  * */
 .content-5 {
-  padding-top: 50px;
+  padding-top: 130px;
   padding-bottom: 120px;
   position: relative;
 }
 .content-5 .container > img {
   display: block;
-  margin: 50px auto 20px;
+  margin: 0 auto 50px;
 }
 .content-5 h3 {
   margin: 0 0 21px;
@@ -1078,7 +1076,7 @@ section * {
   }
 }
 .content-5 h3 + .lead {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal;
   color: #7f8c8d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1115,7 +1113,7 @@ section * {
   }
 }
 .content-5 .features > [class*="col-sm-"] p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
 }
@@ -2079,17 +2077,17 @@ section * {
  * Content 15 stylesheet  
  * */
 .content-15 {
-  padding-top: 50px;
+  padding-top: 125px;
   padding-bottom: 130px;
   position: relative;
 }
 .content-15 h3 {
   margin-bottom: 68px;
-  font-size: 32px;
+  font-size: 37px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 50px;
   text-align: center;
 }
@@ -4271,8 +4269,8 @@ section * {
 }
 .content-32 {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 100px;
+  padding-top: 160px;
+  padding-bottom: 155px;
   text-align: center;
   background: #f2f2f1;
   color: #7f8c8d;
@@ -4285,7 +4283,7 @@ section * {
   line-height: 36px;
 }
 .content-32 h3 {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: normal;
   color: #2c3e50;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4884,7 +4882,7 @@ section * {
 }
 .content-36 p {
   margin: 0 auto;
-  width: 65%;
+  width: 48%;
   font-size: 20px;
   line-height: 31px;
   font-weight: 500;
@@ -5326,4 +5324,188 @@ section * {
 }
 .content-38 .column-2 {
   padding: 0;
+}
+
+.content-39 {
+  position: relative;
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  background-color: #222527;
+}
+@media (max-width: 480px) {
+  .content-39 {
+    height: 420px;
+  }
+}
+.content-39 .container {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .content-39 .container {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+.content-39 h3 {
+  margin: 0 0 20px 0;
+  font-size: 36px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .content-39 h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+}
+@media (max-width: 480px) {
+  .content-39 h3 {
+    font-size: 26px;
+    font-weight: normal;
+    color: #ffffff;
+    margin: 0 0 24px 0;
+  }
+}
+.content-39 .lead {
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .content-39 .lead {
+    font-size: 26px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+}
+@media (max-width: 480px) {
+  .content-39 .lead {
+    font-size: 22px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+}
+.content-39 .pt-perspective {
+  position: relative;
+  height: 100%!important;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px;
+}
+.content-39 .pt-page {
+  width: 100%;
+  height: 100%!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  background-color: #363940;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.content-39 .pt-page-1 .background {
+  background-image: url("../../../img/greenstones.png");
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background-position: 50% 30%;
+}
+.content-39 .pt-page-2 .background {
+  background-image: url("../../../img/stones6.png");
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background-position: 50% 30%;
+}
+.content-39 .pt-page-3 .background {
+  background-image: url("../../../img/vital-ai-postcard-back-graph.png");
+  opacity: 75;
+  filter: alpha(opacity=7500);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background-position: 50% 30%;
+}
+.content-39 .pt-page-current,
+.content-39 .no-js .pt-page {
+  visibility: visible;
+  z-index: 1;
+}
+.content-39 .pt-page-ontop {
+  z-index: 999;
+}
+.content-39 .page-transitions * {
+  line-height: normal;
+}
+.content-39 .page-transitions .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content-39 .page-transitions .caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 140px;
+}
+@media (max-width: 480px) {
+  .content-39 .page-transitions .caption {
+    bottom: 73px;
+  }
+}
+.content-39 .page-transitions .controls > * {
+  position: absolute;
+  left: 15;
+  top: 410px;
+  z-index: 1000;
+  width: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 18px;
+  color: #7f8c8d;
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  -webkit-transition: color 0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.content-39 .page-transitions .controls > *:hover,
+.content-39 .page-transitions .controls > *:focus,
+.content-39 .page-transitions .controls > *.active {
+  color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 480px) {
+  .content-39 .page-transitions .controls > * {
+    top: 363px;
+  }
+}
+.content-39 .page-transitions .controls > *.control-next {
+  left: 45px;
 }

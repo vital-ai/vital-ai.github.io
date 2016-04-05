@@ -166,7 +166,8 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
 
         var headerAniStartPos = s1.outerHeight() - 120, headerAniStopPos = s1StopScroll;
 
-        $(window).scroll(function() {
+        //
+        var scrollHandler = function() {
             var opacity = (s1StopScroll - $(window).scrollTop()) / s1StopScroll;
             opacity = Math.max(0, opacity);
 
@@ -183,7 +184,7 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
             });
 
             antiflicker.css({
-                'background-color': $('.pt-page-current', s1).css('background-color'),
+                'background-color': 'rgb(54, 57, 64)',//$('.pt-page-current', s1).css('background-color'),
                 'opacity': 1.0001 - opacityAntiflicker
             });
             
@@ -234,7 +235,11 @@ startupKit.uiKitHeader._inFixedMode = function(headerClass) {
                 });
             }
 
-        });
+        };
+        
+        $(window).scroll(scrollHandler);
+        $(window).on("collapse-header-1", scrollHandler);
+        
     };
 };
 

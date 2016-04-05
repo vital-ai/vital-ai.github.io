@@ -1209,7 +1209,7 @@ body .colapsed-menu::-webkit-scrollbar {
   transform-style: preserve-3d;
 }
 .header-1-sub .pt-page-1 .background {
-  background-image: url("../../../common-files/img/header_image.jpg");
+  background-image: url("../../../common-files/img/NY_002.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -1217,7 +1217,7 @@ body .colapsed-menu::-webkit-scrollbar {
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-2 .background {
-  background-image: url("../../../common-files/img/header_image.jpg");
+  background-image: url("../../../common-files/img/header/img-2.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
