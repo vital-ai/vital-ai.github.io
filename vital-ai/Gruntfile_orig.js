@@ -27,9 +27,21 @@ var rewrite = require('connect-modrewrite');
             keepalive: true,
 	    protocol: 'https',
             hostname: 'localhost',
-            port: '8000'
+            port: '8000',
+	    middleware: function(connect, options, middlewares) {
+
+                // the rules that shape our mod-rewrite behavior
+                var rules = [
+                    '!\\.html|\\.fui|\\.js|\\.css|\\.svg|\\.jp(e?)g|\\.png|\\.gif$ /index.html'
+                ];
+
+                // add rewrite as first item in the chain of middlewares
+                middlewares.unshift(rewrite(rules));
+
+                return middlewares;
             }
         }
+    }
       },
 watch: {
 options: {
