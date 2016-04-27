@@ -6,10 +6,16 @@
  */
 
 
+
 module.exports = function (grunt) {
 
+    
+    
   'use strict';
 
+    var rewrite = require('connect-modrewrite');
+
+    
   grunt.initConfig({
     watch: {
       // If any .less file changes in directory "build/less/" run the "less"-task.
@@ -70,6 +76,56 @@ module.exports = function (grunt) {
         }
       }
     },
+    handlebars: {
+    all: {
+	//options: {
+	//	processName: function(filePath) {
+	//return filePath.replace(/webroot\//g, "");
+//}
+//},
+        files: {
+            "js/templates.js": ["templates/**/*.hbs"]
+        }
+    
+   }
+},  
+     connect: {
+    server: {
+        options: {
+            keepalive: true,
+            base: '.',
+	    protocol: 'http',
+            hostname: 'localhost',
+            port: '8888',
+	    middleware: function(connect, options, middlewares) {
+
+                // the rules that shape our mod-rewrite behavior
+                var rules = [
+                    '!\\.html|\\.ttf|\\.js|\\.css|\\.svg|\\.jp(e?)g|\\.png|\\.gif$ /index.html'
+                ];
+
+                // add rewrite as first item in the chain of middlewares
+                middlewares.unshift(rewrite(rules));
+
+                return middlewares;
+            }
+        }
+    }
+      }, 
+      
+      watch: {
+options: {
+        atBegin: true
+    },
+            handlebars: {
+                files: ['templates/**/*.hbs'],
+                tasks: ['handlebars']
+            }
+        },
+      
+      
+      
+      
     // Uglify task info. Compress the js files.
     uglify: {
       options: {
@@ -143,6 +199,15 @@ module.exports = function (grunt) {
 
   // Load all grunt tasks
 
+grunt.loadNpmTasks('grunt-contrib-handlebars');    
+    
+    
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    
+    
+    grunt.loadNpmTasks('grunt-contrib-watch');
+ 
+    
   // LESS Compiler
   grunt.loadNpmTasks('grunt-contrib-less');
   // Watch File Changes
