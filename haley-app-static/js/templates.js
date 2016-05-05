@@ -1,7 +1,7 @@
 this["JST"] = this["JST"] || {};
 
 this["JST"]["templates/footer.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<footer class=\"main-footer\">\n       <center> <strong>Copyright &copy; 2016 <a href=\"http://haley.ai\">Haley.ai</a>.</strong></center>\n      </footer>\n\n";
+    return "\n\n<footer class=\"main-footer\">\n    \n\n\n       <center> \n           \n           <div class=\"social\">\n           <a href=\"#\"><i class=\"fa fa-lg fa-facebook\"></i></a>&nbsp;&nbsp;\n        <a href=\"#\"><i class=\"fa fa-lg fa-twitter\"></i></a>&nbsp;&nbsp;\n        <a href=\"#\"><i class=\"fa fa-lg fa-google-plus\"></i></a>&nbsp;&nbsp;\n           </div><br>\n           \n           <strong>Copyright &copy; 2016 <a href=\"http://haley.ai\">Haley.ai</a>.</strong></center>\n    \n      </footer>\n\n";
 },"useData":true});
 
 this["JST"]["templates/header.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
