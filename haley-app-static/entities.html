@@ -250,123 +250,121 @@
                     
                                   <div class="box">
                            <div class="box-header with-border">
-                  <h3 class="box-title">Entities: Friends </h3>
+                  <h3 class="box-title">Entities: Friends </h3>  
                   <div class="box-tools"> 
                       
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Friends
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Countries</a></li>
-    <li><a href="#">Region</a></li>
-    <li><a href="#">Landmarks</a></li>
-      <li><a href="#">Airports</a></li>
-      <li><a href="#">Hospitals</a></li>
-      <li><a href="#">Hotels</a></li>
-  </ul>&nbsp;
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   Friends
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+    <li class="dropdown-header">Person</li>
+      <li role="separator" class="divider"></li>
+    <li><a href="#">Friends</a></li>
+    <li><a href="#">Bestfriends</a></li>
+    <li><a href="#">Family</a></li>
+        <li role="separator" class="divider"></li>
+  <li class="dropdown-header">Food</li>
+  <li role="separator" class="divider"></li>
+       <li><a href="#">Snack</a></li>
+       <li><a href="#">Lunch</a></li>
+       <li><a href="#">Dinner</a></li>
+  </ul>
+</div>
                   </div>
+                               
                 </div><!-- /.box-header -->
-                  
-                                                       
-                         <div class="box-body" align="center">       
-                       <form class="form-inline">
-  <div class="form-group">
- 
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Entity">
-  </div>
-  <button type="submit" class="btn btn-primary">Add Enitity</button>
-</form>               
-           </div> 
+            
+                 <div class="box-body">                 
+                 Description: Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.                     </div>    
+                                      
+                                      
                                       
                 <div class="box-body table-responsive no-padding">
                   <table class="table table-hover">
                  
+                         <th>Entity Name</th> 
+                      <th>Last Updated</th>
+                      <th></th>
+                      
+                      
                     <tr>
                         <td>Bob</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 2/5/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                     <tr>
                      <td>Dylan</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 2/5/16</td>
                       <td><a href="#">Edit</a></td>
                      
                     </tr>
                     <tr>
                      <td>Susan</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 1/21/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                     <tr>
                       <td>John</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 2/15/16</td>
                       <td><a href="#">Edit</a></td>
                     </tr>
                       <tr>
 <td>Matthew</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                       <tr>
 <td>Denise</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                       <tr>
 <td>Gloria</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                       <tr>
 <td>Victoria</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                       <tr>
 <td>Malcolm</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                       <tr>
 <td>Andrew</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
                       <tr>
 <td>Paul</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr><tr>
 <td>Matthias</td>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>last updated 4/12/16</td>
                       <td><a href="#">Edit</a></td>
                       
                     </tr>
-             
-                      
-                      
+      
                   </table>
                 </div><!-- /.box-body -->
+                                                        
+                                      
                   <div class="box-footer clearfix">
                  <center> <ul class="pagination pagination-sm no-margin center">
                     
@@ -376,6 +374,15 @@
                   
                   </ul></center>
                 </div>
+                                      
+                                      <div class="box-footer clearfix" align="center">
+                                          <form class="form-inline">
+  <div class="form-group">
+ 
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Entity Name">
+  </div>
+  <button type="submit" class="btn btn-primary">Add Enitity</button>
+</form>     </div>
                                       
               </div><!-- /.box -->
                 </div><!-- /.col -->
