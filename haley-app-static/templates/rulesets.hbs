@@ -1,0 +1,71 @@
+ <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Rule Sets </h3>
+                  <div class="box-tools"> 
+                      
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Jokes
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Politics</a></li>
+    <li><a href="#">Food</a></li>
+    <li><a href="#">Travel</a></li>
+  </ul>&nbsp;
+
+                      
+                      <ul class="pagination pagination-sm no-margin pull-right">
+                      <li><a href="#">&laquo;</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul>
+                    <div class="input-group" style="width: 150px;">
+            
+                      
+                    </div>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                 
+                    {{#each items}}<tr class="accordion-toggle">
+                      <td>{{description}}</td>
+                      <td><a href="#" data-toggle="collapse" data-target="#collapse{{number}}" >{{edit}}</a></td>
+                    </tr>
+                      
+               <!-- make it a nested table -->      
+  <tr>
+    <td class="details-cell" colspan="8">
+    <div id="collapse{{number}}" class="panel-collapse collapse" style="height: 0px;">
+	<table class="myproduct-table-row"><tr>
+    <td style="width: 700px"> <form> <fieldset class="form-group">
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </fieldset></form></td>
+        <td><button type="button" class="btn btn-primary btn-xs">Save</button>
+        </td>
+
+
+    
+    </tr>
+    </table>
+    </div>
+    </td>
+</tr>{{/each}}         
+                      
+                      
+                      
+                      
+                      
+                    
+                  </table>
+                    
+                    
+                    
+                </div><!-- /.box-body -->
+                  <div class="box-footer clearfix">
+                 <center> <ul class="pagination pagination-sm no-margin center">
+                    
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                  
+                  </ul></center>
+                </div>
+              </div><!-- /.box -->

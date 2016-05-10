@@ -37,124 +37,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script type='text/javascript' src='js/templates.js'></script>         
          
-    <header class="main-header">
 
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-            
-            <div class="navbar-header">
-              <a href="#" class="navbar-brand"><img src="img/haleylogo_offwhite_normal.png" width="90px"></a>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <i class="fa fa-bars"></i>
-              </button>
-            </div>
+<div class="content-placeholder-1"></div>
+
+    
+<script id="header1">
+
+var theheader1 = JST['templates/header1.hbs'];
+    
+
+var context={};
+
+    
+  // Pass our data to the template
+  var theCompiledHtml = theheader1(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-1').html(theCompiledHtml);
+
+</script>    
         
-            
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Interface<span class="sr-only">(current)</span></a></li>
-                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rules&nbsp;<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Chat Demo</a></li>
-                    <li><a href="#">Rule Sets</a></li>
-                    <li><a href="#">Entities</a></li>
-                  </ul>
-                </li>
-           
-              </ul>
-            </div><!-- /.navbar-collapse -->
-            <!-- Navbar Right Menu -->
-              <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                  <!-- Messages: style can be found in dropdown.less-->
-                  
-                </ul>
-                    <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="img/jiaqi.jpg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li><!-- end message -->
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
-                </ul>
-              </li>
-
-              <!-- User Account: style can be found in dropdown.less -->
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="img/jiaqi.jpg" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Jia Liew</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img src="img/jiaqi.jpg" class="img-circle" alt="User Image">
-                    <p>
-                      Jia Liew
-                      <small>Member since Nov. 2012</small>
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <!-- Control Sidebar Toggle Button -->
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-clone"></i></a>
-              </li>
-            </ul>
-                
-              </div><!-- /.navbar-custom-menu -->
-        </nav>
-      </header>
 
       <!-- =============================================== -->
 
@@ -433,81 +336,67 @@
                     </div><!-- /.box-footer-->
                   </div><!--/.direct-chat -->
                     
-                                  <div class="box">
-                <div class="box-header">
-                  <h3 class="box-title">Rule Sets </h3>
-                  <div class="box-tools"> 
-                      
-  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Jokes
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Politics</a></li>
-    <li><a href="#">Food</a></li>
-    <li><a href="#">Travel</a></li>
-  </ul>&nbsp;
+   <div class="content-placeholder-4"></div>
 
-                      
-                      <ul class="pagination pagination-sm no-margin pull-right">
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#">&raquo;</a></li>
-                    </ul>
-                    <div class="input-group" style="width: 150px;">
-            
-                      
-                    </div>
-                  </div>
-                </div><!-- /.box-header -->
-                <div class="box-body table-responsive no-padding">
-                  <table class="table table-hover">
-                 
-                    <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                     
-                    </tr>
-                    <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                   
-                    </tr>
-                      <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                      
-                    </tr>
-                      <tr>
-                      <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                      <td><a href="#">Edit</a></td>
-                      
-                    </tr>
-                      
-                  </table>
-                </div><!-- /.box-body -->
-                  <div class="box-footer clearfix">
-                 <center> <ul class="pagination pagination-sm no-margin center">
+    
+<script id="rulesets">
+
+var therulesets = JST['templates/rulesets.hbs'];
+    
+
+var context={
+items: [
+        {
+    number: "one",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  },  
+    
+    {
+    number: "two",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  }, 
+        
+        {
+    number: "three",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  }, 
+    {
+    number: "four",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  }, 
+    {
+    number: "five",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  }, 
+    {
+    number: "six",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  }, 
+    {
+    number: "seven",
+    description: "Lorem bacon ipsum dolor sit amet salami venison chicken flank fatback doner.",
+    edit: "edit"
+  }
+   ]
+};
+ 
+           
+    
+  // Pass our data to the template
+  var theCompiledHtml = therulesets(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-4').html(theCompiledHtml);
+
+</script>
                     
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                  
-                  </ul></center>
-                </div>
-              </div><!-- /.box -->
                 </div><!-- /.col -->
 
             
