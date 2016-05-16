@@ -61,80 +61,25 @@ var context={};
       <!-- =============================================== -->
 
       <!-- Left side column. contains the sidebar -->
-      <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <li class="header">CHANNELS</li>
-            <li>
-              <a href="#">
-                <li class="active"><i class="fa fa-home"></i> <span>MyHome</span>
-              </a></li>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-building"></i>
-                <span>Office</span>
-                <span class="label label-primary pull-right">4</span>
-              </a>
+      <div class="content-placeholder-2"></div>
 
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-car"></i> <span>Car</span> <small class="label label-primary pull-right">2</small>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-bed"></i>
-                <span>Hotel</span>
-              </a>
-                    </li>
-                  </ul>
+    
+<script id="leftsidebar1">
 
-           
-        </section>
-        <!-- /.sidebar -->
-      </aside>
-      
-      <!-- Left side column. contains the sidebar -->
-      <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <li class="header">ADMIN</li>
-            <li>
-              <a href="#">
-                <li class="active"><i class="fa fa-gear"></i> <span>Chat Demo</span>
-              </a></li>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-gear"></i>
-                <span>Rule Sets</span>
-                <span class="label label-primary pull-right">4</span>
-              </a>
+var theleftsidebar1 = JST['templates/leftsidebar1.hbs'];
+    
 
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-gear"></i> <span>Entities Sets</span> <small class="label label-primary pull-right">2</small>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-gear"></i>
-                <span>Entities</span>
-              </a>
-                    </li>
-                  </ul>
+var context={};
 
-           
-        </section>
-        <!-- /.sidebar -->
-      </aside>
+    
+  // Pass our data to the template
+  var theCompiledHtml = theleftsidebar1(context);
+    
+
+  // Add the compiled html to the page
+  $('.content-placeholder-2').html(theCompiledHtml);
+
+</script>  
 
       <!-- =============================================== -->
 
